@@ -1,0 +1,72 @@
+---
+import './Navigation.less';
+import Logo from "../../assets/images/gurutravel_logo.png";
+---
+
+<header id="header">
+	<div class="container navigation">
+		<!-- Navigation Logo -->
+		<a href="/" class="nav-logo" aria-label="back to homepage">
+			<img
+				src={Logo.src}
+				alt="logo"
+				width="210"
+				height="29"
+				aria-hidden="true"
+				decoding="async"
+			/>
+		</a>
+		<!-- Navigation List -->
+		<nav class="nav" role="navigation">
+			<!-- Mobile Nav Toggle -->
+			<button class="cs-toggle" aria-label="mobile menu toggle">
+				<div class="cs-box" aria-hidden="true">
+					<span class="cs-line cs-line1" aria-hidden="true"></span>
+					<span class="cs-line cs-line2" aria-hidden="true"></span>
+					<span class="cs-line cs-line3" aria-hidden="true"></span>
+				</div>
+			</button>
+			<!-- 
+				We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list
+				gets too long from too many dropdowns being opened and needs to have an overflow 
+				scroll. This wrapper acts as the background so it can go the full height of the 
+				screen and not cut off any overflowing nav items while the cs-ul stops short of 
+				the bottom of the screen, which keeps all nav items in view no matter how mnay 
+				there are.
+			-->
+			<div class="nav-ul-wrapper">
+				<ul id="nav-ul-expanded" class="nav-ul" aria-expanded="false">
+					<li class="nav-li">
+						<a id="nav-home-link" href="/" class="nav-li-link nav-li-link-selected"
+							>Home</a
+						>
+					</li>
+					<li class="nav-li nav-padded-li">
+						<a id="nav-team-link" href="/" class="nav-li-link"
+							>Team</a
+						>
+					</li>
+					<li class="nav-li nav-padded-li">
+						<a
+							id="nav-expeditions-link"
+							href="/"
+							class="nav-li-link ">Expeditions</a
+						>
+					</li>
+					<li class="nav-li">
+						<a id="nav-gallery-link" href="/" class="nav-li-link"
+							>Gallery</a
+						>
+					</li>
+					<li class="nav-li display-mobile">
+						<a id="nav-gallery-link" href="/" class="nav-li-link"
+							>Enquire Now ></a
+						>
+					</li>
+				</ul>
+			</div>
+			<a href="#enquire-btn" class="solid-btn nav-btn">Enquire</a>
+		</nav>
+	</div>
+</header>
+<script src="./Navigation.js"></script>
