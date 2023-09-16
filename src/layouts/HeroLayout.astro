@@ -1,0 +1,83 @@
+---
+import { Image } from "astro:assets";
+const { heroTitle1, heroTitle2, heroImg } = Astro.props;
+const heroSectionImg = {
+	homepage: "sylvain-mauroux-OIuzDRYA3cw-medium.jpg",
+	team: "sylvain-mauroux-OIuzDRYA3cw-medium.jpg",
+};
+import homepageImg from "../assets/images/sylvain-mauroux-OIuzDRYA3cw-unsplash(2).jpg";
+import caretDown from "../assets/svg/icons8-flecha-ampliar-64.png";
+
+---
+
+<div class="hero-container">
+	<Image
+		class="hero-container-img"
+		src={homepageImg}
+		alt="Climber facing the sun on the summit"
+	/>
+	<div class="hero-gradient"></div>
+	<h1 class="hero-title">{heroTitle1}<br />{heroTitle2}</h1>
+
+	<Image
+		class="hero-container-caret-down"
+		src={caretDown}
+		alt="Scroll down to see more"
+	/>
+</div>
+
+<style>
+	.hero-container {
+		overflow: hidden;
+		position: relative;
+		height: 100vh;
+		width: 100%;
+
+		.hero-title {
+			color: var(--primaryLight);
+			width: 80vw;
+			font-size: 3.2rem;
+			font-style: normal;
+			font-weight: 700;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+
+			position: absolute;
+			bottom: 7rem;
+			left: 5rem;
+		}
+
+		.hero-gradient {
+			background-image: linear-gradient(
+				0deg,
+				rgba(0, 0, 0, 0.8) 0%,
+				rgba(0, 0, 0, 0.43) 36%,
+				rgba(255, 255, 255, 0) 42%
+			);
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.hero-container-img {
+			object-fit: cover;
+			height: 100vh;
+			width: 100vw;
+		}
+
+        .hero-container-caret-down {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 50%;
+            translate: -50%;
+            height: 2.5rem;
+            width: 2.5rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+	}
+</style>

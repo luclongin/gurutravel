@@ -1,0 +1,344 @@
+/*-- -------------------------- -->
+<---        Side By Side        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    :root {
+        /* 13px - 16px */
+        //--topperFontSize: clamp(.8125rem, 1.6vw, 1rem);
+        /* 31px - 49px */
+        //--headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+        //--bodyFontSize: 1rem;
+
+        /* 60px - 100px top and bottom */
+        //--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    }
+
+    #sbs-83 {
+        /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
+        font-family: 'Roboto', 'Arial', sans-serif;
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at tablet */
+            max-width: (550/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: (522/16rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+    
+        .cs-topper {
+            font-size: var(--topperFontSize);
+            line-height: 1.2em;
+            text-transform: uppercase;
+            text-align: inherit;
+            letter-spacing: .1em;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: (4/16rem);
+            display: block;
+        }
+    
+        .cs-title {
+            font-size: var(--headerFontSize);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: inherit;
+            max-width: (700/16rem);
+            margin: 0 0 (16/16rem) 0;
+            color: var(--headerColor);
+            position: relative;
+        }
+    
+        .cs-text {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            text-align: inherit;
+            width: 100%;
+            max-width: (650/16rem);
+            margin: 0;
+            color: var(--bodyTextColor);
+        }
+
+        .cs-title {
+            /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+            max-width: 20ch;
+        }
+
+        .cs-text {
+            /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+            margin-bottom: (16/16rem);
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
+        }
+
+        .cs-card-group {
+            width: 100%;
+            max-width: (400/16rem);
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: (12/16rem);
+        }
+
+        .cs-item {
+            list-style: none;
+            width: 32%;
+            max-width: (150/16rem);
+            /* making flex so we can align a heading with 1 line to the bottom */
+            display: flex;
+            flex-direction: column;
+            align-self: stretch;
+            align-content: space-between;
+        }
+
+        .cs-number {
+            /* 39px - 49px */
+            font-size: clamp(2.4375rem, 5vw, 3.0625rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            text-align: left;
+            color: var(--primary);
+            display: block;
+            /* 8px - 16px */
+            margin: 0 0 clamp(.25rem, .5vw, 1rem);
+        }
+
+        .cs-h3 {
+            /* 16px - 20px */
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            line-height: 1.2em;
+            text-align: left;
+            /* auto margin top will push text to bottom if there's only one line */
+            margin: auto 0 0;
+            color: var(--headerColor);
+        }
+
+        .cs-image-group {
+            width: 100%;
+            max-width: (542/16rem);
+            /* pushes down by the same amount the images overlap the image group */
+            margin: 0 0 (40/16rem);
+            display: flex;
+            /* separate children to opposite sides of the room */
+            justify-content: center;
+            align-content: space-between;
+            flex-wrap: wrap;
+            gap: clamp(.5rem, 2vw, 1.25rem);
+        }
+
+        .cs-picture {
+            width: 48%;
+            /* 218px - 264px */
+            min-height: clamp((218/16rem), 25vw, (264/16rem));
+            aspect-ratio: 160/218;
+            position: relative;
+            display: block;
+
+            &:nth-of-type(2) {
+                /* move slightly down */
+                transform: translateY(28/16rem);
+            }
+
+            &:nth-of-type(4) {
+                /* move slightly up */
+                transform: translateY(28/16rem);
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                /* Makes image act as a background image to the picture element */
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #sbs-83 {
+        .cs-container {
+            max-width: (1280/16rem);
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            /* 44px - 108px */
+            column-gap: clamp(2.75rem, calc(4.5vw*1.2 + 1em), 6.75rem);
+        }
+
+        .cs-card-group {
+            max-width: 100%;
+        }
+
+        .cs-image-group {
+            /* 318px - 542px */
+            width: clamp((318/16rem), 46.9vw, (542/16rem));
+            /* prevents flexbox from squishing it */
+            flex: none;
+        }
+
+        .cs-picture {
+            width: 47.8%;
+            aspect-ratio: initial;
+        }
+    }
+}
+                                
+
+/*
+@media only screen and (min-width: 0rem) {
+    .about-section {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .images-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: (20/16rem);
+        }
+
+        .left-images-container,
+        .right-images-container {
+            display: flex;
+            flex-direction: column;
+            gap: (20/16rem);
+            height: clamp(calc(24rem), 38vw, calc(34rem));
+        }
+
+        .about-section-img {
+            border-radius: (12/16rem);
+            //width: (200/16rem);
+            //width: calc(50%-(20/16rem));
+            width: clamp((120/16rem), 32vw, (240/16rem))!important;
+            height: auto;
+            aspect-ratio: 1 / 1;
+        }
+
+        .left-images-container {
+            justify-content: flex-end;
+        }
+
+        .right-images-container {
+            justify-content: flex-start;
+        }
+
+        .about-content {
+            width: calc(50% - var(--sectionPadding));
+            //width: (520/16rem);
+            height: auto;
+            //background-color: rgb(255, 245, 232);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            .section-subtitle {
+                width: 100%;
+                color: var(--primary);
+                font-size: (20/16rem);
+                font-weight: 700;
+                line-height: 120%;
+                letter-spacing: (2/16rem);
+                text-align: left;
+                text-transform: uppercase;
+            }
+
+            .section-title {
+                width: 100%;
+                text-align: left;
+                color: var(--bodyTextColor);
+                //font-size: (40/16rem);
+                font-size: clamp((28/16rem), 4vw, (44/16rem));
+                font-weight: 800;
+                letter-spacing: 2px;
+                line-height: 120%;
+                text-transform: uppercase;
+            }
+
+            .section-text {
+                color: var(--bodyTextColor);
+                font-size: var(--bodyFontSize);
+                font-weight: 400;
+                line-height: 120%;
+                padding: 1rem 0;
+                //width: 75%;
+            }
+
+            .stats-container {
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 0.8rem;
+                padding: 1rem 0 2rem;
+
+                .stat-group {
+                    width: 25%;
+                }
+
+                .stat-bold {
+                    color: var(--primary);
+                    font-size: clamp((30/16rem), 3vw, (36/16rem));
+                    font-weight: 700;
+                    line-height: 120%;
+                }
+
+                .stat-description {
+                    color: var(--bodyTextColor);
+                    font-size: clamp((14/16rem), 2vw, (16/16rem));
+                    font-weight: 500;
+                    line-height: 120%;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    .about-section {
+        flex-direction: row;
+
+        .images-container {
+            width: 50%;
+            height: auto;
+        }
+
+        .about-section-img {
+            border-radius: (12/16rem);
+            width: clamp((140/16rem), 16vw, (240/16rem));
+            height: auto;
+            aspect-ratio: 1 / 1;
+        }
+    }
+}*/

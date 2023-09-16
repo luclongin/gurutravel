@@ -1,16 +1,25 @@
 ---
+import AboutSection from "../layouts/AboutSection.astro";
+import HeroLayout from "../layouts/HeroLayout.astro";
 import Navigation from "../components/Navigation/Navigation.astro";
 import "../styles/root.less";
+import AboutLayout from "../layouts/AboutLayout.astro";
 ---
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>Document</title>
-    </head>
-    <body>
-        <Navigation />
-    </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Document</title>
+	</head>
+	<body>
+		<Navigation />
+		<!--<HeroLayout
+			heroSection="homepage"
+			heroTitle1="dream big. climb high."
+            heroTitle2="explore the peruvian andes."
+		/>-->
+		<AboutLayout />
+	</body>
 </html>

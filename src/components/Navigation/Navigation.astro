@@ -1,6 +1,8 @@
 ---
-import './Navigation.less';
+import "./Navigation.less";
+import { Image } from "astro:assets";
 import Logo from "../../assets/images/gurutravel_logo.png";
+import SpanishFlag from "../../assets/svg/icons8-españa-48.png";
 ---
 
 <header id="header">
@@ -37,8 +39,10 @@ import Logo from "../../assets/images/gurutravel_logo.png";
 			<div class="nav-ul-wrapper">
 				<ul id="nav-ul-expanded" class="nav-ul" aria-expanded="false">
 					<li class="nav-li">
-						<a id="nav-home-link" href="/" class="nav-li-link nav-li-link-selected"
-							>Home</a
+						<a
+							id="nav-home-link"
+							href="/"
+							class="nav-li-link nav-li-link-selected">Home</a
 						>
 					</li>
 					<li class="nav-li nav-padded-li">
@@ -50,13 +54,22 @@ import Logo from "../../assets/images/gurutravel_logo.png";
 						<a
 							id="nav-expeditions-link"
 							href="/"
-							class="nav-li-link ">Expeditions</a
+							class="nav-li-link">Expeditions</a
 						>
 					</li>
 					<li class="nav-li">
 						<a id="nav-gallery-link" href="/" class="nav-li-link"
 							>Gallery</a
 						>
+					</li>
+					<li class="nav-li">
+						<a id="nav-gallery-link" href="/" class="nav-li-link">
+							<Image
+								class="nav-language-flag"
+								src={SpanishFlag}
+								alt="Cambiar a Español"
+							/>
+						</a>
 					</li>
 					<li class="nav-li display-mobile">
 						<a id="nav-gallery-link" href="/" class="nav-li-link"
