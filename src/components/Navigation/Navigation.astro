@@ -20,6 +20,18 @@ import SpanishFlag from "../../assets/svg/icons8-españa-48.png";
 		</a>
 		<!-- Navigation List -->
 		<nav class="nav" role="navigation">
+			<!-- Mobile Language Button -->
+			<a
+				class="nav-language-mobile display-mobile"
+				aria-label="Cambiar a Español"
+			>
+				<Image
+					class="nav-language-flag"
+					src={SpanishFlag}
+					alt="Cambiar a Español"
+				/>
+				Español
+			</a>
 			<!-- Mobile Nav Toggle -->
 			<button class="cs-toggle" aria-label="mobile menu toggle">
 				<div class="cs-box" aria-hidden="true">
@@ -63,7 +75,7 @@ import SpanishFlag from "../../assets/svg/icons8-españa-48.png";
 						>
 					</li>
 					<li class="nav-li">
-						<a id="nav-gallery-link" href="/" class="nav-li-link">
+						<a id="nav-language-link" href="/" class="nav-li-link">
 							<Image
 								class="nav-language-flag"
 								src={SpanishFlag}
