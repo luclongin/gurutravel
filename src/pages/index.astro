@@ -1,9 +1,11 @@
 ---
-import AboutSection from "../layouts/AboutSection.astro";
 import HeroLayout from "../layouts/HeroLayout.astro";
 import Navigation from "../components/Navigation/Navigation.astro";
 import "../styles/root.less";
-import AboutLayout from "../layouts/AboutLayout.astro";
+import AboutLayout from "../layouts/AboutLayout/AboutLayout.astro";
+import ExpeditionsLayout from "../layouts/ExpeditionsLayout.astro";
+import { Image } from "astro:assets";
+import dirtImage from "../assets/images/grain-white-1200-opac18.png";
 ---
 
 <html lang="en">
@@ -14,12 +16,18 @@ import AboutLayout from "../layouts/AboutLayout.astro";
 		<title>Document</title>
 	</head>
 	<body>
+		<Image
+			class="dirt-overlay-img"
+			src={dirtImage}
+			alt="Specks of dirt background image"
+		/>
 		<Navigation />
 		<HeroLayout
 			heroSection="homepage"
 			heroTitle1="dream big. climb high."
-            heroTitle2="explore the peruvian andes."
+			heroTitle2="explore the peruvian andes."
 		/>
 		<AboutLayout />
+		<ExpeditionsLayout />
 	</body>
 </html>

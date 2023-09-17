@@ -1,0 +1,27 @@
+---
+const { expedTitle } = Astro.props;
+import './ExpedImgCard.less';
+---
+
+<div class="exped-images-card">
+	<div class="exped-img-overlay"></div>
+	<picture class="exped-img">
+		<source
+			media="(max-width: 480px)"
+			srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting-m.jpg"
+		/>
+		<source
+			media="(min-width: 480px)"
+			srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting.jpg"
+		/>
+		<img
+			loading="lazy"
+			decoding="async"
+			src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting.jpg"
+			alt="person gardening"
+			width="400"
+			height="200"
+		/>
+	</picture>
+	<p class="exped-img-label">{expedTitle}</p>
+</div>

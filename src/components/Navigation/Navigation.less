@@ -14,6 +14,10 @@ body {
         display: block;
     }
 
+    .hide-mobile {
+        display: none;
+    }
+
     body {
         &.cs-open {
             overflow: hidden;
@@ -75,7 +79,7 @@ body {
             justify-content: center;
             align-items: center;
             padding: 0 1rem;
-            font-size: 1rem;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
             font-weight: 500;
 
             img {
@@ -343,6 +347,10 @@ body {
         position: fixed;
         top: 0;
         z-index: 1000;
+
+        .hide-mobile {
+            display: block !important;
+        }
 
         .display-mobile {
             display: none !important;
