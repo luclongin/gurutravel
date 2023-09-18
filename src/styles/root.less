@@ -135,6 +135,10 @@ span {
         display: block;
     }
 
+    .hide-544 {
+        display: none;
+    }
+
     .hide-mobile, .display-tablet {
         display: none;
     }
@@ -278,7 +282,12 @@ span {
 }
 
 
-
+/** 544 px */
+@media only screen and (min-width: 34rem) {
+    .hide-544 {
+        display: block!important;
+    }
+}
 
 /* Table - 768px */
 @media only screen and (min-width: 48rem) {
