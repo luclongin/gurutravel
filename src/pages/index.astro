@@ -3,9 +3,11 @@ import HeroLayout from "../layouts/HeroLayout.astro";
 import Navigation from "../components/Navigation/Navigation.astro";
 import "../styles/root.less";
 import AboutLayout from "../layouts/AboutLayout/AboutLayout.astro";
-import ExpeditionsLayout from "../layouts/ExpeditionsLayout.astro";
+import ExpeditionsLayout from "../layouts/ExpeditionsLayout/ExpeditionsLayout.astro";
+import HomeReviewsLayout from "../layouts/HomeReviewsLayout/HomeReviewsLayout.astro";
 import { Image } from "astro:assets";
 import dirtImage from "../assets/images/grain-white-1200-opac18.png";
+
 ---
 
 <html lang="en">
@@ -16,11 +18,13 @@ import dirtImage from "../assets/images/grain-white-1200-opac18.png";
 		<title>Document</title>
 	</head>
 	<body>
-		<Image
-			class="dirt-overlay-img"
-			src={dirtImage}
-			alt="Specks of dirt background image"
-		/>
+		<div class="fillbody"></div>
+		 <!-- Background Image -->
+		 <picture class="dirt-bg-img">
+			<source media="(max-width: 600px)" srcset={dirtImage.src}>
+			<source media="(min-width: 601px)" srcset={dirtImage.src}>
+			<img aria-hidden="true" loading="lazy" decoding="async" src={dirtImage.src} alt="kitchen cabinets" width="1920" height="1280">
+		</picture>
 		<Navigation />
 		<HeroLayout
 			heroSection="homepage"
@@ -29,5 +33,6 @@ import dirtImage from "../assets/images/grain-white-1200-opac18.png";
 		/>
 		<AboutLayout />
 		<ExpeditionsLayout />
+		<HomeReviewsLayout />
 	</body>
 </html>

@@ -1,0 +1,19 @@
+---
+import "./QuoteUserProfile.less";
+import { Image } from "astro:assets";
+import userImg from '../../assets/images/alexander-hipp-iEEBWgY_6lA-unsplash.jpg';
+const {name, activity, date} = Astro.props;
+---
+
+<div class="quote-user-profile">
+    <Image
+        class="review-user-profile-img"
+        src={userImg}
+        alt="User Image"
+    />
+    <div class="quote-user-profile-content">
+        <p class="quote-user-profile-name">{name}</p>
+        <p class="quote-user-profile-activity">{activity}</p>
+        <p class="quote-user-profile-date">{date}</p>
+    </div>
+</div>

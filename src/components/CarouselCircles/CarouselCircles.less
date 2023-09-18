@@ -1,0 +1,25 @@
+.carousel-circles {
+    //background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: clamp((16/16rem), 5vw, (24/16rem));
+
+    .circle {
+        height: (16/16rem);
+        width: (16/16rem);
+        border-radius: 50%;
+        background-color: var(--bodyBackgroundColorLight);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .selected-circle {
+        background-color: var(--bodyTextColorLight);
+        height: (24/16rem);
+        width: (24/16rem);
+    }
+}

@@ -1,0 +1,160 @@
+---
+import './HomeReviewsLayout.less';
+import ReviewQuote from '../../components/ReviewQuote/ReviewQuote.astro';
+---
+
+<section id="reviews-section">
+	<div class="container">
+		<div class="content">
+			<span class="topper">Reviews</span>
+			<h2 class="section-title title reviews-title">
+				Success measured in smiles
+			</h2>
+		</div>
+        <div class="reviews-images-container">
+			<picture class="reviews-img">
+				<source
+					media="(max-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/outdoors-m.jpg"
+				/>
+				<source
+					media="(min-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/outdoors.jpg"
+				/>
+				<img
+					loading="lazy"
+					decoding="async"
+					src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/outdoors.jpg"
+					alt="people outside"
+					width="254"
+					height="262"
+				/>
+			</picture>
+			<picture class="reviews-img">
+				<source
+					media="(max-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/pathway-m.jpg"
+				/>
+				<source
+					media="(min-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/pathway.jpg"
+				/>
+				<img
+					loading="lazy"
+					decoding="async"
+					src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/[pathway].jpg"
+					alt="people outside"
+					width="254"
+					height="262"
+				/>
+			</picture>
+			<picture class="reviews-img">
+				<source
+					media="(max-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting-m.jpg"
+				/>
+				<source
+					media="(min-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting.jpg"
+				/>
+				<img
+					loading="lazy"
+					decoding="async"
+					src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting.jpg"
+					alt="person gardening"
+					width="254"
+					height="262"
+				/>
+			</picture>
+			<picture class="reviews-img">
+				<source
+					media="(max-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/urban-environment-m.jpg"
+				/>
+				<source
+					media="(min-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/urban-environment.jpg"
+				/>
+				<img
+					loading="lazy"
+					decoding="async"
+					src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/urban-environment.jpg"
+					alt="urban environment in green"
+					width="254"
+					height="262"
+				/>
+			</picture><picture class="reviews-img">
+				<source
+					media="(max-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/urban-environment-m.jpg"
+				/>
+				<source
+					media="(min-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/urban-environment.jpg"
+				/>
+				<img
+					loading="lazy"
+					decoding="async"
+					src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/urban-environment.jpg"
+					alt="urban environment in green"
+					width="254"
+					height="262"
+				/>
+			</picture><picture class="reviews-img">
+				<source
+					media="(max-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/urban-environment-m.jpg"
+				/>
+				<source
+					media="(min-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/urban-environment.jpg"
+				/>
+				<img
+					loading="lazy"
+					decoding="async"
+					src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/urban-environment.jpg"
+					alt="urban environment in green"
+					width="254"
+					height="262"
+				/>
+			</picture>
+            <picture class="reviews-img display-tablet">
+				<source
+					media="(max-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/outdoors-m.jpg"
+				/>
+				<source
+					media="(min-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/outdoors.jpg"
+				/>
+				<img
+					loading="lazy"
+					decoding="async"
+					src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/outdoors.jpg"
+					alt="people outside"
+					width="254"
+					height="262"
+				/>
+			</picture>
+			<picture class="reviews-img display-tablet">
+				<source
+					media="(max-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/pathway-m.jpg"
+				/>
+				<source
+					media="(min-width: 480px)"
+					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/pathway.jpg"
+				/>
+				<img
+					loading="lazy"
+					decoding="async"
+					src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/[pathway].jpg"
+					alt="people outside"
+					width="254"
+					height="262"
+				/>
+			</picture>
+		</div>
+		<ReviewQuote />
+	</div>
+</section>
