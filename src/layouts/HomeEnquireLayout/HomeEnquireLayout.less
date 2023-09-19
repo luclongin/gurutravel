@@ -1,0 +1,71 @@
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #home-enquire-section {
+        padding: var(--sectionPadding);
+
+        .container {
+            background-color: aliceblue;
+        }
+
+        .home-enquire-images-container {
+            width: 100%;
+            max-width: 32.625rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: clamp(.5rem, 2vw, 1.25rem);
+
+            
+        }
+
+        .enquire-img {
+            width: 100%;
+            max-width: (396/16rem);
+            min-height: clamp((218/16rem), 25vw, (264/16rem));
+            aspect-ratio: 1 / 1;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: (12/16rem);
+            }
+        }
+
+        .dotted-line {
+            margin: 1rem 0;
+            border-bottom: 4px dashed var(--bodyBackgroundColorLight);
+            width: 100%;
+        }
+
+        .subtitle {
+            opacity: 0.9;
+        }
+
+        .enquire-office-address {
+            margin-top: (16/16rem);
+            display: flex;
+            flex-direction: column;
+            gap: (4/16rem);
+        }
+
+        .enquire-office-hours-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: (4/16rem);
+            margin-top: 1rem;
+        }
+
+        .enquire-office-hours {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: (8/16rem);
+        }
+    }
+}
