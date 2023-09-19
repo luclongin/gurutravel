@@ -5,6 +5,7 @@
 
         .container {
             background-color: aliceblue;
+            align-items: flex-start;
         }
 
         .home-enquire-images-container {
@@ -14,15 +15,13 @@
             flex-wrap: wrap;
             justify-content: flex-start;
             gap: clamp(.5rem, 2vw, 1.25rem);
-
-            
         }
 
         .enquire-img {
             width: 100%;
             max-width: (396/16rem);
-            min-height: clamp((218/16rem), 25vw, (264/16rem));
-            aspect-ratio: 1 / 1;
+            min-height: clamp((418/16rem), 25vw, (664/16rem));
+            aspect-ratio: 1 / 2;
             position: relative;
 
             img {
@@ -64,8 +63,9 @@
         .enquire-office-hours {
             display: flex;
             flex-direction: row;
-            justify-content: flex-start;
+            align-items: baseline;
             gap: (8/16rem);
+            vertical-align: baseline;
         }
     }
 }
