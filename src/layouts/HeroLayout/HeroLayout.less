@@ -9,7 +9,7 @@
         .container {
             height: 100%;
             background-color: yellow;
-            justify-content: flex-end !important;
+            justify-content: flex-end!important;
 
             .hero-title {
                 color: var(--primaryLight);
@@ -64,12 +64,20 @@
 }
 
 
+/* Tablet - 768px */
+@media only screen and (min-width: 40rem) {
+    #hero-section {
+        .container {
+        }
+    }
+}
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #hero-section {
 
         .container {
+            justify-content: flex-start!important;
             align-items: flex-end !important;
         }
     }
