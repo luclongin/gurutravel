@@ -19,7 +19,6 @@ body {
     #header {
         width: 100%;
         border: none;
-        padding: (16/16rem) (16/16rem);
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
         background-color: var(--navBackground);
@@ -339,7 +338,6 @@ body {
         position: fixed;
         top: 0;
         z-index: 1000;
-
         
         .container {
             gap: 0;
@@ -353,7 +351,7 @@ body {
             max-width: (860/16rem);
             padding: (16/16rem) (16/16rem);
             position: fixed;
-            top: 2.5rem;
+            top: (16/16rem);
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -362,6 +360,14 @@ body {
 
             .cs-toggle {
                 display: none;
+            }
+
+            .nav-language-mobile {
+                display: none!important;
+            }
+
+            .extra-enquire-link {
+                display: none!important;
             }
 
             .nav-logo {
@@ -459,10 +465,3 @@ body {
         }
     }
 }
-
-/*
-@media only screen and (min-width: 64rem) {
-    .navigation {
-        width: 60vw!important;
-    }
-}*/

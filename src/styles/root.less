@@ -135,8 +135,16 @@ span {
         display: block;
     }
 
+    .show-on-mobile {
+        display: block;
+    }
+
     .hide-544 {
         display: none;
+    }
+
+    .show-on-tablet {
+        display: none!important;
     }
 
     .hide-on-desktop {
@@ -158,6 +166,10 @@ span {
 
     .bold {
         font-weight: 600;
+    }
+
+    .bold500 {
+        font-weight: 500;
     }
 
     .dirt-bg-img {
@@ -304,6 +316,14 @@ span {
 
 /* Table - 768px */
 @media only screen and (min-width: 48rem) {
+    .show-on-tablet {
+        display: block !important;
+    }
+
+    .show-on-mobile {
+        display: none !important;
+    }
+
     .hide-tablet {
         display: none !important;
     }
@@ -322,6 +342,9 @@ span {
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+    .show-on-tablet {
+        display: none!important;
+    }
 
     .hide-on-desktop {
         display: none !important;
@@ -337,6 +360,10 @@ span {
 
     .display-mobile {
         display: none !important;
+    }
+
+    .hide-desktop {
+        display: none;
     }
 
     .container {

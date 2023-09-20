@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+const { heroTitle1, heroTitle2, heroImg } = Astro.props;
+const heroSectionImg = {
+	homepage: "sylvain-mauroux-OIuzDRYA3cw-medium.jpg",
+	team: "sylvain-mauroux-OIuzDRYA3cw-medium.jpg",
+};
+import homepageImg from "../../assets/images/sylvain-mauroux-OIuzDRYA3cw-unsplash(2).jpg";
+import caretDown from "../../assets/svg/icons8-flecha-ampliar-64.png";
+import './HeroLayout.less';
+---
+
+<section id="hero-section">
+	<div class="container">
+		<Image
+			class="hero-container-img"
+			src={homepageImg}
+			alt="Climber facing the sun on the summit"
+		/>
+		<div class="hero-gradient"></div>
+		<h1 class="hero-title">{heroTitle1}<br />{heroTitle2}</h1>
+
+		<Image
+			class="hero-container-caret-down"
+			src={caretDown}
+			alt="Scroll down to see more"
+		/>
+	</div>
+</section>
+
