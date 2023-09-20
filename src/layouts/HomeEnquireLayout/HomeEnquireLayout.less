@@ -4,8 +4,7 @@
         padding: var(--sectionPadding);
 
         .container {
-            background-color: aliceblue;
-            align-items: flex-start;
+            //align-items: flex-start;
         }
 
         .home-enquire-images-container {
@@ -19,9 +18,11 @@
 
         .enquire-img {
             width: 100%;
-            max-width: (396/16rem);
-            min-height: clamp((418/16rem), 25vw, (664/16rem));
-            aspect-ratio: 1 / 2;
+            max-width: (404/16rem);
+            min-height: clamp((418/16rem), 25vw, (800/16rem));
+            height: 100%;
+            //            max-height: (624/16rem);
+            aspect-ratio: 1 / 1;
             position: relative;
 
             img {
@@ -36,13 +37,20 @@
         }
 
         .dotted-line {
-            margin: 1rem 0;
+            margin: .5rem 0;
             border-bottom: 4px dashed var(--bodyBackgroundColorLight);
             width: 100%;
         }
 
         .subtitle {
             opacity: 0.9;
+        }
+
+        .enquire-maps-container {
+            margin-top: 1rem;
+            height: (250/16rem);
+            border-radius: (12/16rem);
+            overflow: hidden;
         }
 
         .enquire-office-address {
@@ -66,6 +74,53 @@
             align-items: baseline;
             gap: (8/16rem);
             vertical-align: baseline;
+        }
+    }
+}
+
+
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #home-enquire-section {
+        padding: var(--sectionPadding);
+
+        .container {
+            flex-direction: row;
+            max-width: (840/16rem);
+        }
+
+        .enquire-maps-container {
+            iframe {
+                width: (384/16rem);
+            }
+        }
+
+        .enquire-img {
+            aspect-ratio: 1 / 2.2;
+        }
+    }
+}
+
+
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+
+    #home-enquire-section {
+        padding: var(--sectionPadding);
+
+        .container {
+            max-width: (1280/16rem);
+            gap: clamp(.5rem, 2vw, 1rem);
+        }
+
+        .home-enquire-images-container {
+            justify-content: center;
+        }
+
+        .enquire-img {
+            aspect-ratio: 1 / 1.8 !important;
         }
     }
 }

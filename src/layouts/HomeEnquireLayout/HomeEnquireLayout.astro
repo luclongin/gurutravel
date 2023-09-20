@@ -2,6 +2,7 @@
 import './HomeEnquireLayout.less';
 import IconAndLabel from "../../components/IconAndLabel/IconAndLabel.astro";
 import WhatsappButton from '../../components/WhatsappButton/WhatsappButton.astro';
+import enquireImg from '../../assets/images/sheshan-r-4AU8t0aQHVI-unsplash.jpg';
 ---
 
 <section id="home-enquire-section">
@@ -10,6 +11,22 @@ import WhatsappButton from '../../components/WhatsappButton/WhatsappButton.astro
 		<div class="home-enquire-images-container">
 			<picture class="enquire-img">
 				<source
+					media="(max-width: 480px)"
+					srcset={enquireImg.src}
+				/>
+				<source
+					media="(min-width: 480px)"
+					srcset={enquireImg.src}
+				/>
+				<img
+					loading="lazy"
+					decoding="async"
+					srcset={enquireImg.src}
+					alt="people outside"
+					width="254"
+					height="262"
+				/>
+				<!-- <source
 					media="(max-width: 480px)"
 					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/outdoors-m.jpg"
 				/>
@@ -25,7 +42,7 @@ import WhatsappButton from '../../components/WhatsappButton/WhatsappButton.astro
 					width="254"
 					height="262"
 				/>
-			</picture>
+			</picture>-->
         </div>
         <!-- Right Section -->
 		<div class="content">
@@ -37,8 +54,9 @@ import WhatsappButton from '../../components/WhatsappButton/WhatsappButton.astro
 			<WhatsappButton />
 			<div class="dotted-line"></div>
 			<div class="enquire-maps-container">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.7797382201557!2d-77.53209187027657!3d-9.527856448275278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a90d1051f3bf5f%3A0x84e830468cdaa5c8!2sPERU%20TOUR%20VIAJES%20Y%20TURISMO%20HUARAZ-ANCASH!5e0!3m2!1sen!2spe!4v1695149954027!5m2!1sen!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				<div class="enquire-office-address">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.7797382201557!2d-77.53209187027657!3d-9.527856448275278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a90d1051f3bf5f%3A0x84e830468cdaa5c8!2sPERU%20TOUR%20VIAJES%20Y%20TURISMO%20HUARAZ-ANCASH!5e0!3m2!1sen!2spe!4v1695149954027!5m2!1sen!2spe" width="304" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>	
+			<div class="enquire-office-address">
 					<p class="subtitle">Our Office</p>
 					<p class="bold">
 						Av. 27 de Noviembre 819, Huaraz, Per&uacute;

@@ -1,0 +1,66 @@
+---
+import './Footer.less';
+import IconAndLabel from '../../components/IconAndLabel/IconAndLabel.astro';
+---
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+<footer id="footer-section">
+    <div class="container">
+        <div class="logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <!-- Remove the light class if you don't need the dark logo -->
+                <img class="logo-img light" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Footer/logo.svg" alt="logo" width="240" height="32">
+                <!-- Lighter Dark Mode Logo, remove if not needed -->
+                <img class="logo-img dark" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Footer/logo-light.svg" alt="logo" width="240" height="32">
+            </a>
+            <p class="cs-text">
+                Your Mountain awaits.<br>Huaraz's leading mountain adventures.
+            </p>
+            <div class="cs-social">
+                <IconAndLabel label="Write to us" value="contact@gurutravel.com" />
+            </div>
+        </div>
+
+        <!-- Links -->
+        <ul class="footer-nav">
+            <li class="footer-nav-li">
+                <span class="footer-nav-header">About</span>
+            </li>
+            <li class="footer-nav-li">
+                <a class="footer-nav-link" href="">Our Story</a>
+            </li>
+            <li class="footer-nav-li">
+                <a class="footer-nav-link" href="">Team</a>
+            </li>
+            <li class="footer-nav-li">
+                <a class="footer-nav-link" href="">Gallery</a>
+            </li>
+        </ul>
+        <ul class="footer-nav">
+            <li class="footer-nav-li">
+                <span class="footer-nav-header">Expeditions</span>
+            </li>
+            <li class="footer-nav-li">
+                <a class="footer-nav-link" href="">Popular Climbs</a>
+            </li>
+            <li class="footer-nav-li">
+                <a class="footer-nav-link" href="">Popular Treks</a>
+            </li>
+            <li class="footer-nav-li">
+                <a class="footer-nav-link" href="">All Climbs and Treks</a>
+            </li>
+        </ul>
+        <ul class="footer-nav">
+            <li class="footer-nav-li">
+                <span class="footer-nav-header">Enquire</span>
+            </li>
+            <li class="footer-nav-li">
+                <a class="footer-nav-link" href="">Contact information</a>
+            </li>
+            <li class="footer-nav-li">
+                <a class="footer-nav-link" href="">Our office</a>
+            </li>
+        </ul>
+    </div>
+</footer>           
