@@ -48,7 +48,6 @@
 
         .enquire-maps-container {
             margin-top: 1rem;
-            height: (250/16rem);
             border-radius: (12/16rem);
             overflow: hidden;
         }
@@ -87,13 +86,16 @@
 
         .container {
             flex-direction: row;
-            max-width: 66.5rem;
-            
+            max-width: 66.5rem!important;
+        }
+
+        .content {
+            width: min-content;
         }
 
         .enquire-maps-container {
             iframe {
-                width: (384/16rem);
+                width: (336/16rem);
             }
         }
 
@@ -101,6 +103,7 @@
             aspect-ratio: 1 / 2;
             width: 100%;
             max-width: none;
+            max-height: (760/16rem);
         }
     }
 }
@@ -114,18 +117,19 @@
         padding: var(--sectionPadding);
 
         .container {
-            max-width: (1280/16rem);
-            gap: clamp(1rem, 2vw, 2rem);
-            background-color: red;
+            //max-width: (1280/16rem)!important;
+            gap: 1rem;
         }
 
         .home-enquire-images-container {
-            justify-content: center;
+            justify-content: flex-start;
+            //background-color: red;
         }
 
         .enquire-img {
             aspect-ratio: 1 / 1.5 !important;
             max-width: none;
+            width: 90%;
         }
     }
 }
