@@ -4,7 +4,8 @@
         padding: var(--sectionPadding);
 
         .container {
-            //align-items: flex-start;
+            align-items: flex-start;
+            gap: clamp(2rem, 5vw, 2.5rem);
         }
 
         .home-enquire-images-container {
@@ -13,7 +14,6 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
-            gap: clamp(.5rem, 2vw, 1.25rem);
         }
 
         .enquire-img {
@@ -21,7 +21,7 @@
             max-width: (404/16rem);
             min-height: clamp((418/16rem), 25vw, (800/16rem));
             height: 100%;
-            //            max-height: (624/16rem);
+            // max-height: (624/16rem);
             aspect-ratio: 1 / 1;
             position: relative;
 
@@ -87,7 +87,8 @@
 
         .container {
             flex-direction: row;
-            max-width: (840/16rem);
+            max-width: 66.5rem;
+            
         }
 
         .enquire-maps-container {
@@ -97,7 +98,9 @@
         }
 
         .enquire-img {
-            aspect-ratio: 1 / 2.2;
+            aspect-ratio: 1 / 2;
+            width: 100%;
+            max-width: none;
         }
     }
 }
@@ -112,7 +115,8 @@
 
         .container {
             max-width: (1280/16rem);
-            gap: clamp(.5rem, 2vw, 1rem);
+            gap: clamp(1rem, 2vw, 2rem);
+            background-color: red;
         }
 
         .home-enquire-images-container {
@@ -120,7 +124,8 @@
         }
 
         .enquire-img {
-            aspect-ratio: 1 / 1.8 !important;
+            aspect-ratio: 1 / 1.5 !important;
+            max-width: none;
         }
     }
 }

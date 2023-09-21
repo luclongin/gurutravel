@@ -10,6 +10,7 @@
             height: 100%;
             background-color: yellow;
             justify-content: flex-end!important;
+            align-items: flex-start;
 
             .hero-title {
                 color: var(--primaryLight);
@@ -19,7 +20,7 @@
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 z-index: 2;
-                margin-bottom: 5rem;
+                margin: 0 0 5rem 2rem;
                 padding: 0 2rem;
             }
 
@@ -68,6 +69,7 @@
 @media only screen and (min-width: 40rem) {
     #hero-section {
         .container {
+            max-width: 66.5rem;
         }
     }
 }
@@ -75,6 +77,9 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #hero-section {
+        .hero-title {
+            padding: 0!important;
+        }
 
         .container {
             justify-content: flex-start!important;
