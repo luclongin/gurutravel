@@ -3,13 +3,14 @@ import './HomeEnquireLayout.less';
 import IconAndLabel from "../../components/IconAndLabel/IconAndLabel.astro";
 import WhatsappButton from '../../components/WhatsappButton/WhatsappButton.astro';
 import enquireImg from '../../assets/images/sheshan-r-4AU8t0aQHVI-unsplash.jpg';
+import ExpedImgCard from '../../components/ExpedImgCard/ExpedImgCard.astro';
 ---
 
 <section id="home-enquire-section">
     <div class="container">
         <!-- Left section -->
 		<div class="home-enquire-images-container">
-			<picture class="enquire-img">
+			<!--<picture class="enquire-img">
 				<source
 					media="(max-width: 480px)"
 					srcset={enquireImg.src}
@@ -25,31 +26,15 @@ import enquireImg from '../../assets/images/sheshan-r-4AU8t0aQHVI-unsplash.jpg';
 					alt="people outside"
 					width="254"
 					height="262"
-				/>
-				<!-- <source
-					media="(max-width: 480px)"
-					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/outdoors-m.jpg"
-				/>
-				<source
-					media="(min-width: 480px)"
-					srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/outdoors.jpg"
-				/>
-				<img
-					loading="lazy"
-					decoding="async"
-					src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/outdoors.jpg"
-					alt="people outside"
-					width="254"
-					height="262"
-				/>
-			</picture>-->
+				/>-->
+				<ExpedImgCard type="enquire" imgClass="enquire-img" expedTitle="Ready for an adventure?" />
         </div>
         <!-- Right Section -->
 		<div class="content">
 			<span class="topper">Enquire</span>
 			<h2 class="section-title title">Let's Get In Touch</h2>
-			<IconAndLabel label="Phone" value="(+51) 983 700 901"/>
-			<IconAndLabel label="Email" value="enquire@gurutravel.com"/>
+			<IconAndLabel label="phone" value="(+51) 983 700 901" type="default"/>
+			<IconAndLabel label="email" value="enquire@gurutravel.com" type="default"/>
 			<WhatsappButton />
 			<div class="enquire-maps-container">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.7797382201557!2d-77.53209187027657!3d-9.527856448275278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a90d1051f3bf5f%3A0x84e830468cdaa5c8!2sPERU%20TOUR%20VIAJES%20Y%20TURISMO%20HUARAZ-ANCASH!5e0!3m2!1sen!2spe!4v1695149954027!5m2!1sen!2spe" width="232" height="208" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -62,15 +47,15 @@ import enquireImg from '../../assets/images/sheshan-r-4AU8t0aQHVI-unsplash.jpg';
 				</div>
 				<div class="enquire-office-hours-container">
 					<div class="enquire-office-hours">
-						<p class="subtitle">Mon-Fri</p>
+						<!--<p class="subtitle">Mon-Fri</p>-->
 						<p class="">
-							7:00 AM - 5:00 PM
+							Monday - Friday: 7 PM - 5 PM
 						</p>
 					</div>
 					<div class="enquire-office-hours">
-						<p class="subtitle">Sat-Sun</p>
+						<!--<p class="subtitle">Sat-Sun</p>-->
 						<p class="">
-							9:00 AM - 4:00 PM
+							Saturday - Sunday: 9 AM - 4 PM
 						</p>
 					</div>
 				</div>
