@@ -1,0 +1,9 @@
+---
+import type ReviewQuote from '../ReviewQuote/ReviewQuote.astro';
+import HomeCarousel from './HomeCarousel.jsx';
+import ReviewQuote from '../ReviewQuote/ReviewQuote.astro';
+---
+<HomeCarousel client:load>
+	<ReviewQuote slot="review1" reviewText=`<span class='bold'>Amazing!</span> The guides were so kind and attentive to our needs. Out of all the tour guides we found, I'd definitely recommend Diego and his team!`/>
+	<ReviewQuote slot="review2"/>
+</HomeCarousel>

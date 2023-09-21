@@ -6,6 +6,7 @@ import { Image } from "astro:assets";
 import leftQuote from "../../assets/images/left-quote.png";
 import rightQuote from "../../assets/images/right-quote.png";
 
+const {reviewText} = Astro.props;
 ---
 
 <div class="review-quote">
@@ -16,11 +17,9 @@ import rightQuote from "../../assets/images/right-quote.png";
     />
     <div class="review-content">
         <p class="review-quote-text text">
-            <span class="bold">Amazing!</span> The guides were so kind and attentive to our needs. Out of all the tour guides we found,
-            I'd definitely recommend Diego and his team!
+            {reviewText}
         </p>
         <QuoteUserProfile name="Jake Shelton" activity="Alpamayo Trek" date="May 2023" />
-        <CarouselCircles />
     </div>
     <Image
         class="review-right-quote"
