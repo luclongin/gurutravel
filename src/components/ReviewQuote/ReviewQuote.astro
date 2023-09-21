@@ -6,7 +6,7 @@ import { Image } from "astro:assets";
 import leftQuote from "../../assets/images/left-quote.png";
 import rightQuote from "../../assets/images/right-quote.png";
 
-const {reviewText} = Astro.props;
+const {clientName, clientDate, clientExpedition, reviewText} = Astro.props;
 ---
 
 <div class="review-quote">
@@ -19,7 +19,7 @@ const {reviewText} = Astro.props;
         <p class="review-quote-text text">
             {reviewText}
         </p>
-        <QuoteUserProfile name="Jake Shelton" activity="Alpamayo Trek" date="May 2023" />
+        <QuoteUserProfile clientName={clientName} clientExpedition={clientExpedition} clientDate={clientDate} />
     </div>
     <Image
         class="review-right-quote"

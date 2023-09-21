@@ -7,13 +7,13 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import './HomeCarousel.css';
+import './Carousel.css';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
 
 
-const HomeCarousel = (props) => {
+const Carousel = (props) => {
   return (
     <>
       <Swiper
@@ -23,15 +23,16 @@ const HomeCarousel = (props) => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        navigation={false}
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>{props.review1}</SwiperSlide>
         <SwiperSlide>{props.review2}</SwiperSlide>
+        <SwiperSlide>{props.review3}</SwiperSlide>
       </Swiper>
     </>
   );
 }
 
-export default HomeCarousel;
+export default Carousel;

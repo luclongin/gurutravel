@@ -1,19 +1,32 @@
 ---
 import "./QuoteUserProfile.less";
 import { Image } from "astro:assets";
-import userImg from '../../assets/images/alexander-hipp-iEEBWgY_6lA-unsplash.jpg';
-const {name, activity, date} = Astro.props;
+import jakeImg from '../../assets/images/alexander-hipp-iEEBWgY_6lA-unsplash.jpg';
+import stephanieImg from '../../assets/images/stephanie-liverani-Zz5LQe-VSMY-unsplash.jpg';
+import juanImg from '../../assets/images/jurica-koletic-7YVZYZeITc8-unsplash.jpg';
+
+const {clientName, clientExpedition, clientDate} = Astro.props;
 ---
 
 <div class="quote-user-profile">
-    <Image
+    { clientName == "Stephanie Liveranie" && <Image
         class="review-user-profile-img"
-        src={userImg}
+        src={stephanieImg}
         alt="User Image"
-    />
+    />}
+    { clientName == "Jake Shelton" && <Image
+    class="review-user-profile-img"
+    src={jakeImg}
+    alt="User Image"
+/>}
+    { clientName == "Juan Huaman" && <Image
+    class="review-user-profile-img"
+    src={juanImg}
+    alt="User Image"
+/>}
     <div class="quote-user-profile-content">
-        <p class="quote-user-profile-name">{name}</p>
-        <p class="quote-user-profile-activity">{activity}</p>
-        <p class="quote-user-profile-date">{date}</p>
+        <p class="quote-user-profile-name">{clientName}</p>
+        <p class="quote-user-profile-activity">{clientExpedition}</p>
+        <p class="quote-user-profile-date">{clientDate}</p>
     </div>
 </div>
