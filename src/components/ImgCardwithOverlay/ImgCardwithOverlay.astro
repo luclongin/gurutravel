@@ -1,48 +1,29 @@
 ---
-const { title, cardClass, type } = Astro.props;
+const { title, cardClass, imgTitle } = Astro.props;
 import "./ImgCardwithOverlay.less";
 import enquireImg from "../../assets/images/sheshan-r-4AU8t0aQHVI-unsplash.jpg";
+import santaCruzImg from "../../assets/images/tiago-rosado-cMG5qjpnsyg-unsplash.jpg";
+const imgDict = {
+	"santaCruz": santaCruzImg,
+	"enquire": enquireImg
+};
 ---
+<!-- Flexible image with black overlay at the bottom for white text -->
 <div class=`img-card-overlay ${cardClass}`>
 	<div class=`img-overlay`></div>
 	<picture class=`img-card-overlay-img`>
-		<source media="(max-width: 480px)" srcset={enquireImg.src} />
-		<source media="(min-width: 480px)" srcset={enquireImg.src} />
+		<source media="(max-width: 480px)" srcset={imgDict[imgTitle].src} />
+		<source media="(min-width: 480px)" srcset={imgDict[imgTitle].src} />
 		<img
 			loading="lazy"
 			decoding="async"
-			srcset={enquireImg.src}
+			srcset={imgDict[imgTitle].src}
 			alt="people outside"
 			width="254"
 			height="262"
 		/>
 	</picture>
 	<p class="img-card-overlay-text">{title}</p>
-<!--
-<div class=`exped-images-card ${cardClass}`>
-	<div class=`exped-img-overlay`></div>
-	<picture class=`exped-img`>
-		<source media="(max-width: 480px)" srcset={enquireImg.src} />
-		<source media="(min-width: 480px)" srcset={enquireImg.src} />
-		<img
-			loading="lazy"
-			decoding="async"
-			srcset={enquireImg.src}
-			alt="people outside"
-			width="254"
-			height="262"
-		/>
-	</picture>
-	
-	{
-		type == "enquire" ? (
-			<p class="exped-enquire-title">{title}</p>
-		) : (
-			<p class="exped-img-label">{title}</p>
-		)
-	}
-</div>-->
-
 
 <!--<picture class=`exped-img ${className}`>
 		<source
