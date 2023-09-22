@@ -1,6 +1,6 @@
 ---
 const {textTitle, imgTitle} = Astro.props;
-import './TextWithDisappearingImg.less';
+import './TextWithDisappearingImgReverse.less';
 import whoWeAreImg from "../../assets/images/who-we-are.jpg";
 import whoWeAreImgMobile from "../../assets/images/who-we-are-m.jpg";
 import whatWeOffer from "../../assets/images/what-we-offer.jpg";
@@ -10,17 +10,12 @@ const imgDict = {
 	"who-we-are": {default: whoWeAreImg, mobile: whoWeAreImgMobile},
 	"what-we-offer": {default: whatWeOffer, mobile: whatWeOfferMobile}
 };
-
 ---
-<div class="text-with-disappearing-img">
-    <div class="content">
-        <h2 class="title">{textTitle}</h2>
-        <slot></slot>
-    </div>
+<div class="text-with-disappearing-img text-with-disappearing-img-reverse">
     <div class="image-container">
         <div class="white-img-overlay"></div>
         <picture class=`disappearing-img`>
-			<source media="(max-width: 900px)" srcset={imgDict[imgTitle].mobile.src}>
+			<source media="(max-width: 900px)" srcset={imgDict[imgTitle].default.src}>
 			<source media="(min-width: 901px)" srcset={imgDict[imgTitle].default.src}>
             <img
                 loading="lazy"
@@ -31,5 +26,9 @@ const imgDict = {
                 height="262"
             />
         </picture>
+    </div>
+    <div class="content">
+        <h2 class="title">{textTitle}</h2>
+        <slot></slot>
     </div>
 </div>
