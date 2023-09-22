@@ -36,12 +36,16 @@ import HomeCarousel from '../components/HomeCarousel/HomeCarousel.astro';
 			heroTitle1="Discover Peru"
 			heroTitle2="in a whole new way"
 		/>
-		<AboutLayout />
-		<ExpeditionsLayout />
-		<HomeReviewsLayout />
+		<div class="background-overlay-diamond-right">
+			<AboutLayout />
+			<ExpeditionsLayout />
+		</div>
+		<HomeReviewsLayout />		
+		<div class="background-overlay-diamond-right-strong">
+
 		<HomeGallery />
-		<HomeEnquireLayout />
-		<Footer />
-		<HomeCarousel />
+			<HomeEnquireLayout />
+			</div>
+			<Footer />
 	</body>
 </html>
