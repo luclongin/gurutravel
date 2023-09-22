@@ -1,9 +1,24 @@
 ---
-const { expedTitle, cardClass, type } = Astro.props;
-import "./ExpedImgCard.less";
+const { title, cardClass, type } = Astro.props;
+import "./ImgCardwithOverlay.less";
 import enquireImg from "../../assets/images/sheshan-r-4AU8t0aQHVI-unsplash.jpg";
 ---
-
+<div class=`img-card-overlay ${cardClass}`>
+	<div class=`img-overlay`></div>
+	<picture class=`img-card-overlay-img`>
+		<source media="(max-width: 480px)" srcset={enquireImg.src} />
+		<source media="(min-width: 480px)" srcset={enquireImg.src} />
+		<img
+			loading="lazy"
+			decoding="async"
+			srcset={enquireImg.src}
+			alt="people outside"
+			width="254"
+			height="262"
+		/>
+	</picture>
+	<p class="img-card-overlay-text">{title}</p>
+<!--
 <div class=`exped-images-card ${cardClass}`>
 	<div class=`exped-img-overlay`></div>
 	<picture class=`exped-img`>
@@ -18,7 +33,18 @@ import enquireImg from "../../assets/images/sheshan-r-4AU8t0aQHVI-unsplash.jpg";
 			height="262"
 		/>
 	</picture>
-	<!--<picture class=`exped-img ${className}`>
+	
+	{
+		type == "enquire" ? (
+			<p class="exped-enquire-title">{title}</p>
+		) : (
+			<p class="exped-img-label">{title}</p>
+		)
+	}
+</div>-->
+
+
+<!--<picture class=`exped-img ${className}`>
 		<source
 			media="(max-width: 480px)"
 			srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting-m.jpg"
@@ -36,11 +62,3 @@ import enquireImg from "../../assets/images/sheshan-r-4AU8t0aQHVI-unsplash.jpg";
 			height="200"
 		/>
 	</picture>-->
-	{
-		type == "enquire" ? (
-			<p class="exped-enquire-title">{expedTitle}</p>
-		) : (
-			<p class="exped-img-label">{expedTitle}</p>
-		)
-	}
-</div>
