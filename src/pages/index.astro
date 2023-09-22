@@ -1,46 +1,27 @@
 ---
-import HeroLayout from "../layouts/HeroLayout/HeroLayout.astro";
-import Navigation from "../components/Navigation/Navigation.astro";
-import "../styles/root.less";
-import HomeAboutLayout from "../layouts/HomeAboutLayout/HomeAboutLayout.astro";
-import HomeExpeditionsLayout from "../layouts/HomeExpeditionsLayout/HomeExpeditionsLayout.astro";
-import HomeReviewsLayout from "../layouts/HomeReviewsLayout/HomeReviewsLayout.astro";
-import HomeEnquireLayout from "../layouts/HomeEnquireLayout/HomeEnquireLayout.astro";
-import HomeGalleryLayout from "../layouts/HomeGalleryLayout/HomeGalleryLayout.astro";
-import Footer from "../layouts/Footer/Footer.astro";
-import dirtImage from "../assets/images/grain-white-1200-opac18.png";
----
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Document</title>
-	</head>
-	<body>
-		<div class="fillbody"></div>
-		 <!-- Background Image -->
-		 <picture class="dirt-bg-img">
-			<source media="(max-width: 600px)" srcset={dirtImage.src}>
-			<source media="(min-width: 601px)" srcset={dirtImage.src}>
-			<img aria-hidden="true" loading="lazy" decoding="async" src={dirtImage.src} alt="kitchen cabinets" width="1920" height="1280">
-		</picture>
-		<Navigation />
-		<HeroLayout
-			heroSection="homepage"
-			heroTitle1="Discover Peru"
-			heroTitle2="in a whole new way"
-		/>
-		<div class="background-overlay-diamond-right">
-			<HomeAboutLayout />
-			<HomeExpeditionsLayout />
-		</div>
-		<HomeReviewsLayout />		
-		<div class="background-overlay-diamond-right-strong">
-			<HomeGalleryLayout />
-			<HomeEnquireLayout />
-		</div>
-		<Footer />
-	</body>
-</html>
+import HeroLayout from "../layouts/HeroLayout/HeroLayout.astro";
+import HomeAboutLayout from "../layouts/Homepage/HomeAboutLayout/HomeAboutLayout.astro";
+import HomeExpeditionsLayout from "../layouts/Homepage/HomeExpeditionsLayout/HomeExpeditionsLayout.astro";
+import HomeReviewsLayout from "../layouts/Homepage/HomeReviewsLayout/HomeReviewsLayout.astro";
+import HomeEnquireLayout from "../layouts/Homepage/HomeEnquireLayout/HomeEnquireLayout.astro";
+import HomeGalleryLayout from "../layouts/Homepage/HomeGalleryLayout/HomeGalleryLayout.astro";
+---
+<BaseLayout>
+	<HeroLayout
+		heroSection="homepage"
+		heroTitle1="Discover Peru"
+		heroTitle2="in a whole new way"
+		heroImg="homepage"
+	/>
+	<div class="background-overlay-diamond-right">
+		<HomeAboutLayout />
+		<HomeExpeditionsLayout />
+	</div>
+	<HomeReviewsLayout />		
+	<div class="background-overlay-diamond-right-strong">
+		<HomeGalleryLayout />
+		<HomeEnquireLayout />
+	</div>
+</BaseLayout>

@@ -3,9 +3,12 @@ import "./Navigation.less";
 import { Image } from "astro:assets";
 import Logo from "../../assets/images/gurutravel_logo.png";
 import SpanishFlag from "../../assets/svg/icons8-españa-48.png";
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
 ---
 <!-- ============================================ -->
-<!--               Navigation                     -->
+<!--         Navigation Code Stitch               -->
 <!-- ============================================ -->
 <header id="header">
 	<div class="container navigation">
@@ -50,29 +53,40 @@ import SpanishFlag from "../../assets/svg/icons8-españa-48.png";
 				the bottom of the screen, which keeps all nav items in view no matter how mnay 
 				there are.
 			-->
+		  
 			<div class="nav-ul-wrapper">
 				<ul id="nav-ul-expanded" class="nav-ul" aria-expanded="false">
 					<li class="nav-li">
+						<!-- if currentPath is truthy, nav-li-link-selected will be added -->
 						<a
 							id="nav-home-link"
 							href="/"
-							class="nav-li-link nav-li-link-selected">Home</a
+							class:list={["nav-li-link", {"nav-li-link-selected": currentPath===""}]}
 						>
+							Home
+						</a>
 					</li>
 					<li class="nav-li nav-padded-li">
-						<a id="nav-team-link" href="/" class="nav-li-link"
-							>Team</a
-						>
+						<a 
+							id="nav-team-link" 
+							href="/about" 
+							class:list={["nav-li-link", {"nav-li-link-selected": currentPath==="about"}]}
+						>Team</a>
 					</li>
 					<li class="nav-li nav-padded-li">
 						<a
 							id="nav-expeditions-link"
-							href="/"
-							class="nav-li-link">Expeditions</a
+							href="/expeditions"
+							class:list={["nav-li-link", {"nav-li-link-selected": currentPath==="expeditions"}]}
+							>Expeditions</a
 						>
 					</li>
 					<li class="nav-li">
-						<a id="nav-gallery-link" href="/" class="nav-li-link"
+						<a 
+							id="nav-gallery-link" 
+							href="/gallery" 							
+							class:list={["nav-li-link", {"nav-li-link-selected": currentPath==="gallery"}]}
+
 							>Gallery</a
 						>
 					</li>

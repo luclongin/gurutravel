@@ -5,20 +5,28 @@ const heroSectionImg = {
 	homepage: "sylvain-mauroux-OIuzDRYA3cw-medium.jpg",
 	team: "sylvain-mauroux-OIuzDRYA3cw-medium.jpg",
 };
-import homepageImg from "../../assets/images/sylvain-mauroux-OIuzDRYA3cw-unsplash(2).jpg";
+import homeImg from "../../assets/images/homeImg.jpg";
+import homeImgMobile from "../../assets/images/homeImg-m.jpg";
+import aboutImg from "../../assets/images/aboutHeroImg.jpg";
+import aboutImgMobile from "../../assets/images/aboutHeroImg-m.jpg";
 import caretDown from "../../assets/svg/icons8-flecha-ampliar-64.png";
 import './HeroLayout.less';
+
+const imgDict = {
+	"homepage": {default: homeImg, mobile: homeImgMobile},
+	"about": {default: aboutImg, mobile: aboutImgMobile}
+};
 ---
 <!-- ============================================ -->
 <!--                 Hero Section                 -->
 <!-- ============================================ -->
 <section id="hero-section">
 	<div class="container">
-		<Image
-			class="hero-container-img"
-			src={homepageImg}
-			alt="Climber facing the sun on the summit"
-		/>
+		<picture class="hero-container-img">
+			<source media="(max-width: 900px)" srcset={imgDict[heroImg].mobile.src}>
+			<source media="(min-width: 901px)" srcset={imgDict[heroImg].default.src}>
+			<img aria-hidden="true" loading="lazy" decoding="async" src={imgDict[heroImg].default.src} alt="kitchen cabinets" width="1920" height="1280">
+		</picture>
 		<div class="hero-gradient"></div>
 		<h1 class="hero-title">{heroTitle1}<br />{heroTitle2}</h1>
 
