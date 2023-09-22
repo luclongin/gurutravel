@@ -2,17 +2,13 @@
 import HeroLayout from "../layouts/HeroLayout/HeroLayout.astro";
 import Navigation from "../components/Navigation/Navigation.astro";
 import "../styles/root.less";
-import AboutLayout from "../layouts/AboutLayout/AboutLayout.astro";
-import ExpeditionsLayout from "../layouts/ExpeditionsLayout/ExpeditionsLayout.astro";
+import HomeAboutLayout from "../layouts/HomeAboutLayout/HomeAboutLayout.astro";
+import HomeExpeditionsLayout from "../layouts/HomeExpeditionsLayout/HomeExpeditionsLayout.astro";
 import HomeReviewsLayout from "../layouts/HomeReviewsLayout/HomeReviewsLayout.astro";
 import HomeEnquireLayout from "../layouts/HomeEnquireLayout/HomeEnquireLayout.astro";
 import HomeGallery from "../layouts/HomeGallery/HomeGallery.astro";
 import Footer from "../layouts/Footer/Footer.astro";
-import { Image } from "astro:assets";
 import dirtImage from "../assets/images/grain-white-1200-opac18.png";
-
-import HomeCarousel from '../components/HomeCarousel/HomeCarousel.astro';
-
 ---
 
 <html lang="en">
@@ -37,15 +33,14 @@ import HomeCarousel from '../components/HomeCarousel/HomeCarousel.astro';
 			heroTitle2="in a whole new way"
 		/>
 		<div class="background-overlay-diamond-right">
-			<AboutLayout />
-			<ExpeditionsLayout />
+			<HomeAboutLayout />
+			<HomeExpeditionsLayout />
 		</div>
 		<HomeReviewsLayout />		
 		<div class="background-overlay-diamond-right-strong">
-
-		<HomeGallery />
+			<HomeGallery />
 			<HomeEnquireLayout />
-			</div>
-			<Footer />
+		</div>
+		<Footer />
 	</body>
 </html>
