@@ -1,19 +1,14 @@
-import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-import './Carousel.css';
-
+import './ReactCarousel.css';
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
 
-
-const Carousel = (props) => {
+const ReactCarousel = (props) => {
   return (
     <>
       <Swiper
@@ -35,4 +30,4 @@ const Carousel = (props) => {
   );
 }
 
-export default Carousel;
+export default ReactCarousel;

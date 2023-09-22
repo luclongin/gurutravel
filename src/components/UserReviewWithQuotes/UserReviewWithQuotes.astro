@@ -1,11 +1,9 @@
 ---
-import QuoteUserProfile from '../QuoteUserProfile/QuoteUserProfile.astro';
-import CarouselCircles from '../CarouselCircles/CarouselCircles.astro';
-import './ReviewQuote.less';
+import UserReviewInfo from '../UserReviewInfo/UserReviewInfo.astro';
+import './UserReviewWithQuotes.less';
 import { Image } from "astro:assets";
 import leftQuote from "../../assets/images/left-quote.png";
 import rightQuote from "../../assets/images/right-quote.png";
-
 const {clientName, clientDate, clientExpedition, reviewText} = Astro.props;
 ---
 
@@ -19,7 +17,7 @@ const {clientName, clientDate, clientExpedition, reviewText} = Astro.props;
         <p class="review-quote-text text">
             {reviewText}
         </p>
-        <QuoteUserProfile clientName={clientName} clientExpedition={clientExpedition} clientDate={clientDate} />
+        <UserReviewInfo clientName={clientName} clientExpedition={clientExpedition} clientDate={clientDate} />
     </div>
     <Image
         class="review-right-quote"
