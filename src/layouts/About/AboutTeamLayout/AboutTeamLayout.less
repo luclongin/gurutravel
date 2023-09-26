@@ -187,24 +187,91 @@
 	#about-team-section {
 		.container {
 			max-width: 66.5rem !important;
-		}
-	}
-}
 
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-	#about-team-section {
-		.container {
-			max-width: (1064/16rem);
-			background-color: red;
+			.wrap {
+				width: 100%;
+			}
 
 			.guide-gallery {
-				height: 90vh;
-				width: 90vw;
-				background-color: var(--color-tan);
-				display: grid;
-				grid-template-rows: 100%;
-				overflow: hidden;
+				list-style: none;
+				margin: 0 auto;
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+
+				.guide-container {
+					.down-icon {
+						display: none !important;
+					}
+
+					.up-icon {
+						display: none !important;
+					}
+
+					.guide-img,
+					label,
+					.guide-img-overlay {
+						aspect-ratio: unset !important;
+					}
+				}
+
+				input:checked ~ .guide-collapsible {
+					display: none;
+				}
+
+				input:checked ~ label {
+					transition: 0.3s;
+
+					.guide-img,
+					.guide-img-overlay {
+						transition: 0.3s;
+					}
+				}
+
+				.guide-container {
+					float: left;
+					width: 20%;
+					height: 600px;
+					opacity: 0.4;
+					transition: all 0.5s ease-in-out;
+
+					&:hover,
+					&:first-child ~ li:last-child {
+						width: 60%;
+						opacity: 1;
+						transition: all 0.5s ease-in-out;
+
+						.guide-collapsible {
+							display: flex;
+						}
+					}
+
+					&:hover ~ li:last-child {
+						width: 12%;
+						opacity: 0.4;
+					}
+
+					&:nth-child(1) {
+						//background: url("https://dl.dropbox.com/s/mbho5bqfofk6g99/pic.jpg")
+						//top center no-repeat;
+					}
+					&:nth-child(2) {
+						background: url("https://dl.dropbox.com/s/kioimintl0v9l4d/pic.jpg")
+							top right no-repeat;
+					}
+					&:nth-child(3) {
+						background: url("https://dl.dropbox.com/s/7a60gndncwf81x8/pic.jpg")
+							top center no-repeat;
+					}
+					&:nth-child(4) {
+						background: url("https://dl.dropbox.com/s/nkwuv9jz8i99309/pic.jpg")
+							top center no-repeat;
+					}
+					&:nth-child(5) {
+						background: url("https://dl.dropbox.com/s/mbho5bqfofk6g99/pic.jpg")
+							top center no-repeat;
+					}
+				}
 			}
 		}
 	}
