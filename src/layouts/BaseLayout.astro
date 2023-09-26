@@ -2,6 +2,7 @@
 import Navigation from "../components/Navigation/Navigation.astro";
 import "../styles/root.less";
 import Footer from "../layouts/Footer/Footer.astro";
+import HomeEnquireLayout from "../layouts/Homepage/HomeEnquireLayout/HomeEnquireLayout.astro";
 import dirtImage from "../assets/images/grain-white-1200-opac18.png";
 ---
 <html lang="en">
@@ -22,6 +23,7 @@ import dirtImage from "../assets/images/grain-white-1200-opac18.png";
 
         <!-- Here will be inserted page-specific components -->
         <slot></slot>
+		<HomeEnquireLayout />
 		<Footer />
 	</body>
 </html>
