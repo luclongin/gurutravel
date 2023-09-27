@@ -1,0 +1,109 @@
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	.expedition-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+        gap: 1rem;
+		margin-bottom: 2rem;
+
+		.expedition-img-container {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			max-width: (720/16rem);
+			position: relative;
+
+			.expedition-img-overlay {
+				background-image: linear-gradient(
+					0deg,
+					rgba(0, 0, 0, 0.8) 18%,
+					rgba(0, 0, 0, 0.43) 30%,
+					rgba(255, 255, 255, 0) 40%
+				);
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+				z-index: 1;
+				border-radius: (12/16rem);
+			}
+
+			.expedition-card-img {
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 100%;
+				z-index: 0;
+				height: (296/16rem);
+				aspect-ratio: 1 / 1;
+
+				img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: (12/16rem);
+				}
+			}
+
+			.expedition-img-container-content {
+				color: var(--primaryLight);
+				position: absolute;
+				bottom: 1rem;
+				left: 0;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				padding: 0 (16/16rem);
+				z-index: 2;
+
+				.expedition-name {
+					width: 40%;
+					font-weight: 700;
+					color: var(--primaryLight);
+				}
+
+				.expedition-difficulty-text {
+					margin-top: (8/16rem);
+					color: var(--primaryLight);
+				}
+			}
+		}
+
+		.expedition-content {
+			color: var(--bodyTextColorLight);
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+
+			.expedition-content-stats {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+                gap: 1rem;
+
+				.expedition-altitude,
+				.expedition-duration {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+
+					p {
+						font-size: var(--bodyFontSize);
+						margin-left: (4/16rem);
+					}
+				}
+			}
+
+            .expedition-description-text {
+                line-height: 120%;
+                font-size: var(--bodyFontSize);
+            }
+		}
+	}
+}

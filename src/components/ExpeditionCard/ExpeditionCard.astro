@@ -1,43 +1,61 @@
 ---
 import "./ExpeditionCard.less";
+import { Image } from "astro:assets";
+import triangle from "../../assets/svg/triangle.svg";
+import clock from "../../assets/svg/clock.svg";
+import ExpeditionDifficultyBars from "../ExpeditionDifficultyBars/ExpeditionDifficultyBars.astro";
 const {id, name, difficulty, altitude, duration, description} = Astro.props;
+
+import climb1Img from "../../assets/images/climb-1.jpg";
+import climb2Img from "../../assets/images/climb-2.jpg";
+import climb3Img from "../../assets/images/climb-3.jpg";
+const imgDict = {
+	1: {default: climb1Img, mobile: climb1Img},
+	2: {default: climb3Img, mobile: climb3Img},
+	3: {default: climb2Img, mobile: climb2Img},
+	4: {default: climb3Img, mobile: climb3Img}
+};
 ---
 <div class="expedition-card">
     <div class="expedition-img-container">
-        <picture class="expedition-card-img">
-            <source
-                media="(max-width: 480px)"
-                srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting-m.jpg"
-            />
-            <source
-                media="(min-width: 480px)"
-                srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting.jpg"
-            />
-            <img
-                loading="lazy"
-                decoding="async"
-                src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting.jpg"
-                alt="person gardening"
-                width="400"
-                height="200"
-            />
-        </picture>
+        <div class="expedition-img-overlay"></div>
+        {console.log(imgDict[`${id}`])}
+        {
+            <picture class="expedition-card-img">
+                <source
+                    media="(max-width: 480px)"
+                    srcset={imgDict[id].mobile.src}
+                />
+                <source
+                    media="(min-width: 480px)"
+                    srcset={imgDict[id].default.src}
+                />
+                <img
+                    loading="lazy"
+                    decoding="async"
+                    src={imgDict[id].default.src}
+                    alt="person gardening"
+                    width="400"
+                    height="200"
+                />
+            </picture>
+        }
         <div class="expedition-img-container-content">
             <p class="subtitle expedition-name">{name}</p>
             <div class="difficulty-container">
-                <!-- ADD DIFFIVULTY BAR COMPONENT DEPENDING ON VALUE -->
-                <p class="expedition-difficulty-text">{difficulty}</p>
+                <ExpeditionDifficultyBars difficulty={difficulty} />
+                <p class="subtitle expedition-difficulty-text">{difficulty}</p>
             </div>
         </div>
     </div>
     <div class="expedition-content">
         <div class="expedition-content-stats">
             <div class="expedition-altitude">
-                <!-- triangle -->
+                <Image src={triangle} alt="Altitude Icon" height="16" width="16" />
                 <p class="expedition-altitude-text">{altitude}</p>
             </div>
             <div class="expedition-duration">
-                <!-- clock icon -->
+                <Image src={clock} alt="Clock Icon" height="16" width="16" />
                 <p class="expedition-duration-text">{duration}</p>
             </div>
         </div>

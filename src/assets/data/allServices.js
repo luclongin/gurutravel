@@ -32,7 +32,7 @@ export const allClimbs = [
 	{
 		id: 4,
 		type: "climb",
-		name: "huascar&aacute;n mountain",
+		name: "huascaran mountain",
 		difficulty: "advanced",
 		altitude: "6,768M",
 		duration: "7-10 days",

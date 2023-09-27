@@ -14,7 +14,14 @@ import { allClimbs, allTreks } from "../,,/../../../assets/data/allServices.js";
         <div class="all-expetitions-container">
             {
                 allClimbs.map(climb => 
-                    <ExpeditionCard />
+                    <ExpeditionCard 
+                        id={climb.id} 
+                        name={climb.name}
+                        difficulty={climb.difficulty}
+                        altitude={climb.altitude}
+                        duration={climb.duration}
+                        description={climb.description}
+                    />
                 )
             }
         </div>
