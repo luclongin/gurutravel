@@ -4,17 +4,22 @@ const { heroTitle1, heroTitle2, heroImg } = Astro.props;
 const heroSectionImg = {
 	homepage: "sylvain-mauroux-OIuzDRYA3cw-medium.jpg",
 	team: "sylvain-mauroux-OIuzDRYA3cw-medium.jpg",
+	expeditions:  "sylvain-mauroux-OIuzDRYA3cw-medium.jpg"
 };
+
 import homeImg from "../../assets/images/homeImg.jpg";
 import homeImgMobile from "../../assets/images/homeImg-m.jpg";
 import aboutImg from "../../assets/images/aboutHeroImg.jpg";
 import aboutImgMobile from "../../assets/images/aboutHeroImg-m.jpg";
+import expeditionsImg from "../../assets/images/aboutHeroImg.jpg";
+import expeditionsImgMobile from "../../assets/images/aboutHeroImg-m.jpg";
 import caretDown from "../../assets/svg/icons8-flecha-ampliar-64.png";
 import './HeroLayout.less';
 
 const imgDict = {
 	"homepage": {default: homeImg, mobile: homeImgMobile},
-	"about": {default: aboutImg, mobile: aboutImgMobile}
+	"about": {default: aboutImg, mobile: aboutImgMobile},
+	"expeditions": {default: expeditionsImg, mobile: expeditionsImgMobile}
 };
 ---
 <!-- ============================================ -->
