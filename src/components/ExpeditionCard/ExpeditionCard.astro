@@ -1,0 +1,46 @@
+---
+import "./ExpeditionCard.less";
+const {id, name, difficulty, altitude, duration, description} = Astro.props;
+---
+<div class="expedition-card">
+    <div class="expedition-img-container">
+        <picture class="expedition-card-img">
+            <source
+                media="(max-width: 480px)"
+                srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting-m.jpg"
+            />
+            <source
+                media="(min-width: 480px)"
+                srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting.jpg"
+            />
+            <img
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting.jpg"
+                alt="person gardening"
+                width="400"
+                height="200"
+            />
+        </picture>
+        <div class="expedition-img-container-content">
+            <p class="subtitle expedition-name">{name}</p>
+            <div class="difficulty-container">
+                <!-- ADD DIFFIVULTY BAR COMPONENT DEPENDING ON VALUE -->
+                <p class="expedition-difficulty-text">{difficulty}</p>
+            </div>
+        </div>
+    </div>
+    <div class="expedition-content">
+        <div class="expedition-content-stats">
+            <div class="expedition-altitude">
+                <!-- triangle -->
+                <p class="expedition-altitude-text">{altitude}</p>
+            </div>
+            <div class="expedition-duration">
+                <!-- clock icon -->
+                <p class="expedition-duration-text">{duration}</p>
+            </div>
+        </div>
+        <p class="expedition-description-text">{description}</p>
+    </div>
+</div>

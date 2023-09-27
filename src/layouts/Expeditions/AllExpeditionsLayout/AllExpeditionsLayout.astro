@@ -1,13 +1,22 @@
 ---
 import "./AllExpeditionsLayout.less";
-import ExpeditionCard from "../../../components/Expedition/ExpeditionCard.astro";
+import ExpeditionCard from "../../../components/ExpeditionCard/ExpeditionCard.astro";
+import { allClimbs, allTreks } from "../,,/../../../assets/data/allServices.js";
 ---
-<section id="all-expeditions-layout">
+<section id="all-expeditions-section">
     <div class="container">
         <div class="content">
+            <span class="topper">all climbs & expeditions</span>
+            <h2 class="section-title title gallery-title">
+                epic climbs. epic views.
+            </h2>
         </div>
         <div class="all-expetitions-container">
-            <ExpeditionCard />
+            {
+                allClimbs.map(climb => 
+                    <ExpeditionCard />
+                )
+            }
         </div>
     </div>
 </section>
