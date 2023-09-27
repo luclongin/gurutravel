@@ -9,8 +9,40 @@
 		.container {
 			display: flex;
 			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			width: 100%;
 			max-width: (840/16rem);
-        }
-    }
+		}
+
+		.content {
+			max-width: (840/16rem);
+		}
+	}
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 38rem) {
+	#all-expeditions-section {
+		display: flex;
+		flex-direction: row;
+		padding: var(--sectionPadding);
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: fit-content;
+			max-width: 66.5rem !important;
+		}
+
+		.all-expetitions-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+			gap: 1rem;
+		}
+	}
 }

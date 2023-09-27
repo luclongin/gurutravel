@@ -39,6 +39,56 @@ export const allClimbs = [
 		description:
 			"The tallest peak in Peru, offering a significant mountaineering experience.",
 	},
+	{
+		id: 5,
+		type: "climb",
+		name: "tullparaju mountain",
+		difficulty: "advanced",
+		altitude: "5,830M",
+		duration: "4-6 days",
+		description:
+			"Embark on a technical climb, rewarded with awe-inspiring vistas of the surrounding peaks.",
+	},
+	{
+		id: 6,
+		type: "climb",
+		name: "alpamayo mountain",
+		difficulty: "advanced",
+		altitude: "5,947M",
+		duration: "12-14 days",
+		description:
+			"One of the world's most beautiful peaks, with its challenging ascent and rewarding views.",
+	},
+	{
+		id: 7,
+		type: "climb",
+		name: "pisco mountain",
+		difficulty: "moderate",
+		altitude: "5,732M",
+		duration: "3-4 days",
+		description:
+			"Introduction to high-altitude climbing and stunning vistas of the Cordillera Blanca.",
+	},
+	{
+		id: 8,
+		type: "climb",
+		name: "huascaran mountain",
+		difficulty: "advanced",
+		altitude: "6,768M",
+		duration: "7-10 days",
+		description:
+			"The tallest peak in Peru, offering a significant mountaineering experience.",
+	},
+	{
+		id: 9,
+		type: "climb",
+		name: "huascaran mountain",
+		difficulty: "advanced",
+		altitude: "6,768M",
+		duration: "7-10 days",
+		description:
+			"The tallest peak in Peru, offering a significant mountaineering experience.",
+	},
 ];
 
 
