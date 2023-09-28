@@ -2,6 +2,12 @@
 import "./AllExpeditionsLayout.less";
 import ExpeditionCard from "../../../components/ExpeditionCard/ExpeditionCard.astro";
 import { allClimbs, allTreks } from "../,,/../../../assets/data/allServices.js";
+
+import climb1Img from "../../../assets/images/climb-1.jpg";
+import climb2Img from "../../../assets/images/climb-2.jpg";
+import climb3Img from "../../../assets/images/climb-3.jpg";
+import climb4Img from "../../../assets/images/climb-4.jpg";
+
 ---
 <section id="all-expeditions-section">
     <div class="container">
@@ -16,6 +22,28 @@ import { allClimbs, allTreks } from "../,,/../../../assets/data/allServices.js";
                 allClimbs.map(climb => 
                     <ExpeditionCard 
                         id={climb.id} 
+                        type={climb.type}
+                        name={climb.name}
+                        difficulty={climb.difficulty}
+                        altitude={climb.altitude}
+                        duration={climb.duration}
+                        description={climb.description}
+                        mobileImg={climb1Img.src}
+                        defaultImg={climb1Img.src}
+                    />
+                )
+            }
+            <!--<div class="content">
+                <span class="topper">all treks & day hikes</span>
+                <h2 class="section-title title gallery-title">
+                    Step into the Wild.
+                </h2>
+            </div>
+            {
+                allTreks.map(climb => 
+                    <ExpeditionCard 
+                        id={climb.id}
+                        type={climb.type} 
                         name={climb.name}
                         difficulty={climb.difficulty}
                         altitude={climb.altitude}
@@ -23,7 +51,7 @@ import { allClimbs, allTreks } from "../,,/../../../assets/data/allServices.js";
                         description={climb.description}
                     />
                 )
-            }
+            }-->
         </div>
     </div>
 </section>

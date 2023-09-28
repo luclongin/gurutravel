@@ -8,8 +8,6 @@ export const allClimbs = [
 		duration: "4-6 days",
 		description:
 			"Embark on a technical climb, rewarded with awe-inspiring vistas of the surrounding peaks.",
-		defaultImg: "../../assets/images/climb-4.jpg",
-		mobileImg: "../../assets/images/climb-4.jpg"
 	},
 	{
 		id: 2,
@@ -95,6 +93,46 @@ export const allClimbs = [
 
 
 export const allTreks = [
+	{
+		id: 1,
+		type: "trek",
+		name: "laguna 69",
+		difficulty: "beginner",
+		altitude: "4,600M",
+		duration: "1 day",
+		description:
+			"A short but rewarding hike, a stunning turquoise glacial lake surrounded by towering peaks.",
+	},
+	{
+		id: 2,
+		type: "trek",
+		name: "huayhuash circuit",
+		difficulty: "advanced",
+		altitude: "5,000M",
+		duration: "10-12 days",
+		description:
+			"Embark on an epic journey through the remote mountain range, known for its beauty and high passes.",
+	},
+	{
+		id: 3,
+		type: "trek",
+		name: "pastoruri glacier trek",
+		difficulty: "beginner",
+		altitude: "5,000M",
+		duration: "1 day",
+		description:
+			"A short but fascinating trek where you can witness the effects of glacial retreat.",
+	},
+	{
+		id: 4,
+		type: "trek",
+		name: "santa cruz trek",
+		difficulty: "moderate",
+		altitude: "5,000M",
+		duration: "12-14 days",
+		description:
+			"Experience the beauty of Cordillera Blanca. Pristine valleys, glacial lakes, and towering peaks.",
+	},
 	{
 		id: 5,
 		type: "trek",
