@@ -156,6 +156,10 @@ export const allTreks = [
 		description:
 			"Embark on an epic journey through the remote mountain range, known for its beauty and high passes.",
 	},
+];
+
+
+export const extraTreks = [
 	{
 		id: 7,
 		type: "trek",

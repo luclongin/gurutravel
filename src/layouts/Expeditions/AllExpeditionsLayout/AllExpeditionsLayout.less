@@ -34,7 +34,7 @@
 			align-items: center;
 		}
 
-		#extra-climbs-container {
+		#extra-climbs-container, #extra-treks-container {
 			display: none;
 		}
 
@@ -43,11 +43,24 @@
 
 			&:checked ~ label {
 				display: none;
-				
 			}
 
 			&:checked ~ #extra-climbs-container {
 				display: flex;
+				transition: all 0.5s ease;
+			}
+		}
+
+		#see-all-treks-btn-input {
+			display: none;
+
+			&:checked ~ label {
+				display: none;
+			}
+
+			&:checked ~ #extra-treks-container {
+				display: flex;
+				transition: all 0.5s ease;
 			}
 		}
 	}

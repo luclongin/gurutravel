@@ -3,10 +3,10 @@ import "./SeeAllButton.less";
 import plusIcon from "../../assets/svg/plus.svg";
 import { Image } from "astro:assets";
 import plusBoldBlueIcon from "../../assets/svg/plusBoldBlue.svg";
-const {seeAllText, href} = Astro.props;
+const {seeAllText, type} = Astro.props;
 ---
-<input type="checkbox" name="see-all-climbs-btn-input" id="see-all-climbs-btn-input">
-<label for="see-all-climbs-btn-input" class="subtitle see-all-btn" >
+<input type="checkbox" name=`see-all-${type}-btn-input` id=`see-all-${type}-btn-input`>
+<label for=`see-all-${type}-btn-input` class="subtitle see-all-btn" >
     <Image class="default-plus-icon" src={plusIcon} alt="See More" height={20} width={20} />
     <Image class="bold-plus-icon" src={plusBoldBlueIcon} alt="See More" height={20} width={20} />
     {seeAllText}
