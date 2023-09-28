@@ -1,6 +1,8 @@
 ---
 import "./AllExpeditionsLayout.less";
 import ExpeditionCard from "../../../components/ExpeditionCard/ExpeditionCard.astro";
+import SeeAllButton from "../../../components/SeeAllButton/SeeAllButton.astro";
+
 import { allClimbs, allTreks } from "../,,/../../../assets/data/allServices.js";
 
 import climb1Img from "../../../assets/images/climb-1.jpg";
@@ -62,6 +64,9 @@ const trekImgDict = {
                     />
                 )
             }
+            <div class="see-all-btn-container">
+                <SeeAllButton seeAllText="See All climbs & expeditions"/>
+            </div>
             <div class="content trek-content">
                 <span class="topper">all treks & day hikes</span>
                 <h2 class="section-title title gallery-title">
@@ -83,6 +88,9 @@ const trekImgDict = {
                     />
                 )
             }
+        </div>
+        <div class="see-all-btn-container">
+            <SeeAllButton seeAllText="See All treks & hikes"/>
         </div>
     </div>
 </section>
