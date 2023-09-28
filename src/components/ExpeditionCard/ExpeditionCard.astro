@@ -4,11 +4,12 @@ import { Image } from "astro:assets";
 import triangle from "../../assets/svg/triangle.svg";
 import clock from "../../assets/svg/clock.svg";
 import ExpeditionDifficultyBars from "../ExpeditionDifficultyBars/ExpeditionDifficultyBars.astro";
-const {id, name, difficulty, altitude, duration, description} = Astro.props;
+const {id, name, difficulty, altitude, duration, description, defaultImg, mobileImg} = Astro.props;
 
 import climb1Img from "../../assets/images/climb-1.jpg";
 import climb2Img from "../../assets/images/climb-2.jpg";
 import climb3Img from "../../assets/images/climb-3.jpg";
+
 const imgDict = {
 	1: {default: climb1Img, mobile: climb1Img},
 	2: {default: climb3Img, mobile: climb3Img},
@@ -29,16 +30,16 @@ const imgDict = {
             <picture class="expedition-card-img">
                 <source
                     media="(max-width: 480px)"
-                    srcset={imgDict[id].mobile.src}
+                    srcset={mobileImg ? mobileImg : imgDict[id].mobile.src}
                 />
                 <source
                     media="(min-width: 480px)"
-                    srcset={imgDict[id].default.src}
+                    srcset={defaultImg ? mobiledefaultImgImg : imgDict[id].default.src}
                 />
                 <img
                     loading="lazy"
                     decoding="async"
-                    src={imgDict[id].default.src}
+                    src={defaultImg ? mobiledefaultImgImg : imgDict[id].default.src}
                     alt="person gardening"
                     width="400"
                     height="200"

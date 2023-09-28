@@ -8,6 +8,8 @@ export const allClimbs = [
 		duration: "4-6 days",
 		description:
 			"Embark on a technical climb, rewarded with awe-inspiring vistas of the surrounding peaks.",
+		defaultImg: "../../assets/images/climb-1.jpg",
+		mobileImg: "../../assets/images/climb-1.jpg"
 	},
 	{
 		id: 2,
