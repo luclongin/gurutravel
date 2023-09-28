@@ -5,48 +5,13 @@ import triangle from "../../assets/svg/triangle.svg";
 import clock from "../../assets/svg/clock.svg";
 import ExpeditionDifficultyBars from "../ExpeditionDifficultyBars/ExpeditionDifficultyBars.astro";
 const {id, type, name, difficulty, altitude, duration, description, mobileImg, defaultImg} = Astro.props;
-/*
-import climb1Img from "../../assets/images/climb-1.jpg";
-import climb2Img from "../../assets/images/climb-2.jpg";
-import climb3Img from "../../assets/images/climb-3.jpg";
-
-const climbImgDict = {
-	1: {default: climb1Img, mobile: climb1Img},
-	2: {default: climb3Img, mobile: climb3Img},
-	3: {default: climb2Img, mobile: climb2Img},
-	4: {default: climb3Img, mobile: climb3Img},
-	5: {default: climb1Img, mobile: climb1Img},
-	6: {default: climb3Img, mobile: climb3Img},
-	7: {default: climb2Img, mobile: climb2Img},
-	8: {default: climb3Img, mobile: climb3Img},
-	9: {default: climb3Img, mobile: climb3Img}
-};
-*/
-
-console.log("mobileImg", mobileImg);
-console.log("defaultImg", defaultImg);
 ---
 <div class="expedition-card">
     <div class="expedition-img-container">
+        <div class="expedition-card-hover">
+            <p class="card-hover-text">See More</p>
+        </div>
         <div class="expedition-img-overlay"></div>
-        <!--<picture class="expedition-card-img">
-            <source
-                media="(max-width: 480px)"
-                srcset={climbImgDict[id].mobile.src}
-            />
-            <source
-                media="(min-width: 480px)"
-                srcset={climbImgDict[id].default.src}
-            />
-            <img
-                loading="lazy"
-                decoding="async"
-                src={climbImgDict[id].default.src}
-                alt="person gardening"
-                width="400"
-                height="200"
-            />
-        </picture>-->
         <picture class="expedition-card-img">
             <source
                 media="(max-width: 480px)"
@@ -65,7 +30,6 @@ console.log("defaultImg", defaultImg);
                 height="200"
             />
         </picture>
-        
         <div class="expedition-img-container-content">
             <p class="subtitle expedition-name">{name}</p>
             <div class="difficulty-container">

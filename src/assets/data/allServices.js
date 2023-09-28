@@ -173,4 +173,14 @@ export const allTreks = [
 		description:
 			"Experience the beauty of Cordillera Blanca. Pristine valleys, glacial lakes, and towering peaks.",
 	},
+	{
+		id: 9,
+		type: "trek",
+		name: "santa cruz trek",
+		difficulty: "moderate",
+		altitude: "5,000M",
+		duration: "12-14 days",
+		description:
+			"Experience the beauty of Cordillera Blanca. Pristine valleys, glacial lakes, and towering peaks.",
+	},
 ];
