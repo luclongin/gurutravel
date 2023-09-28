@@ -16,6 +16,8 @@
 		}
 
 		.all-expetitions-container {
+			position: relative;
+
 			.content {
 				max-width: (840/16rem);
 			}
@@ -26,7 +28,27 @@
 		}
 
 		.see-all-btn-container {
-			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-self: center;
+			align-items: center;
+		}
+
+		#extra-climbs-container {
+			display: none;
+		}
+
+		#see-all-climbs-btn-input {
+			display: none;
+
+			&:checked ~ label {
+				display: none;
+				
+			}
+
+			&:checked ~ #extra-climbs-container {
+				display: flex;
+			}
 		}
 	}
 }

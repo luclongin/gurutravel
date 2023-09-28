@@ -59,6 +59,9 @@ export const allClimbs = [
 		description:
 			"One of the world's most beautiful peaks, with its challenging ascent and rewarding views.",
 	},
+];
+
+export const extraClimbs = [
 	{
 		id: 7,
 		type: "climb",
@@ -69,9 +72,6 @@ export const allClimbs = [
 		description:
 			"Introduction to high-altitude climbing and stunning vistas of the Cordillera Blanca.",
 	},
-];
-
-export const extraClimbs = [
 	{
 		id: 8,
 		type: "climb",
@@ -91,7 +91,7 @@ export const extraClimbs = [
 		duration: "7-10 days",
 		description:
 			"The tallest peak in Peru, offering a significant mountaineering experience.",
-	}
+	},
 ];
 
 

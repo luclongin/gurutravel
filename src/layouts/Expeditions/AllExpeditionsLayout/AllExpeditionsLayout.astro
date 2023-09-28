@@ -2,6 +2,7 @@
 import "./AllExpeditionsLayout.less";
 import ExpeditionCard from "../../../components/ExpeditionCard/ExpeditionCard.astro";
 import SeeAllButton from "../../../components/SeeAllButton/SeeAllButton.astro";
+import SeeLessButton from "../../../components/SeeLessButton/SeeLessButton.astro";
 
 import { allClimbs, extraClimbs, allTreks } from "../,,/../../../assets/data/allServices.js";
 
@@ -63,24 +64,30 @@ const trekImgDict = {
                     />
                 )
             }
-            {
-                extraClimbs.map((climb) => 
-                    <ExpeditionCard 
-                        id={climb.id} 
-                        type={climb.type}
-                        name={climb.name}
-                        difficulty={climb.difficulty}
-                        altitude={climb.altitude}
-                        duration={climb.duration}
-                        description={climb.description}
-                        mobileImg={climbImgDict[climb.id].mobile.src}
-                        defaultImg={climbImgDict[climb.id].default.src}
-                    />
-                )
-            }
-        </div>
-        <div class="see-all-btn-container">
+
             <SeeAllButton seeAllText="See All climbs & expeditions"/>
+
+            <div id="extra-climbs-container" class="all-expetitions-container">
+                {
+                    extraClimbs.map((climb) => 
+                        <ExpeditionCard 
+                            id={climb.id} 
+                            type={climb.type}
+                            name={climb.name}
+                            difficulty={climb.difficulty}
+                            altitude={climb.altitude}
+                            duration={climb.duration}
+                            description={climb.description}
+                            mobileImg={climbImgDict[climb.id].mobile.src}
+                            defaultImg={climbImgDict[climb.id].default.src}
+                            hidden={false}
+                        />
+                    )
+                }
+                <SeeLessButton seeLessText="See less"/>
+            
+            </div>
+
         </div>
     </div>
 </section>
