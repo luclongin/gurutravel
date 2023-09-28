@@ -3,7 +3,7 @@ import "./AllExpeditionsLayout.less";
 import ExpeditionCard from "../../../components/ExpeditionCard/ExpeditionCard.astro";
 import SeeAllButton from "../../../components/SeeAllButton/SeeAllButton.astro";
 
-import { allClimbs, allTreks } from "../,,/../../../assets/data/allServices.js";
+import { allClimbs, extraClimbs, allTreks } from "../,,/../../../assets/data/allServices.js";
 
 import climb1Img from "../../../assets/images/climb-1.jpg";
 import climb2Img from "../../../assets/images/climb-2.jpg";
@@ -38,7 +38,6 @@ const trekImgDict = {
 	9: {default: trek2Img, mobile: trek2Img}
 };
 
-
 ---
 <section class="all-expeditions-section">
     <div class="container">
@@ -50,7 +49,22 @@ const trekImgDict = {
                 </h2>
             </div>
             {
-                allClimbs.map(climb => 
+                allClimbs.map((climb) => 
+                    <ExpeditionCard 
+                        id={climb.id} 
+                        type={climb.type}
+                        name={climb.name}
+                        difficulty={climb.difficulty}
+                        altitude={climb.altitude}
+                        duration={climb.duration}
+                        description={climb.description}
+                        mobileImg={climbImgDict[climb.id].mobile.src}
+                        defaultImg={climbImgDict[climb.id].default.src}
+                    />
+                )
+            }
+            {
+                extraClimbs.map((climb) => 
                     <ExpeditionCard 
                         id={climb.id} 
                         type={climb.type}
@@ -74,8 +88,7 @@ const trekImgDict = {
 
 <section class="all-expeditions-section">
     <div class="container">
-            <div class="all-expetitions-container">
-
+        <div class="all-expetitions-container">
             <div class="content trek-content">
                 <span class="topper">all treks & day hikes</span>
                 <h2 class="section-title title gallery-title">
@@ -96,7 +109,7 @@ const trekImgDict = {
                         defaultImg={trekImgDict[trek.id].default.src}
                     />
                 )
-            }
+            }  
         </div>
         <div class="see-all-btn-container">
             <SeeAllButton seeAllText="See All treks & hikes"/>

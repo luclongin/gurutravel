@@ -69,6 +69,9 @@ export const allClimbs = [
 		description:
 			"Introduction to high-altitude climbing and stunning vistas of the Cordillera Blanca.",
 	},
+];
+
+export const extraClimbs = [
 	{
 		id: 8,
 		type: "climb",
@@ -88,7 +91,7 @@ export const allClimbs = [
 		duration: "7-10 days",
 		description:
 			"The tallest peak in Peru, offering a significant mountaineering experience.",
-	},
+	}
 ];
 
 
@@ -96,7 +99,7 @@ export const allTreks = [
 	{
 		id: 1,
 		type: "trek",
-		name: "laguna 69",
+		name: "laguna 69 trek",
 		difficulty: "beginner",
 		altitude: "4,600M",
 		duration: "1 day",
@@ -136,7 +139,7 @@ export const allTreks = [
 	{
 		id: 5,
 		type: "trek",
-		name: "laguna 69",
+		name: "laguna 69 trek",
 		difficulty: "beginner",
 		altitude: "4,600M",
 		duration: "1 day",
