@@ -46,8 +46,11 @@
 			}
 
 			&:checked ~ #extra-climbs-container {
+				display: block;
+			}
+
+			&:checked ~ .see-less-btn {
 				display: flex;
-				transition: all 0.5s ease;
 			}
 		}
 
@@ -59,8 +62,12 @@
 			}
 
 			&:checked ~ #extra-treks-container {
-				display: flex;
+				display: block;
 				transition: all 0.5s ease;
+			}
+
+			&:checked ~ .see-less-btn {
+				display: flex;
 			}
 		}
 	}
@@ -88,6 +95,18 @@
 			justify-content: flex-start;
 			align-items: flex-start;
 			gap: 1rem;
+		}
+
+		#see-all-climbs-btn-input {
+			&:checked ~ #extra-climbs-container {
+				display: flex;
+			}
+		}
+
+		#see-all-treks-btn-input {
+			&:checked ~ #extra-treks-container {
+				display: flex;
+			}
 		}
 	}
 }
