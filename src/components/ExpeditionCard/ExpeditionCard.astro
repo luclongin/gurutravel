@@ -34,12 +34,12 @@ const imgDict = {
                 />
                 <source
                     media="(min-width: 480px)"
-                    srcset={defaultImg ? mobiledefaultImgImg : imgDict[id].default.src}
+                    srcset={defaultImg ? defaultImg : imgDict[id].default.src}
                 />
                 <img
                     loading="lazy"
                     decoding="async"
-                    src={defaultImg ? mobiledefaultImgImg : imgDict[id].default.src}
+                    src={defaultImg ? defaultImg : imgDict[id].default.src}
                     alt="person gardening"
                     width="400"
                     height="200"
