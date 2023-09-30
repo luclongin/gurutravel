@@ -1,0 +1,20 @@
+---
+import "./ExpeditionDetailsLayout.less";
+import BaseLayout from "../../BaseLayout.astro";
+import HeroLayout from "../../HeroLayout/HeroLayout.astro";
+import ExpeditionDetailsSideBar from "../../../components/ExpeditionDetailsSideBar/ExpeditionDetailsSideBar.astro";
+import ExpeditionDetailsOverview from "./ExpeditionDetailsOverview/ExpeditionDetailsOverview.astro";
+const { frontmatter } = Astro.props;
+---
+<BaseLayout>
+    <HeroLayout
+		heroSection="huayhuash-circuit"
+		heroTitle1="Huayhuash Circuit"
+		heroTitle2="Trek"
+		heroImg="homepage"
+	/>
+	<section class="exped-details-section">
+		<ExpeditionDetailsSideBar />
+		<ExpeditionDetailsOverview frontmatter={frontmatter} />
+	</section>
+</BaseLayout>
