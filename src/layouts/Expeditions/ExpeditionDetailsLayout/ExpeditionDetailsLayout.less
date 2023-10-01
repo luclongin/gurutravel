@@ -3,7 +3,7 @@
 	.exped-details-section {
 		padding: var(--sectionPadding);
 		padding-top: 0rem;
-		background-color: yellow;
+		background-color: antiquewhite;
 
 		.container {
 			width: 100%;
@@ -17,7 +17,6 @@
 			letter-spacing: (2/16rem);
 			margin: 1rem 0;
 			width: 100%;
-			background-color: rebeccapurple;
 		}
 	}
 
@@ -33,7 +32,6 @@
 		justify-content: flex-start;
 		align-items: flex-start;
 		max-width: (400/16rem);
-		background-color: red;
 
 		label {
 			width: 90%;
@@ -52,18 +50,13 @@
 			}
 		}
 	}
-
-	#exped-details-select {
-		//width: 40rem !important;
-		background-color: turquoise;
-	}
 }
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
 	#exped-details-container {
 		width: 100%;
-		background-color: brown;
+		background-color: aliceblue;
 		// this breaks the block position that forces the
 		// sticky position of the sidebar
 		display: flex;
@@ -88,7 +81,7 @@
 			margin: 0;
 			max-width: (800/16rem);
 			flex-direction: column;
-			gap: 2rem;
+			gap: 3rem;
 		}
 	}
 
@@ -97,5 +90,20 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
+	}
+}
+
+/* Big Desktop - 1792px */
+@media only screen and (min-width: 112rem) {
+	#exped-details-container {
+		justify-content: center;
+
+		.exped-details-section {
+			.container {
+				width: 100%;
+				align-items: flex-start;
+				max-width: 60rem;
+			}
+		}
 	}
 }
