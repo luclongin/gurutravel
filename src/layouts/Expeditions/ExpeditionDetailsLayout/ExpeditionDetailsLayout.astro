@@ -2,8 +2,10 @@
 import "./ExpeditionDetailsLayout.less";
 import BaseLayout from "../../BaseLayout.astro";
 import HeroLayout from "../../HeroLayout/HeroLayout.astro";
+import SelectDropDown from "../../../components/SelectDropDown/SelectDropDown.astro";
 import ExpeditionDetailsSideBar from "../../../components/ExpeditionDetailsSideBar/ExpeditionDetailsSideBar.astro";
 import ExpeditionDetailsOverview from "./ExpeditionDetailsOverview/ExpeditionDetailsOverview.astro";
+import ExpeditionDetailsIncluded from "./ExpeditionDetailsIncluded/ExpeditionDetailsIncluded.astro";
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout>
@@ -13,8 +15,21 @@ const { frontmatter } = Astro.props;
 		heroTitle2="Trek"
 		heroImg="homepage"
 	/>
-	<section class="exped-details-section">
+	<section id="exped-details-container">
 		<ExpeditionDetailsSideBar />
-		<ExpeditionDetailsOverview frontmatter={frontmatter} />
+		<section id="exped-details-sections-container">
+
+			<div id="exped-details-select" class="exped-details-section">
+				<div class="container">
+					<SelectDropDown
+						name="expedition-details-sidebar"
+						label="Jump to"
+					/>
+				</div>
+			</div>
+			
+			<ExpeditionDetailsOverview frontmatter={frontmatter} />
+			<ExpeditionDetailsIncluded frontmatter={frontmatter} />
+		</section>
 	</section>
 </BaseLayout>

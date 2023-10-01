@@ -1,38 +1,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
 	#exped-details-overview-section {
-		padding: var(--sectionPadding);
-		padding-top: 0rem;
-
 		.container {
-			width: 100%;
-			max-width: (550/16rem);
-
-			.select-dropdown-container {
-				display: flex;
-				flex-direction: column;
-				justify-content: flex-start;
-				align-items: flex-start;
-				max-width: (400/16rem);
-
-				label {
-					width: 90%;
-				}
-			}
-
-			.exped-details-select {
-				position: relative;
-				z-index: 1;
-				margin: 3rem 0;
-			}
-
-			.exped-details-section-title {
-				font-size: var(--subheaderFontSize);
-				text-transform: uppercase;
-				letter-spacing: (2/16rem);
-				margin: 1rem 0;
-			}
-
 			.exped-details-overview-content {
 				display: flex;
 				flex-wrap: wrap;
@@ -40,10 +9,6 @@
 				align-items: flex-start;
 				gap: 2rem;
 				width: 100%;
-
-				.exped-details-section-title {
-					width: 100%;
-				}
 
 				.icon-label-value-column {
 					width: (144/16rem);
@@ -62,15 +27,8 @@
 @media only screen and (min-width: 46rem) {
 	#exped-details-overview-section {
 		.container {
-			max-width: 40rem !important;
-
-			.exped-details-section-title {
-				margin-top: 3rem;
-			}
-
 			.exped-details-overview-content {
 				justify-content: space-between;
-
 				.icon-label-value-column {
 					width: calc(33% - 4rem);
 					p.bold {
@@ -85,21 +43,7 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
 	#exped-details-overview-section {
-		width: 100%;
-		margin-left: 2rem;
-		margin-left: clamp(1rem, 5vw, 5rem);
-		// hide mobile-only select dropdown
-		.exped-details-select {
-			display: none !important;
-		}
-
 		.container {
-			width: 100%;
-			// value found by testing
-			max-width: 60rem;
-			padding: 0;
-			margin: 0;
-
 			.exped-details-overview-content {
 				gap: 2rem;
 				max-width: 60rem;

@@ -1,20 +1,11 @@
 ---
 import "./IconAndLabel.less";
 import { Image } from "astro:assets";
-import phoneImg from "../../assets/svg/phone-call.png";
-import mailImg from "../../assets/svg/email.png";
-const { label, value } = Astro.props;
+const { value, imgSrc } = Astro.props;
 ---
 <!-- Icon (e.g. mail icon or phone icon) with a bold text -->
 <div class="icon-and-label">
-	{
-		label.toLowerCase() == "phone" &&
-			<Image src={phoneImg} alt="Phone Icon" height="32" width="32" />
-    }
-    {
-		label.toLowerCase() == "email" &&
-        <Image src={mailImg} alt="Mail Icon" height="32" width="32" />	
-    }
+    <Image src={imgSrc} alt="Icon And Label" height="32" width="32" />	
 	<div class="text-content">	
 		<p class="bold">{value}</p>
 	</div>		

@@ -1,6 +1,7 @@
 ---
 import './Footer.less';
 import { Image } from "astro:assets";
+import mailImg from "../../assets/svg/email.png";
 import Logo from "../../assets/images/gurutravel_logo.png";
 import IconAndLabel from '../../components/IconAndLabel/IconAndLabel.astro';
 ---
@@ -16,7 +17,10 @@ import IconAndLabel from '../../components/IconAndLabel/IconAndLabel.astro';
             <p class="text">
                 Your Mountain awaits.<br>Huaraz's leading mountain adventures.
             </p>
-            <IconAndLabel label="email" value="contact@gurutravel.com"/>
+            <IconAndLabel 
+                value="contact@gurutravel.com"
+                imgSrc={mailImg}   
+            />
         </div>
 
         <!-- Links -->
