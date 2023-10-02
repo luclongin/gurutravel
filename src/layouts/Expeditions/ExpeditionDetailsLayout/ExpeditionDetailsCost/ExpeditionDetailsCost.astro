@@ -1,0 +1,20 @@
+---
+import checkmarkImg from "../../../../assets/svg/checkmark.svg";
+import xMarkImg from "../../../../assets/svg/x.svg";
+import IconAndLabel from "../../../../components/IconAndLabel/IconAndLabel.astro";
+import "./ExpeditionDetailsCost.less";
+const { frontmatter } = Astro.props;
+---
+
+<section class="exped-details-section" id="exped-details-cost-section">
+	<div class="container">
+		<h2 class="exped-details-section-title">Cost</h2>
+		<p class="text">The price listed below is per person.</p>
+        <ul class="price-list">
+            <li>
+                <p class="price-list-key text">group of 7+</p>
+                <p class="price-list-value text"><span class="bold">USD 798</span> per person</p>
+            </li>
+        </ul>
+	</div>
+</section>

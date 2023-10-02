@@ -36,9 +36,24 @@ notIncludedList: [
     "First breakfast and last dinner",
     "Fees to enter local villages"
 ]
-image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'The full Astro logo.'
-tags: ["astro", "blogging", "learning in public"]
+itinerary: [
+    # [ day number , step title, step description ]
+    {
+        stepNumber: "Day 1",
+        stepName: "Huaraz (3100M) - Cuartelhuain (4,170m)",
+        stepDescription: 'Departure from Huaraz town in a private vehicle at the scheduled time ( 8-9 am) toward our first camping spot, "Cuartelhuain." After 2.5 hours of tarred road, we turn onto the dirt road with our first views of the Cordillera Huayhaush in the distance. After a further 3 hours, we arrive at Cuartelhuain campsite. We set up camp on the riverbanks. The relaxed afternoon closes our first-day journey enjoying the sunset moments in Huayhuash.'
+    },
+    {
+        stepNumber: "Day 2",
+        stepName: "Cuartelhuain (4,170m) to Mitucocha (4,270m)",
+        stepDescription: 'Our journey begins with a 3-4 hour ascent, culminating in crossing the Cacanapunta Pass at 4,690m. From this vantage point, we will receive rewarded breathtaking views of the surrounding valleys and mountains of Cuncush Valley. As we descend, we see the Caliente Valley, including its marshes and hot springs that flow into the Atlantic Ocean. Continuing, we traverse the granite block of Cerro Chincana and pass through the Tuctupampa plain, arriving at the picturesque shores of the Janca River (4,720m). Here, we will set up camp.'
+    }
+]
+extraItinerary: [
+    {
+        stepNumber: "Day 3",
+        stepName: "Mitucocha (4,170m) to Paradise (4,270m)",
+        stepDescription: 'Our journey begins with a 3-4 hour ascent, culminating in crossing the Cacanapunta Pass at 4,690m. From this vantage point, we will receive rewarded breathtaking views of the surrounding valleys and mountains of Cuncush Valley. As we descend, we see the Caliente Valley, including its marshes and hot springs that flow into the Atlantic Ocean. Continuing, we traverse the granite block of Cerro Chincana and pass through the Tuctupampa plain, arriving at the picturesque shores of the Janca River (4,720m). Here, we will set up camp.'
+    }
+]
 ---
-Published on: 2022-07-01

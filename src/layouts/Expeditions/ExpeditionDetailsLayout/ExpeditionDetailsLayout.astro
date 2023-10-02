@@ -6,6 +6,8 @@ import SelectDropDown from "../../../components/SelectDropDown/SelectDropDown.as
 import ExpeditionDetailsSideBar from "../../../components/ExpeditionDetailsSideBar/ExpeditionDetailsSideBar.astro";
 import ExpeditionDetailsOverview from "./ExpeditionDetailsOverview/ExpeditionDetailsOverview.astro";
 import ExpeditionDetailsIncluded from "./ExpeditionDetailsIncluded/ExpeditionDetailsIncluded.astro";
+import ExpeditionDetailsItinerary from "./ExpeditionDetailsItinerary/ExpeditionDetailsItinerary.astro";
+import ExpeditionDetailsCost from "./ExpeditionDetailsCost/ExpeditionDetailsCost.astro";
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout>
@@ -30,6 +32,8 @@ const { frontmatter } = Astro.props;
 			
 			<ExpeditionDetailsOverview frontmatter={frontmatter} />
 			<ExpeditionDetailsIncluded frontmatter={frontmatter} />
+			<ExpeditionDetailsItinerary frontmatter={frontmatter} />
+			<ExpeditionDetailsCost frontmatter={frontmatter} />
 		</section>
 	</section>
 </BaseLayout>

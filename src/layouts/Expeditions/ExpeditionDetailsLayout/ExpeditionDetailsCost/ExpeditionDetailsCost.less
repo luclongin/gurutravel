@@ -1,0 +1,47 @@
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#exped-details-cost-section {
+		.text {
+			width: fit-content;
+			margin-bottom: 0;
+			color: var(--bodyTextColorLight);
+		}
+
+        .price-list {
+
+            li {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: clamp(1.5rem, 5vw, 2rem);
+
+                .price-list-key {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: (2/16rem);
+                    background-color: red;
+                }
+
+                .price-list-value {
+                    background-color: blue;
+                    .bold {
+                        color: var(--bodyTextColor);
+                    }
+                }
+            }
+        }
+	}
+}
+
+/* Tablet - 736px */
+@media only screen and (min-width: 46rem) {
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+	#exped-details-cost-section {
+		.container {
+		}
+	}
+}
