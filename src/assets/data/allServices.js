@@ -109,10 +109,11 @@ export const allTreks = [
 	{
 		id: 2,
 		type: "trek",
-		name: "huayhuash circuit",
+		name: "huayhuash circuit trek",
 		difficulty: "advanced",
 		altitude: "5,000M",
 		duration: "10-12 days",
+		url: "/huayhuash-circuit",
 		description:
 			"Embark on an epic journey through the remote mountain range, known for its beauty and high passes.",
 	},
@@ -149,10 +150,11 @@ export const allTreks = [
 	{
 		id: 6,
 		type: "trek",
-		name: "huayhuash circuit",
+		name: "huayhuash circuit trek",
 		difficulty: "advanced",
 		altitude: "5,000M",
 		duration: "10-12 days",
+		url: "/huayhuash-circuit",
 		description:
 			"Embark on an epic journey through the remote mountain range, known for its beauty and high passes.",
 	},

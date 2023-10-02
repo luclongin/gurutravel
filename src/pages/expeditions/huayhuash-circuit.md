@@ -56,4 +56,19 @@ extraItinerary: [
         stepDescription: 'Our journey begins with a 3-4 hour ascent, culminating in crossing the Cacanapunta Pass at 4,690m. From this vantage point, we will receive rewarded breathtaking views of the surrounding valleys and mountains of Cuncush Valley. As we descend, we see the Caliente Valley, including its marshes and hot springs that flow into the Atlantic Ocean. Continuing, we traverse the granite block of Cerro Chincana and pass through the Tuctupampa plain, arriving at the picturesque shores of the Janca River (4,720m). Here, we will set up camp.'
     }
 ]
+priceList: {
+    "group of 7+": "<span class='bold'>USD 798</span> per person",
+    "group of 6": "<span class='bold'>USD 863</span> per person",
+    "group of 5": "<span class='bold'>USD 967</span> per person",
+    "group of 4": "<span class='bold'>USD 1089</span> per person",
+    "group of 3": "<span class='bold'>USD 1347</span> per person",
+    "group of 2": "<span class='bold'>USD 1792</span> per person",
+    "1 person": "<span class='bold'>USD 3063</span> per person"
+}
+gallery: [
+    "../../../../assets/images/austin-ban-juHayWuaaoQ-unsplash.jpg",
+    "../../../../assets/images/sylvain-mauroux-OIuzDRYA3cw-unsplash(1).jpg",
+    "../../../../assets/images/tiago-rosado-cMG5qjpnsyg-unsplash.jpg",
+    "../../../../assets/images/trek-3.jpg",
+]
 ---

@@ -4,9 +4,9 @@ import { Image } from "astro:assets";
 import triangle from "../../assets/svg/triangle.svg";
 import clock from "../../assets/svg/clock.svg";
 import ExpeditionDifficultyBars from "../ExpeditionDifficultyBars/ExpeditionDifficultyBars.astro";
-const {id, type, name, difficulty, altitude, duration, description, mobileImg, defaultImg, hidden} = Astro.props;
+const {id, type, name, url, difficulty, altitude, duration, description, mobileImg, defaultImg, hidden} = Astro.props;
 ---
-<div class=`expedition-card ${hidden ? "hidden" : ""}`>
+<a href={`expeditions/${url}`} class=`expedition-card ${hidden ? "hidden" : ""}`>
     <div class="expedition-img-container">
         <div class="expedition-card-hover">
             <p class="card-hover-text">See More</p>
@@ -51,4 +51,4 @@ const {id, type, name, difficulty, altitude, duration, description, mobileImg, d
         </div>
         <p class="expedition-description-text">{description}</p>
     </div>
-</div>
+</a>

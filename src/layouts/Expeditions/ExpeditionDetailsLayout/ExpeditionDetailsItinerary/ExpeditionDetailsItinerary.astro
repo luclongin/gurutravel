@@ -13,7 +13,13 @@ const {frontmatter} = Astro.props;
 <section id="exped-details-itinerary-section" class="exped-details-section">
 	<div class="container">
 		<h2 class="exped-details-section-title">Itinerary</h2>
-		<Image class="itinerary-map-img" src={mapImg} alt="Itinerary Map" width={1200} height={1200} />
+		<Image 
+			class="itinerary-map-img" 
+			src={mapImg} 
+			alt="Itinerary Map" 
+			width={1000} 
+			height={1000} 
+		/>
 		<ExpeditionDetailsInfoCard
 			iconSVG={lightbulbSVG}
 			iconPosition="bottom"
@@ -32,7 +38,6 @@ const {frontmatter} = Astro.props;
 			}
 			<SeeAllButton seeAllText="View Complete Itinerary" type="itinerary"/>
 			<div id="extra-itinerary-container" class="exped-details-itinerary-steps-container">
-
 			{
 				frontmatter.extraItinerary.map(step => 
 					<div class="exped-details-itinerary-step">
@@ -46,6 +51,5 @@ const {frontmatter} = Astro.props;
 			<SeeLessButton seeLessText="View Less" type="itinerary"/>
 		</div>
 		<ImgCardwithOverlayAndBtn cardClass="enquire-img" title="Sound Exciting?" imgSrc={mountainImg}/>
-
 	</div>
 </section>

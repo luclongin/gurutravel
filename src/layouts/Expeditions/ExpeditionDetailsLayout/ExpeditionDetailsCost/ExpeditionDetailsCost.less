@@ -8,23 +8,25 @@
 		}
 
         .price-list {
-
+            width: 100%;
+            
             li {
                 list-style: none;
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
                 gap: clamp(1.5rem, 5vw, 2rem);
+                margin-bottom: .5rem;
 
                 .price-list-key {
                     text-transform: uppercase;
                     font-weight: 600;
                     letter-spacing: (2/16rem);
-                    background-color: red;
+                    width: (160/16rem);
                 }
 
                 .price-list-value {
-                    background-color: blue;
+                    width: (200/16rem);
                     .bold {
                         color: var(--bodyTextColor);
                     }

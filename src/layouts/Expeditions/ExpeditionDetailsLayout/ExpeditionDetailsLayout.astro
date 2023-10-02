@@ -8,6 +8,7 @@ import ExpeditionDetailsOverview from "./ExpeditionDetailsOverview/ExpeditionDet
 import ExpeditionDetailsIncluded from "./ExpeditionDetailsIncluded/ExpeditionDetailsIncluded.astro";
 import ExpeditionDetailsItinerary from "./ExpeditionDetailsItinerary/ExpeditionDetailsItinerary.astro";
 import ExpeditionDetailsCost from "./ExpeditionDetailsCost/ExpeditionDetailsCost.astro";
+import ExpeditionDetailsGallery from "./ExpeditionDetailsGallery/ExpeditionDetailsGallery.astro";
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout>
@@ -34,6 +35,7 @@ const { frontmatter } = Astro.props;
 			<ExpeditionDetailsIncluded frontmatter={frontmatter} />
 			<ExpeditionDetailsItinerary frontmatter={frontmatter} />
 			<ExpeditionDetailsCost frontmatter={frontmatter} />
+			<ExpeditionDetailsGallery frontmatter={frontmatter} />
 		</section>
 	</section>
 </BaseLayout>

@@ -15,48 +15,50 @@ const {frontmatter} = Astro.props;
 	<div class="container">
 		<div class="exped-details-overview-content">
 			<h2 class="exped-details-section-title">Overview</h2>
-			<IconLabelValue
-				type="column"
-				label="Location"
-				value={frontmatter.location}
-				imgSrc={locationSVG}
-			/>
-			<IconLabelValue
-				type="column"
-				label="Duration"
-				value={frontmatter.duration}
-				imgSrc={clockSVG}
-			/>
-			<IconLabelValue
-				type="column"
-				label="Difficulty"
-				value={frontmatter.difficulty}
-				imgSrc={difficultySVG}
-			/>
-			<IconLabelValue
-				type="column"
-				label="Altitude"
-				value={frontmatter.altitude}
-				imgSrc={altitudeSVG}
-			/>
-			<IconLabelValue
-				type="column"
-				label="Daily Activity"
-				value={frontmatter.dailyActivity}
-				imgSrc={hikerSVG}
-			/>
-			<IconLabelValue
-				type="column"
-				label="Season"
-				value={frontmatter.season}
-				imgSrc={calendarSVG}
-			/>
-			<ExpeditionDetailsInfoCard
-				iconSVG={smileySVG}
-				iconPosition="top"
-				title="Your Profile"
-				text="You have experience hiking and camping in the mountains, in all conditions. Previous acclimatization is necessary."
-			/>
+			
+				<IconLabelValue
+					type="column"
+					label="Location"
+					value={frontmatter.location}
+					imgSrc={locationSVG}
+				/>
+				<IconLabelValue
+					type="column"
+					label="Duration"
+					value={frontmatter.duration}
+					imgSrc={clockSVG}
+				/>
+				<IconLabelValue
+					type="column"
+					label="Difficulty"
+					value={frontmatter.difficulty}
+					imgSrc={difficultySVG}
+				/>
+				<IconLabelValue
+					type="column"
+					label="Altitude"
+					value={frontmatter.altitude}
+					imgSrc={altitudeSVG}
+				/>
+				<IconLabelValue
+					type="column"
+					label="Daily Activity"
+					value={frontmatter.dailyActivity}
+					imgSrc={hikerSVG}
+				/>
+				<IconLabelValue
+					type="column"
+					label="Season"
+					value={frontmatter.season}
+					imgSrc={calendarSVG}
+				/>
+				<ExpeditionDetailsInfoCard
+					iconSVG={smileySVG}
+					iconPosition="top"
+					title="Your Profile"
+					text="You have experience hiking and camping in the mountains, in all conditions.<br/>Previous acclimatization is necessary."
+				/>
+			
 		</div>
 	</div>
 </section>
