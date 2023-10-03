@@ -1,7 +1,6 @@
 import "./ExpeditionGallery.css";
 import LightGallery from "lightgallery/react";
 import lgZoom from "lightgallery/plugins/zoom";
-import lgVideo from "lightgallery/plugins/video";
 import Image1 from "../../assets/images/climb-1.jpg";
 import Image2 from "../../assets/images/climb-2.jpg";
 import Image3 from "../../assets/images/climb-3.jpg";
@@ -10,7 +9,7 @@ import Image4 from "../../assets/images/climb-4.jpg";
 const ExpeditionGallery = (props) => {
 	return (
 		<div class="gallery-container">
-			<LightGallery plugins={[lgZoom, lgVideo]} mode="lg-fade">
+			<LightGallery plugins={[lgZoom]} mode="lg-fade">
 				<a
 					data-lg-size="1406-1390"
 					className="gallery-item"
