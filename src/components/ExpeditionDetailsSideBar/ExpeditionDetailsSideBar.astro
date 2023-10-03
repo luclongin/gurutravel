@@ -1,15 +1,33 @@
 ---
-import type { Code } from "astro:components";
 import "./ExpeditionDetailsSideBar.less";
+import { Image } from "astro:assets";
 import SelectDropDown from "../SelectDropDown/SelectDropDown.astro";
+import TableOfContentsButton from "../TableOfContentsButton/TableOfContentsButton.astro";
+import xMarkSVG from "../../assets/svg/x.svg";
 ---
-<div class="expedition-details-sidebar">
-    <nav class="expedition-details-sidebar-nav">
-        <a href="#" class="selected">Overview</a>
-        <a href="#">What's included</a>
-        <a href="#">Itinerary</a>
-        <a href="#">Cost</a>
-        <a href="#">Gallery</a>
-        <a href="#">Practical Info</a>
-    </nav>
+<div class="container table-of-contents-container">
+    <input type="checkbox" name="toggle-menu-input" id="toggle-menu-input">
+    <label for="toggle-menu-input" class="toggle-menu-button-container">
+        <TableOfContentsButton />
+    </label>
+    <div class="expedition-details-sidebar"> 
+        <label for="toggle-menu-input" class="toggle-menu-button-close-container">
+            <div class="">
+                <Image 
+                    src={xMarkSVG} 
+                    alt="Close Table of Contents"
+                    width={20}
+                    height={20}
+                />
+            </div>
+        </label>
+        <nav class="expedition-details-sidebar-nav">
+            <a href="#exped-details-overview-section" class="selected">Overview</a>
+            <a href="#exped-details-itinerary-section">What's included</a>
+            <a href="#exped-details-itinerary-section">Itinerary</a>
+            <a href="#exped-details-cost-section">Cost</a>
+            <a href="#exped-details-gallery-section">Gallery</a>
+            <a href="#">Practical Info</a>
+        </nav>
+    </div>
 </div>

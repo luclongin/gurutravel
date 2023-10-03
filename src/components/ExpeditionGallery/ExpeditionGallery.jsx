@@ -8,7 +8,7 @@ import Image4 from "../../assets/images/climb-4.jpg";
 
 const ExpeditionGallery = (props) => {
 	return (
-		<div class="gallery-container">
+		<div className="gallery-container">
 			<LightGallery plugins={[lgZoom]} mode="lg-fade">
 				<a
 					data-lg-size="1406-1390"
@@ -64,7 +64,7 @@ const ExpeditionGallery = (props) => {
 				>
 					<img
 						className="img-responsive"
-						src="https://images.unsplash.com/photo-1544550285-f813152fb2fd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80"
+						src={Image4.src}
 					/>
 				</a>
 				<a
@@ -75,7 +75,7 @@ const ExpeditionGallery = (props) => {
 				>
 					<img
 						className="img-responsive"
-						src="https://images.unsplash.com/photo-1584592740039-cddf0671f3d4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80"
+						src={Image4.src}
 					/>
 				</a>
         <a

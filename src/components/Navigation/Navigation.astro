@@ -77,7 +77,7 @@ const currentPath = pathname.slice(1); // remove the first "/"
 						<a
 							id="nav-expeditions-link"
 							href="/expeditions"
-							class:list={["nav-li-link", {"nav-li-link-selected": currentPath==="expeditions"}]}
+							class:list={["nav-li-link", {"nav-li-link-selected": currentPath.includes("expeditions")}]}
 							>Expeditions</a
 						>
 					</li>
