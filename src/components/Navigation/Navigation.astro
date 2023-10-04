@@ -6,6 +6,7 @@ import SpanishFlag from "../../assets/svg/icons8-españa-48.png";
 
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
+console.log("currentPath: ", currentPath==="");
 ---
 <!-- ============================================ -->
 <!--         Navigation Code Stitch               -->
@@ -61,7 +62,7 @@ const currentPath = pathname.slice(1); // remove the first "/"
 						<a
 							id="nav-home-link"
 							href="/"
-							class:list={["nav-li-link", {"nav-li-link-selected": currentPath==="/"}]}
+							class:list={["nav-li-link", {"nav-li-link-selected": currentPath===""}]}
 						>
 							Home
 						</a>
@@ -85,7 +86,7 @@ const currentPath = pathname.slice(1); // remove the first "/"
 						<a 
 							id="nav-gallery-link" 
 							href="/gallery" 							
-							class:list={["nav-li-link", {"nav-li-link-selected": currentPath==="gallery"}]}
+							class:list={["nav-li-link", {"nav-li-link-selected": currentPath.includes("gallery")}]}
 							>Gallery</a
 						>
 					</li>

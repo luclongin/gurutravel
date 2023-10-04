@@ -78,6 +78,10 @@
             line-height: 1.5em;
             color: var(--bodyTextColor);
             position: relative;
+
+            &:hover {
+                font-weight: 600;
+            }
         }
     }
 }
@@ -103,7 +107,12 @@
         }
 
         .footer-nav {
-            width: auto;
+            width: clamp((120/16rem), 15vw, (176/16rem));
+
+            &:nth-of-type(1) {            
+                width: (96/16rem);
+
+            }
         }
     }
 }
