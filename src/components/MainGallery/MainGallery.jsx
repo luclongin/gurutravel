@@ -8,7 +8,7 @@ import Image4 from "../../assets/images/climb-4.jpg";
 
 const MainGallery = (props) => {
 	return (
-		<div class="gallery-container">
+		<div className="gallery-container">
 			<LightGallery plugins={[lgZoom]} mode="lg-fade">
 				<a
 					data-lg-size="1406-1390"
