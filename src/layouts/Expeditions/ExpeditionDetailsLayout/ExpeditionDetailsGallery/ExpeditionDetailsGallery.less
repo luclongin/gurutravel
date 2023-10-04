@@ -1,6 +1,11 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
 	#exped-details-gallery-section {
+		// Padding for scrolling
+    	// to not hide the title
+		scroll-margin-top: var(--scrollMarginTop);
+		scroll-snap-margin-top: var(--scrollMarginTop); /* iOS 11 and older */
+		
 		.gallery-container {
 			gap: 1rem;
 			position: relative;

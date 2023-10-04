@@ -22,9 +22,9 @@
 				flex-direction: row;
 				align-items: center;
 
-                img {
-                    filter: none;
-                }
+				img {
+					filter: none;
+				}
 			}
 
 			// text of included and not included sections
@@ -58,6 +58,10 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
 	#exped-details-included-section {
+		// Padding for scrolling
+		// to not hide the title
+		scroll-margin-top: var(--scrollMarginTop);
+		scroll-snap-margin-top: var(--scrollMarginTop); /* iOS 11 and older */
 		.container {
 			.exped-details-included-line {
 				width: 100%;
@@ -85,16 +89,15 @@
 						margin: 0;
 						height: fit-content;
 						min-width: (240/16rem);
-                        
 					}
 				}
 			}
 			.included-list-container {
 				align-items: flex-start;
 
-                .subtitle {
-                    margin-top: .4rem;
-                }
+				.subtitle {
+					margin-top: 0.4rem;
+				}
 			}
 		}
 	}

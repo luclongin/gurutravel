@@ -21,16 +21,6 @@ const { frontmatter } = Astro.props;
 	<section id="exped-details-container">
 		<ExpeditionDetailsSideBar />
 		<section id="exped-details-sections-container">
-
-			<!--<div id="exped-details-select" class="exped-details-section">
-				<div class="container">
-					<SelectDropDown
-						name="expedition-details-sidebar"
-						label="Jump to"
-					/>
-				</div>
-			</div>
-		-->
 			<ExpeditionDetailsOverview frontmatter={frontmatter} />
 			<ExpeditionDetailsIncluded frontmatter={frontmatter} />
 			<ExpeditionDetailsItinerary frontmatter={frontmatter} />
