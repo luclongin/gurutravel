@@ -1,11 +1,8 @@
 ---
 import "./ExpeditionDetailsSideBar.less";
 import { Image } from "astro:assets";
-import SelectDropDown from "../SelectDropDown/SelectDropDown.astro";
 import TableOfContentsButton from "../TableOfContentsButton/TableOfContentsButton.astro";
 import xMarkSVG from "../../assets/svg/x.svg";
-const pathname = new URL(Astro.request.url);
-console.log("pathname: ", pathname);
 ---
 <div class="container table-of-contents-container">
     <input type="checkbox" name="toggle-menu-input" id="toggle-menu-input">

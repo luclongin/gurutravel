@@ -11,8 +11,8 @@
 	--bodyBackgroundColor: #fafafa;
 	--bodyBackgroundColorLight: #e5e5e5;
 
-	--buttonBoxShadow: 0px (8/16rem) (8/16rem) 0px rgba(0, 0, 0, 0.25);
-	--buttonBoxShadowHover: 0px (4/16rem) (4/16rem) 0px rgba(0, 0, 0, 0.25);
+	--buttonBoxShadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+	--buttonBoxShadowHover: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 	--scrollMarginTop: 9rem;
 
@@ -360,12 +360,12 @@ button {
 		/* prevents padding from adding to the width */
 		box-sizing: border-box;
 		border-radius: (12/16rem);
-		box-shadow: 0px (8/16rem) (8/16rem) 0px rgba(0, 0, 0, 0.25);
+		box-shadow: var(--buttonBoxShadow);//0px (8/16rem) (8/16rem) 0px rgba(0, 0, 0, 0.25);
 
 		&:hover {
 			cursor: pointer;
 			background-color: var(--primaryDark);
-			box-shadow: 0px (4/16rem) (4/16rem) 0px rgba(0, 0, 0, 0.25);
+			box-shadow: var(--buttonBoxShadowHover); //0px (4/16rem) (4/16rem) 0px rgba(0, 0, 0, 0.25);
 		}
 	}
 }
