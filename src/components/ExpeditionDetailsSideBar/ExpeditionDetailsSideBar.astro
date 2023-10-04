@@ -4,6 +4,8 @@ import { Image } from "astro:assets";
 import SelectDropDown from "../SelectDropDown/SelectDropDown.astro";
 import TableOfContentsButton from "../TableOfContentsButton/TableOfContentsButton.astro";
 import xMarkSVG from "../../assets/svg/x.svg";
+const pathname = new URL(Astro.request.url);
+console.log("pathname: ", pathname);
 ---
 <div class="container table-of-contents-container">
     <input type="checkbox" name="toggle-menu-input" id="toggle-menu-input">
@@ -22,12 +24,12 @@ import xMarkSVG from "../../assets/svg/x.svg";
             </div>
         </label>
         <nav class="expedition-details-sidebar-nav">
-            <a href="#exped-details-overview-section" class="selected">Overview</a>
-            <a href="#exped-details-included-section">What's included</a>
-            <a href="#exped-details-itinerary-section">Itinerary</a>
-            <a href="#exped-details-cost-section">Cost</a>
-            <a href="#exped-details-gallery-section">Gallery</a>
-            <a href="#">Practical Info</a>
+            <a href="#overview">Overview</a>
+            <a href="#included">What's included</a>
+            <a href="#itinerary">Itinerary</a>
+            <a href="#cost">Cost</a>
+            <a href="#gallery">Gallery</a>
+            <!--<a href="#">Practical Info</a>-->
         </nav>
     </div>
 </div>
