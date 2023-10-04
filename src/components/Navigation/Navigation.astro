@@ -70,7 +70,7 @@ const currentPath = pathname.slice(1); // remove the first "/"
 						<a 
 							id="nav-team-link" 
 							href="/about" 
-							class:list={["nav-li-link", {"nav-li-link-selected": currentPath==="about"}]}
+							class:list={["nav-li-link", {"nav-li-link-selected": currentPath.includes("about")}]}
 						>Team</a>
 					</li>
 					<li class="nav-li nav-padded-li">
@@ -86,7 +86,6 @@ const currentPath = pathname.slice(1); // remove the first "/"
 							id="nav-gallery-link" 
 							href="/gallery" 							
 							class:list={["nav-li-link", {"nav-li-link-selected": currentPath==="gallery"}]}
-
 							>Gallery</a
 						>
 					</li>
@@ -100,13 +99,13 @@ const currentPath = pathname.slice(1); // remove the first "/"
 						</a>
 					</li>
 					<li class="nav-li extra-enquire-link">
-						<a id="nav-gallery-link" href="/" class="nav-li-link"
+						<a id="nav-gallery-link" href="/about/#enquire" class="nav-li-link"
 							>Enquire Now ></a
 						>
 					</li>
 				</ul>
 			</div>
-			<a href="#enquire-btn" class="solid-btn nav-btn">Enquire</a>
+			<a href="/about/#enquire" class="solid-btn nav-btn">Enquire</a>
 		</nav>
 	</div>
 </header>
