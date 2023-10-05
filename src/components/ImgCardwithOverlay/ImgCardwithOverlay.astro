@@ -1,23 +1,17 @@
 ---
-const { title, cardClass, imgTitle } = Astro.props;
+const { title, cardClass, imgSrc } = Astro.props;
 import "./ImgCardwithOverlay.less";
-import enquireImg from "../../assets/images/sheshan-r-4AU8t0aQHVI-unsplash.jpg";
-import santaCruzImg from "../../assets/images/tiago-rosado-cMG5qjpnsyg-unsplash.jpg";
-const imgDict = {
-	"santaCruz": santaCruzImg,
-	"enquire": enquireImg
-};
 ---
 <!-- Flexible image with black overlay at the bottom for white text -->
 <div class=`img-card-overlay ${cardClass}`>
 	<div class=`img-overlay`></div>
 	<picture class=`img-card-overlay-img`>
-		<source media="(max-width: 480px)" srcset={imgDict[imgTitle].src} />
-		<source media="(min-width: 480px)" srcset={imgDict[imgTitle].src} />
+		<source media="(max-width: 480px)" srcset={imgSrc} />
+		<source media="(min-width: 480px)" srcset={imgSrc} />
 		<img
 			loading="lazy"
 			decoding="async"
-			srcset={imgDict[imgTitle].src}
+			srcset={imgSrc}
 			alt="people outside"
 			width="254"
 			height="262"
@@ -25,21 +19,3 @@ const imgDict = {
 	</picture>
 	<p class="img-card-overlay-text">{title}</p>
 </div>
-<!--<picture class=`exped-img ${className}`>
-		<source
-			media="(max-width: 480px)"
-			srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting-m.jpg"
-		/>
-		<source
-			media="(min-width: 480px)"
-			srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting.jpg"
-		/>
-		<img
-			loading="lazy"
-			decoding="async"
-			src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting.jpg"
-			alt="person gardening"
-			width="400"
-			height="200"
-		/>
-	</picture>-->

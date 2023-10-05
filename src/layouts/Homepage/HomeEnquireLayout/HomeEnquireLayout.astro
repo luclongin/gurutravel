@@ -2,7 +2,7 @@
 import './HomeEnquireLayout.less';
 import IconAndLabelAndValue from "../../../components/IconAndLabelAndValue/IconAndLabelAndValue.astro";
 import WhatsappButton from '../../../components/WhatsappButton/WhatsappButton.astro';
-import enquireImg from '../../assets/images/sheshan-r-4AU8t0aQHVI-unsplash.jpg';
+import enquireImg from '../../../assets/images/sheshan-r-4AU8t0aQHVI-unsplash.jpg';
 import ImgCardwithOverlay from '../../../components/ImgCardwithOverlay/ImgCardwithOverlay.astro';
 ---
 <!-- ============================================ -->
@@ -12,24 +12,7 @@ import ImgCardwithOverlay from '../../../components/ImgCardwithOverlay/ImgCardwi
     <div class="container">
         <!-- Left section -->
 		<div class="home-enquire-images-container">
-			<!--<picture class="enquire-img">
-				<source
-					media="(max-width: 480px)"
-					srcset={enquireImg.src}
-				/>
-				<source
-					media="(min-width: 480px)"
-					srcset={enquireImg.src}
-				/>
-				<img
-					loading="lazy"
-					decoding="async"
-					srcset={enquireImg.src}
-					alt="people outside"
-					width="254"
-					height="262"
-				/>-->
-				<ImgCardwithOverlay cardClass="enquire-img" title="Ready for an adventure?" imgTitle="enquire"/>
+			<ImgCardwithOverlay cardClass="enquire-img" title="Ready for an adventure?" imgSrc={enquireImg.src}/>
         </div>
         <!-- Right Section -->
 		<div class="content" id="enquire">
