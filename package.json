@@ -14,9 +14,9 @@
     "@types/react": "^18.2.22",
     "@types/react-dom": "^18.2.7",
     "astro": "^3.0.13",
-    "lightgallery": "^2.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-photoswipe-gallery": "^2.2.7",
     "swiper": "^10.3.0"
   },
   "devDependencies": {

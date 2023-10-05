@@ -113,7 +113,7 @@ export const allTreks = [
 		difficulty: "advanced",
 		altitude: "5,000M",
 		duration: "10-12 days",
-		url: "/huayhuash-circuit",
+		url: "huayhuash-circuit",
 		description:
 			"Embark on an epic journey through the remote mountain range, known for its beauty and high passes.",
 	},

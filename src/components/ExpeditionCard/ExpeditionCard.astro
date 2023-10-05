@@ -6,7 +6,9 @@ import clock from "../../assets/svg/clock.svg";
 import ExpeditionDifficultyBars from "../ExpeditionDifficultyBars/ExpeditionDifficultyBars.astro";
 const {id, type, name, url, difficulty, altitude, duration, description, mobileImg, defaultImg, hidden} = Astro.props;
 ---
-<a href={`expeditions/${url}`} class=`expedition-card ${hidden ? "hidden" : ""}`>
+<!-- previously `expeditions/${url}` but turns out it gives us: 
+expeditions/expeditions//URL-->
+<a href={`${url}`} class=`expedition-card ${hidden ? "hidden" : ""}`>
     <div class="expedition-img-container">
         <div class="expedition-card-hover">
             <p class="card-hover-text">See More</p>

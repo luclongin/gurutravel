@@ -4,7 +4,7 @@
 		align-items: flex-start;
 		padding: var(--sectionPadding);
 		padding-bottom: 1.5rem;
-		width: auto;
+		width: fit-content !important;
 	}
 
 	.toggle-menu-button-container {
@@ -13,11 +13,15 @@
 		height: 100%;
 		display: flex;
 		padding: 1rem 1.5rem;
-		box-shadow: var(--buttonBoxShadow);//0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+		box-shadow: var(
+			--buttonBoxShadow
+		); //0px 4px 8px 0px rgba(0, 0, 0, 0.25);
 
 		&:hover {
 			cursor: pointer;
-			box-shadow: var(--buttonBoxShadowHover);//box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+			box-shadow: var(
+				--buttonBoxShadowHover
+			); //box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 		}
 	}
 
@@ -111,8 +115,10 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
 	.table-of-contents-container {
-		margin: 0;
+		margin: 0 !important;
 		padding: 0;
+		position: sticky;
+		top: 0;
 
 		.toggle-menu-button-container,
 		.toggle-menu-button-close-container {
@@ -123,8 +129,6 @@
 			margin: 0;
 			border-radius: 0;
 			border: none;
-			position: sticky;
-			top: 0;
 			display: flex;
 			padding-top: 8rem;
 			width: 25%;
