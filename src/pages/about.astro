@@ -3,14 +3,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroLayout from "../layouts/HeroLayout/HeroLayout.astro";
 import AboutDetails from '../layouts/About/AboutDetailsLayout/AboutDetails.astro';
 import AboutTeamLayout from '../layouts/About/AboutTeamLayout/AboutTeamLayout.astro';
-
+import AboutImg from "../assets/images/trek-3.jpg"
 ---
 <BaseLayout>
     <HeroLayout
 		heroSection="about"
 		heroTitle1="Discover our story."
 		heroTitle2="Meet your guides."
-		heroImg="about"
+		heroImg={AboutImg}
+		heroImgMobile={AboutImg}
 	/>
     <AboutDetails />
     <AboutTeamLayout />

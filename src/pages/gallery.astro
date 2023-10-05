@@ -2,13 +2,15 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroLayout from "../layouts/HeroLayout/HeroLayout.astro";
 import GalleryLayout from "../layouts/GalleryLayout/GalleryLayout.astro";
+import GalleryImg from "../assets/images/tiago-rosado-cMG5qjpnsyg-unsplash.jpg";
 ---
 <BaseLayout>
 	<HeroLayout
 		heroSection="gallery"
 		heroTitle1=""
 		heroTitle2="Gallery"
-		heroImg="about"
+		heroImg={GalleryImg}
+		heroImgMobile={GalleryImg}
 	/>
     <GalleryLayout />
 </BaseLayout>

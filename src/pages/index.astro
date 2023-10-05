@@ -5,13 +5,16 @@ import HomeAboutLayout from "../layouts/Homepage/HomeAboutLayout/HomeAboutLayout
 import HomeExpeditionsLayout from "../layouts/Homepage/HomeExpeditionsLayout/HomeExpeditionsLayout.astro";
 import HomeReviewsLayout from "../layouts/Homepage/HomeReviewsLayout/HomeReviewsLayout.astro";
 import HomeGalleryLayout from "../layouts/Homepage/HomeGalleryLayout/HomeGalleryLayout.astro";
+import HomepageImg from "../assets/images/homepage/sylvain-mauroux-OIuzDRYA3cw-unsplash.webp";
+import HomepageImgMobile from "../assets/images/homepage/sylvain-mauroux-OIuzDRYA3cw-unsplash-m.webp";
 ---
 <BaseLayout>
 	<HeroLayout
 		heroSection="homepage"
 		heroTitle1="Discover Peru"
 		heroTitle2="in a whole new way"
-		heroImg="homepage"
+		heroImg={HomepageImg}
+		heroImgMobile={HomepageImgMobile}
 	/>
 	<div class="background-overlay-diamond-right">
 		<HomeAboutLayout />

@@ -1,26 +1,8 @@
 ---
 import { Image } from "astro:assets";
-const { heroTitle1, heroTitle2, heroImg } = Astro.props;
-const heroSectionImg = {
-	homepage: "sylvain-mauroux-OIuzDRYA3cw-medium.jpg",
-	team: "sylvain-mauroux-OIuzDRYA3cw-medium.jpg",
-	expeditions:  "sylvain-mauroux-OIuzDRYA3cw-medium.jpg"
-};
-
-import homeImg from "../../assets/images/homeImg.jpg";
-import homeImgMobile from "../../assets/images/homeImg-m.jpg";
-import aboutImg from "../../assets/images/aboutHeroImg.jpg";
-import aboutImgMobile from "../../assets/images/aboutHeroImg-m.jpg";
-import expeditionsImg from "../../assets/images/aboutHeroImg.jpg";
-import expeditionsImgMobile from "../../assets/images/aboutHeroImg-m.jpg";
+const { heroTitle1, heroTitle2, heroImg, heroImgMobile } = Astro.props;
 import caretDown from "../../assets/svg/icons8-flecha-ampliar-64.png";
 import './HeroLayout.less';
-
-const imgDict = {
-	"homepage": {default: homeImg, mobile: homeImgMobile},
-	"about": {default: aboutImg, mobile: aboutImgMobile},
-	"expeditions": {default: expeditionsImg, mobile: expeditionsImgMobile}
-};
 ---
 <!-- ============================================ -->
 <!--                 Hero Section                 -->
@@ -28,9 +10,9 @@ const imgDict = {
 <section id="hero-section">
 	<div class="container">
 		<picture class="hero-container-img">
-			<source media="(max-width: 900px)" srcset={imgDict[heroImg].mobile.src}>
-			<source media="(min-width: 901px)" srcset={imgDict[heroImg].default.src}>
-			<img aria-hidden="true" loading="lazy" decoding="async" src={imgDict[heroImg].default.src} alt="kitchen cabinets" width="1920" height="1280">
+			<source media="(max-width: 900px)" srcset={heroImgMobile.src}>
+			<source media="(min-width: 901px)" srcset={heroImg}>
+			<img aria-hidden="true" loading="lazy" decoding="async" src={heroImg.src} alt="kitchen cabinets" width="1920" height="1280">
 		</picture>
 		<div class="hero-gradient"></div>
 		<h1 class="hero-title">{heroTitle1}<br />{heroTitle2}</h1>

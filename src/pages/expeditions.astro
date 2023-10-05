@@ -2,13 +2,15 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroLayout from "../layouts/HeroLayout/HeroLayout.astro";
 import AllExpeditionsLayout from "../layouts/Expeditions/AllExpeditionsLayout/AllExpeditionsLayout.astro";
+import ExpedImg from "../assets/images/austin-ban-juHayWuaaoQ-unsplash.jpg";
 ---
 <BaseLayout>
 	<HeroLayout
 		heroSection="expeditions"
 		heroTitle1="All climbs"
 		heroTitle2="& treks"
-		heroImg="expeditions"
+		heroImg={ExpedImg}
+		heroImgMobile={ExpedImg}
 	/>
     <AllExpeditionsLayout />
 </BaseLayout>
