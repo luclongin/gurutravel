@@ -66,9 +66,9 @@ priceList: {
     "1 person": "<span class='bold'>USD 3063</span> per person"
 }
 gallery: [
-    "../../../../assets/images/austin-ban-juHayWuaaoQ-unsplash.jpg",
+    "../../../../assets/images/hero/austin-ban-juHayWuaaoQ-unsplash.webp",
     "../../../../assets/images/sylvain-mauroux-OIuzDRYA3cw-unsplash(1).jpg",
-    "../../../../assets/images/tiago-rosado-cMG5qjpnsyg-unsplash.jpg",
+    "../../../../assets/images/hero/tiago-rosado-cMG5qjpnsyg-unsplash.webp",
     "../../../../assets/images/trek-3.jpg",
 ]
 ---

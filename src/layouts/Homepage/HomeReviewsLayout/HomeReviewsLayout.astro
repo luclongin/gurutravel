@@ -1,7 +1,9 @@
 ---
 import './HomeReviewsLayout.less';
-import Img1 from "../../../assets/images/austin-ban-juHayWuaaoQ-unsplash.jpg";
-import Img2 from "../../../assets/images/tiago-rosado-cMG5qjpnsyg-unsplash.jpg";
+import Img1 from "../../../assets/images/hero/austin-ban-juHayWuaaoQ-unsplash.webp";
+import Img1Mobile from "../../../assets/images/hero/austin-ban-juHayWuaaoQ-unsplash-m.webp";
+import Img2 from "../../../assets/images/hero/tiago-rosado-cMG5qjpnsyg-unsplash.webp";
+import Img2Mobile from "../../../assets/images/hero/tiago-rosado-cMG5qjpnsyg-unsplash-m.webp";
 import Img3 from "../../../assets/images/what-we-offer.jpg";
 
 import HomeCarousel from '../../../components/HomeCarousel/HomeCarousel.astro';
@@ -21,7 +23,7 @@ import HomeCarousel from '../../../components/HomeCarousel/HomeCarousel.astro';
 			<picture class="reviews-img">
 				<source
 					media="(max-width: 480px)"
-					srcset={Img1.src}
+					srcset={Img1Mobile.src}
 				/>
 				<source
 					media="(min-width: 480px)"
@@ -39,7 +41,7 @@ import HomeCarousel from '../../../components/HomeCarousel/HomeCarousel.astro';
 			<picture class="reviews-img">
 				<source
 					media="(max-width: 480px)"
-					srcset={Img2.src}
+					srcset={Img2Mobile.src}
 				/>
 				<source
 					media="(min-width: 480px)"
@@ -92,7 +94,7 @@ import HomeCarousel from '../../../components/HomeCarousel/HomeCarousel.astro';
 			</picture><picture class="reviews-img">
 				<source
 					media="(max-width: 480px)"
-					srcset={Img2.src}
+					srcset={Img2Mobile.src}
 				/>
 				<source
 					media="(min-width: 480px)"
@@ -145,7 +147,7 @@ import HomeCarousel from '../../../components/HomeCarousel/HomeCarousel.astro';
 			<picture class="reviews-img display-tablet">
 				<source
 					media="(max-width: 480px)"
-					srcset={Img2.src}
+					srcset={Img2Mobile.src}
 				/>
 				<source
 					media="(min-width: 480px)"

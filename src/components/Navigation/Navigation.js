@@ -28,8 +28,10 @@ window.onscroll = function () {
 	var pos2 = window.scrollY;
 	if (pos1 > pos2) {
 		document.querySelector("#header .navigation").style.top = "1rem";
+		document.querySelector("#header .navigation").style.opacity = "1";
 	} else {
 		document.querySelector("#header .navigation").style.top = "-20rem";
+		document.querySelector("#header .navigation").style.opacity = "0";
 	}
 	pos1 = pos2;
 };

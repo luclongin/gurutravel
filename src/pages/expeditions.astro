@@ -2,7 +2,8 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroLayout from "../layouts/HeroLayout/HeroLayout.astro";
 import AllExpeditionsLayout from "../layouts/Expeditions/AllExpeditionsLayout/AllExpeditionsLayout.astro";
-import ExpedImg from "../assets/images/austin-ban-juHayWuaaoQ-unsplash.jpg";
+import ExpedImg from "../assets/images/hero/austin-ban-juHayWuaaoQ-unsplash.webp";
+import ExpedImgMobile from "../assets/images/hero/austin-ban-juHayWuaaoQ-unsplash-m.webp";
 ---
 <BaseLayout>
 	<HeroLayout
@@ -10,7 +11,7 @@ import ExpedImg from "../assets/images/austin-ban-juHayWuaaoQ-unsplash.jpg";
 		heroTitle1="All climbs"
 		heroTitle2="& treks"
 		heroImg={ExpedImg}
-		heroImgMobile={ExpedImg}
+		heroImgMobile={ExpedImgMobile}
 	/>
     <AllExpeditionsLayout />
 </BaseLayout>
