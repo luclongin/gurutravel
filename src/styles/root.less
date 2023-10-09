@@ -58,7 +58,8 @@ h4,
 h5,
 p,
 button,
-span, ul {
+span,
+ul {
 	margin: 0;
 	padding: 0;
 }
@@ -360,12 +361,16 @@ button {
 		/* prevents padding from adding to the width */
 		box-sizing: border-box;
 		border-radius: (12/16rem);
-		box-shadow: var(--buttonBoxShadow);//0px (8/16rem) (8/16rem) 0px rgba(0, 0, 0, 0.25);
+		box-shadow: var(
+			--buttonBoxShadow
+		); //0px (8/16rem) (8/16rem) 0px rgba(0, 0, 0, 0.25);
 
 		&:hover {
 			cursor: pointer;
 			background-color: var(--primaryDark);
-			box-shadow: var(--buttonBoxShadowHover); //0px (4/16rem) (4/16rem) 0px rgba(0, 0, 0, 0.25);
+			box-shadow: var(
+				--buttonBoxShadowHover
+			); //0px (4/16rem) (4/16rem) 0px rgba(0, 0, 0, 0.25);
 		}
 	}
 }
@@ -402,6 +407,7 @@ button {
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+	
 	.show-on-tablet {
 		display: none !important;
 	}

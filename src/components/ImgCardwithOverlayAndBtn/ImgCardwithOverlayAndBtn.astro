@@ -1,5 +1,5 @@
 ---
-const { title, cardClass, imgSrc } = Astro.props;
+const { title, cardClass, imgSrc, url } = Astro.props;
 import "./ImgCardwithOverlayAndBtn.less";
 ---
 <!-- Flexible image with black overlay at the bottom for white text -->
@@ -19,6 +19,6 @@ import "./ImgCardwithOverlayAndBtn.less";
 	</picture>
 	<div class="img-card-overlay-text">
 		<p>{title}</p>
-		<a href="#enquire-btn" class="solid-btn overlay-btn">Enquire Now</a>
+		<a href={url} class="solid-btn overlay-btn">Enquire Now</a>
 	</div>
 </div>

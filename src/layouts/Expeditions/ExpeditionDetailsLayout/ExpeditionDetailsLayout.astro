@@ -2,13 +2,13 @@
 import "./ExpeditionDetailsLayout.less";
 import BaseLayout from "../../BaseLayout.astro";
 import HeroLayout from "../../HeroLayout/HeroLayout.astro";
-import SelectDropDown from "../../../components/SelectDropDown/SelectDropDown.astro";
 import ExpeditionDetailsSideBar from "../../../components/ExpeditionDetailsSideBar/ExpeditionDetailsSideBar.astro";
 import ExpeditionDetailsOverview from "./ExpeditionDetailsOverview/ExpeditionDetailsOverview.astro";
 import ExpeditionDetailsIncluded from "./ExpeditionDetailsIncluded/ExpeditionDetailsIncluded.astro";
 import ExpeditionDetailsItinerary from "./ExpeditionDetailsItinerary/ExpeditionDetailsItinerary.astro";
 import ExpeditionDetailsCost from "./ExpeditionDetailsCost/ExpeditionDetailsCost.astro";
 import ExpeditionDetailsGallery from "./ExpeditionDetailsGallery/ExpeditionDetailsGallery.astro";
+import ExpedImg from "../../../assets/images/austin-ban-juHayWuaaoQ-unsplash.jpg";
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout>
@@ -16,7 +16,8 @@ const { frontmatter } = Astro.props;
 		heroSection="huayhuash-circuit"
 		heroTitle1="Huayhuash Circuit"
 		heroTitle2="Trek"
-		heroImg="homepage"
+		heroImg={ExpedImg}
+		heroImgMobile={ExpedImg}
 	/>
 	<section id="exped-details-container">
 		<ExpeditionDetailsSideBar />
