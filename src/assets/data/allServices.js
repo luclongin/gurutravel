@@ -6,6 +6,7 @@ export const allClimbs = [
 		difficulty: "advanced",
 		altitude: "5,830M",
 		duration: "4-6 days",
+		imgSrc: "../../assets/images/climb-1.jpg",
 		description:
 			"Embark on a technical climb, rewarded with awe-inspiring vistas of the surrounding peaks.",
 	},
@@ -16,6 +17,7 @@ export const allClimbs = [
 		difficulty: "advanced",
 		altitude: "5,947M",
 		duration: "12-14 days",
+		imgSrc: "../../../assets/images/climb-2.jpg",
 		description:
 			"One of the world's most beautiful peaks, with its challenging ascent and rewarding views.",
 	},
@@ -26,6 +28,7 @@ export const allClimbs = [
 		difficulty: "moderate",
 		altitude: "5,732M",
 		duration: "3-4 days",
+		imgSrc: "../../../assets/images/climb-3.jpg",
 		description:
 			"Introduction to high-altitude climbing and stunning vistas of the Cordillera Blanca.",
 	},
@@ -36,6 +39,7 @@ export const allClimbs = [
 		difficulty: "advanced",
 		altitude: "6,768M",
 		duration: "7-10 days",
+		imgSrc: "../../../assets/images/climb-4.jpg",
 		description:
 			"The tallest peak in Peru, offering a significant mountaineering experience.",
 	},
@@ -46,6 +50,7 @@ export const allClimbs = [
 		difficulty: "advanced",
 		altitude: "5,830M",
 		duration: "4-6 days",
+		imgSrc: "../../../assets/images/climb-1.jpg",
 		description:
 			"Embark on a technical climb, rewarded with awe-inspiring vistas of the surrounding peaks.",
 	},
@@ -56,6 +61,7 @@ export const allClimbs = [
 		difficulty: "advanced",
 		altitude: "5,947M",
 		duration: "12-14 days",
+		imgSrc: "../../../assets/images/climb-2.jpg",
 		description:
 			"One of the world's most beautiful peaks, with its challenging ascent and rewarding views.",
 	},
@@ -75,7 +81,7 @@ export const extraClimbs = [
 	{
 		id: 8,
 		type: "climb",
-		name: "huascaran mountain",
+		name: "huascaran mountain classic",
 		difficulty: "advanced",
 		altitude: "6,768M",
 		duration: "7-10 days",
@@ -85,7 +91,7 @@ export const extraClimbs = [
 	{
 		id: 9,
 		type: "climb",
-		name: "huascaran mountain",
+		name: "huascaran mountain french",
 		difficulty: "advanced",
 		altitude: "6,768M",
 		duration: "7-10 days",
@@ -185,7 +191,7 @@ export const extraTreks = [
 	{
 		id: 9,
 		type: "trek",
-		name: "santa cruz trek",
+		name: "Huayhuash Circuit Trek II",
 		difficulty: "moderate",
 		altitude: "5,000M",
 		duration: "12-14 days",
