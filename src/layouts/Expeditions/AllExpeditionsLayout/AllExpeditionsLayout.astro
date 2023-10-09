@@ -4,7 +4,7 @@ import ExpeditionCard from "../../../components/ExpeditionCard/ExpeditionCard.as
 import SeeAllButton from "../../../components/SeeAllButton/SeeAllButton.astro";
 import SeeLessButton from "../../../components/SeeLessButton/SeeLessButton.astro";
 
-import { allClimbs, extraClimbs, allTreks, extraTreks } from "../,,/../../../assets/data/allServices.js";
+import { allClimbs, extraClimbs, allTreks, extraTreks } from "../../../assets/data/allServices.js";
 
 import climb1Img from "../../../assets/images/climb-1.jpg";
 import climb2Img from "../../../assets/images/climb-2.jpg";
@@ -60,6 +60,7 @@ const trekImgDict = {
                         description={climb.description}
                         mobileImg={climbImgDict[climb.id].mobile.src}
                         defaultImg={climbImgDict[climb.id].default.src}
+                        url={climb.url}
                     />
                 )
             }
@@ -78,6 +79,7 @@ const trekImgDict = {
                             mobileImg={climbImgDict[climb.id].mobile.src}
                             defaultImg={climbImgDict[climb.id].default.src}
                             hidden={false}
+                            url={climb.url}
                         />
                     )
                 }
@@ -114,18 +116,19 @@ const trekImgDict = {
             <SeeAllButton seeAllText="See All Treks & Hikes" type="treks"/>
             <div id="extra-treks-container" class="all-expetitions-container">
                 {
-                    extraTreks.map((climb) => 
+                    extraTreks.map((trek) => 
                         <ExpeditionCard 
-                            id={climb.id} 
-                            type={climb.type}
-                            name={climb.name}
-                            difficulty={climb.difficulty}
-                            altitude={climb.altitude}
-                            duration={climb.duration}
-                            description={climb.description}
-                            mobileImg={climbImgDict[climb.id].mobile.src}
-                            defaultImg={climbImgDict[climb.id].default.src}
+                            id={trek.id} 
+                            type={trek.type}
+                            name={trek.name}
+                            difficulty={trek.difficulty}
+                            altitude={trek.altitude}
+                            duration={trek.duration}
+                            description={trek.description}
+                            mobileImg={trekImgDict[trek.id].mobile.src}
+                            defaultImg={trekImgDict[trek.id].default.src}
                             hidden={false}
+                            url={trek.url}
                         />
                     )
                 }

@@ -6,7 +6,7 @@ export const allClimbs = [
 		difficulty: "advanced",
 		altitude: "5,830M",
 		duration: "4-6 days",
-		imgSrc: "../../assets/images/climb-1.jpg",
+		url: "huayhuash-circuit",
 		description:
 			"Embark on a technical climb, rewarded with awe-inspiring vistas of the surrounding peaks.",
 	},
@@ -17,7 +17,7 @@ export const allClimbs = [
 		difficulty: "advanced",
 		altitude: "5,947M",
 		duration: "12-14 days",
-		imgSrc: "../../../assets/images/climb-2.jpg",
+		url: "huayhuash-circuit",
 		description:
 			"One of the world's most beautiful peaks, with its challenging ascent and rewarding views.",
 	},
@@ -28,7 +28,7 @@ export const allClimbs = [
 		difficulty: "moderate",
 		altitude: "5,732M",
 		duration: "3-4 days",
-		imgSrc: "../../../assets/images/climb-3.jpg",
+		url: "huayhuash-circuit",
 		description:
 			"Introduction to high-altitude climbing and stunning vistas of the Cordillera Blanca.",
 	},
@@ -39,7 +39,7 @@ export const allClimbs = [
 		difficulty: "advanced",
 		altitude: "6,768M",
 		duration: "7-10 days",
-		imgSrc: "../../../assets/images/climb-4.jpg",
+		url: "huayhuash-circuit",
 		description:
 			"The tallest peak in Peru, offering a significant mountaineering experience.",
 	},
@@ -50,7 +50,7 @@ export const allClimbs = [
 		difficulty: "advanced",
 		altitude: "5,830M",
 		duration: "4-6 days",
-		imgSrc: "../../../assets/images/climb-1.jpg",
+		url: "huayhuash-circuit",
 		description:
 			"Embark on a technical climb, rewarded with awe-inspiring vistas of the surrounding peaks.",
 	},
@@ -61,7 +61,7 @@ export const allClimbs = [
 		difficulty: "advanced",
 		altitude: "5,947M",
 		duration: "12-14 days",
-		imgSrc: "../../../assets/images/climb-2.jpg",
+		url: "huayhuash-circuit",
 		description:
 			"One of the world's most beautiful peaks, with its challenging ascent and rewarding views.",
 	},
@@ -74,6 +74,7 @@ export const extraClimbs = [
 		name: "pisco mountain",
 		difficulty: "moderate",
 		altitude: "5,732M",
+		url: "huayhuash-circuit",
 		duration: "3-4 days",
 		description:
 			"Introduction to high-altitude climbing and stunning vistas of the Cordillera Blanca.",
@@ -85,6 +86,7 @@ export const extraClimbs = [
 		difficulty: "advanced",
 		altitude: "6,768M",
 		duration: "7-10 days",
+		url: "huayhuash-circuit",
 		description:
 			"The tallest peak in Peru, offering a significant mountaineering experience.",
 	},
@@ -95,6 +97,7 @@ export const extraClimbs = [
 		difficulty: "advanced",
 		altitude: "6,768M",
 		duration: "7-10 days",
+		url: "huayhuash-circuit",
 		description:
 			"The tallest peak in Peru, offering a significant mountaineering experience.",
 	},
@@ -109,6 +112,7 @@ export const allTreks = [
 		difficulty: "beginner",
 		altitude: "4,600M",
 		duration: "1 day",
+		url: "huayhuash-circuit",
 		description:
 			"A short but rewarding hike, a stunning turquoise glacial lake surrounded by towering peaks.",
 	},
@@ -130,6 +134,7 @@ export const allTreks = [
 		difficulty: "beginner",
 		altitude: "5,000M",
 		duration: "1 day",
+		url: "huayhuash-circuit",
 		description:
 			"A short but fascinating trek where you can witness the effects of glacial retreat.",
 	},
@@ -140,6 +145,7 @@ export const allTreks = [
 		difficulty: "moderate",
 		altitude: "5,000M",
 		duration: "12-14 days",
+		url: "huayhuash-circuit",
 		description:
 			"Experience the beauty of Cordillera Blanca. Pristine valleys, glacial lakes, and towering peaks.",
 	},
@@ -149,6 +155,7 @@ export const allTreks = [
 		name: "laguna 69 trek",
 		difficulty: "beginner",
 		altitude: "4,600M",
+		url: "huayhuash-circuit",
 		duration: "1 day",
 		description:
 			"A short but rewarding hike, a stunning turquoise glacial lake surrounded by towering peaks.",
@@ -160,7 +167,7 @@ export const allTreks = [
 		difficulty: "advanced",
 		altitude: "5,000M",
 		duration: "10-12 days",
-		url: "/huayhuash-circuit",
+		url: "huayhuash-circuit",
 		description:
 			"Embark on an epic journey through the remote mountain range, known for its beauty and high passes.",
 	},
@@ -174,6 +181,7 @@ export const extraTreks = [
 		name: "pastoruri glacier trek",
 		difficulty: "beginner",
 		altitude: "5,000M",
+		url: "huayhuash-circuit",
 		duration: "1 day",
 		description:
 			"A short but fascinating trek where you can witness the effects of glacial retreat.",
@@ -184,6 +192,7 @@ export const extraTreks = [
 		name: "santa cruz trek",
 		difficulty: "moderate",
 		altitude: "5,000M",
+		url: "huayhuash-circuit",
 		duration: "12-14 days",
 		description:
 			"Experience the beauty of Cordillera Blanca. Pristine valleys, glacial lakes, and towering peaks.",
@@ -194,6 +203,7 @@ export const extraTreks = [
 		name: "Huayhuash Circuit Trek II",
 		difficulty: "moderate",
 		altitude: "5,000M",
+		url: "huayhuash-circuit",
 		duration: "12-14 days",
 		description:
 			"Experience the beauty of Cordillera Blanca. Pristine valleys, glacial lakes, and towering peaks.",
