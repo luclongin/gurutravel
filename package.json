@@ -14,6 +14,7 @@
     "@types/react": "^18.2.22",
     "@types/react-dom": "^18.2.7",
     "astro": "^3.0.13",
+    "astro-i18next": "^1.0.0-beta.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-photoswipe-gallery": "^2.2.7",
