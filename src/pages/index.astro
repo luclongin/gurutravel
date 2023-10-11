@@ -1,4 +1,5 @@
 ---
+import { changeLanguage } from "i18next";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroLayout from "../layouts/HeroLayout/HeroLayout.astro";
 import HomeAboutLayout from "../layouts/Homepage/HomeAboutLayout/HomeAboutLayout.astro";
@@ -7,6 +8,8 @@ import HomeReviewsLayout from "../layouts/Homepage/HomeReviewsLayout/HomeReviews
 import HomeGalleryLayout from "../layouts/Homepage/HomeGalleryLayout/HomeGalleryLayout.astro";
 import HomepageImg from "../assets/images/hero/sylvain-mauroux-OIuzDRYA3cw-unsplash.jpg";
 import HomepageImgMobile from "../assets/images/hero/sylvain-mauroux-OIuzDRYA3cw-unsplash-m.jpg";
+
+changeLanguage("en");
 ---
 <BaseLayout>
 	<HeroLayout
