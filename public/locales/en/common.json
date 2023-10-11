@@ -2,7 +2,8 @@
     "common": {
 		"about": "about",
 		"team": "team",
-		"our story": "our story",
+		"our-story": "our story",
+		"our-office": "our office",
 		"gallery": "gallery",
 		"expeditions": "expeditions",
 		"popular-climbs": "popular climbs",
@@ -16,6 +17,6 @@
 		"sunday": "sunday",
 		"phone": "phone",
 		"email": "email",
-        "home": "home"
+		"home": "home"
 	}
 }

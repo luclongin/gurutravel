@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroLayout from "../layouts/HeroLayout/HeroLayout.astro";
 import HomeAboutLayout from "../layouts/Homepage/HomeAboutLayout/HomeAboutLayout.astro";
@@ -14,8 +14,8 @@ changeLanguage("en");
 <BaseLayout>
 	<HeroLayout
 		heroSection="homepage"
-		heroTitle1="Discover Peru"
-		heroTitle2="in a whole new way"
+		heroTitle1={t("homepage:homepage.hero-title-1")}
+		heroTitle2={t("homepage:homepage.hero-title-2")}
 		heroImg={HomepageImg}
 		heroImgMobile={HomepageImgMobile}
 	/>

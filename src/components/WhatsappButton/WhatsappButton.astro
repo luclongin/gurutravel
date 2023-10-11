@@ -2,7 +2,7 @@
 import "./WhatsappButton.less";
 import whatsappImg from '../../assets/svg/whatsapp.png';
 import { Image } from "astro:assets";
-
+import { t } from "i18next"; 
 ---
 
 <a href="/" class="solid-btn whatsapp-btn">
@@ -12,5 +12,5 @@ import { Image } from "astro:assets";
         height="24"
         width="24"
     />
-    Chat on Whatsapp
+    {t("footer:footer.enquire.cta-btn-text")}
 </a>

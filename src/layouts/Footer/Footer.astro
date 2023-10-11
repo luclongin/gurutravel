@@ -1,5 +1,6 @@
 ---
 import './Footer.less';
+import { t } from "i18next";
 import { Image } from "astro:assets";
 import mailImg from "../../assets/svg/email.png";
 import Logo from "../../assets/images/gurutravel_logo.png";
@@ -14,9 +15,7 @@ import IconAndLabel from '../../components/IconAndLabel/IconAndLabel.astro';
             <a aria-label="go back to home" class="logo" href="">
                 <Image src={Logo} class="logo-img" alt="Guru Travel Logo" width="240" height="32"/>
             </a>
-            <p class="text">
-                Your Mountain awaits.<br>Huaraz's leading mountain adventures.
-            </p>
+            <p class="text" set:html={t("footer:footer.bottom-nav.text")} />
             <IconAndLabel 
                 value="contact@gurutravel.com"
                 imgSrc={mailImg}   
@@ -26,41 +25,41 @@ import IconAndLabel from '../../components/IconAndLabel/IconAndLabel.astro';
         <!-- Links -->
         <ul class="footer-nav">
             <li class="footer-nav-li">
-                <span class="footer-nav-header">About</span>
+                <span class="footer-nav-header">{t("common.about")}</span>
             </li>
             <li class="footer-nav-li">
-                <a class="footer-nav-link" href="/about">Our Story</a>
+                <a class="footer-nav-link" href="/about">{t("common.our-story")}</a>
             </li>
             <li class="footer-nav-li">
-                <a class="footer-nav-link" href="/about">Team</a>
+                <a class="footer-nav-link" href="/about">{t("common.team")}</a>
             </li>
             <li class="footer-nav-li">
-                <a class="footer-nav-link" href="/gallery">Gallery</a>
-            </li>
-        </ul>
-        <ul class="footer-nav">
-            <li class="footer-nav-li">
-                <span class="footer-nav-header">Expeditions</span>
-            </li>
-            <li class="footer-nav-li">
-                <a class="footer-nav-link" href="/expeditions">Popular Climbs</a>
-            </li>
-            <li class="footer-nav-li">
-                <a class="footer-nav-link" href="/expeditions">Popular Treks</a>
-            </li>
-            <li class="footer-nav-li">
-                <a class="footer-nav-link" href="/expeditions">All Climbs and Treks</a>
+                <a class="footer-nav-link" href="/gallery">{t("common.gallery")}</a>
             </li>
         </ul>
         <ul class="footer-nav">
             <li class="footer-nav-li">
-                <span class="footer-nav-header">Enquire</span>
+                <span class="footer-nav-header">{t("common.expeditions")}</span>
             </li>
             <li class="footer-nav-li">
-                <a class="footer-nav-link" href="/about/#enquire">Contact information</a>
+                <a class="footer-nav-link" href="/expeditions">{t("common.popular-climbs")}</a>
             </li>
             <li class="footer-nav-li">
-                <a class="footer-nav-link" href="/about/#enquire">Our office</a>
+                <a class="footer-nav-link" href="/expeditions">{t("common.popular-treks")}</a>
+            </li>
+            <li class="footer-nav-li">
+                <a class="footer-nav-link" href="/expeditions">{t("common.all-climbs-and-treks")}</a>
+            </li>
+        </ul>
+        <ul class="footer-nav">
+            <li class="footer-nav-li">
+                <span class="footer-nav-header">{t("common.enquire")}</span>
+            </li>
+            <li class="footer-nav-li">
+                <a class="footer-nav-link" href="/about/#enquire">{t("common.contact-information")}</a>
+            </li>
+            <li class="footer-nav-li">
+                <a class="footer-nav-link" href="/about/#enquire">{t("common.our-office")}</a>
             </li>
         </ul>
     </div>

@@ -1,9 +1,13 @@
 {
 	"footer": {
+		"bottom-nav": {
+			"text": "Tu montaña te espera.<br/>Las principales aventuras de montaña en Huaraz."
+		},
 		"enquire": {
 			"topper": "Consultar",
 			"title": "Pongámonos en contacto",
-			"cta-btn-text": "Chatear en Whatsapp"
+			"cta-btn-text": "Chatear en Whatsapp",
+			"ready-text": "¿Listo para una aventura?"
 		}
 	}
 }

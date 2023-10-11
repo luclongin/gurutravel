@@ -3,7 +3,7 @@ import "./Navigation.less";
 import { Image } from "astro:assets";
 import Logo from "../../assets/images/gurutravel_logo.png";
 import SpanishFlag from "../../assets/svg/icons8-españa-48.png";
-
+import { t } from "i18next";
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
 ---
@@ -63,7 +63,7 @@ const currentPath = pathname.slice(1); // remove the first "/"
 							href="/"
 							class:list={["nav-li-link", {"nav-li-link-selected": currentPath===""}]}
 						>
-							Home
+							{t("common.home")}
 						</a>
 					</li>
 					<li class="nav-li nav-padded-li">
@@ -71,14 +71,14 @@ const currentPath = pathname.slice(1); // remove the first "/"
 							id="nav-team-link" 
 							href="/about" 
 							class:list={["nav-li-link", {"nav-li-link-selected": currentPath.includes("about")}]}
-						>Team</a>
+						>{t("common.team")}</a>
 					</li>
 					<li class="nav-li nav-padded-li">
 						<a
 							id="nav-expeditions-link"
 							href="/expeditions"
 							class:list={["nav-li-link", {"nav-li-link-selected": currentPath.includes("expeditions")}]}
-							>Expeditions</a
+							>{t("common.expeditions")}</a
 						>
 					</li>
 					<li class="nav-li">
@@ -86,7 +86,7 @@ const currentPath = pathname.slice(1); // remove the first "/"
 							id="nav-gallery-link" 
 							href="/gallery" 							
 							class:list={["nav-li-link", {"nav-li-link-selected": currentPath.includes("gallery")}]}
-							>Gallery</a
+							>{t("common.gallery")} </a
 						>
 					</li>
 					<li class="nav-li hide-mobile">
@@ -100,12 +100,12 @@ const currentPath = pathname.slice(1); // remove the first "/"
 					</li>
 					<li class="nav-li extra-enquire-link">
 						<a id="nav-gallery-link" href="/about/#enquire" class="nav-li-link"
-							>Enquire Now ></a
+							>{t("common.enquire")}  ></a
 						>
 					</li>
 				</ul>
 			</div>
-			<a href="/about/#enquire" class="solid-btn nav-btn">Enquire</a>
+			<a href="/about/#enquire" class="solid-btn nav-btn">{t("common.enquire")} </a>
 		</nav>
 	</div>
 </header>

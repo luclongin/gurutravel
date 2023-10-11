@@ -1,9 +1,13 @@
 {
 	"footer": {
+        "bottom-nav": {
+            "text": "Your Mountain awaits.<br/>Huaraz's leading mountain adventures."
+        },
         "enquire": {
             "topper": "Enquire",
             "title": "Let's Get in Touch",
-            "cta-btn-text": "Chat on Whatsapp"
+            "cta-btn-text": "Chat on Whatsapp",
+            "ready-text": "Ready for an adventure?"
         }
     }
 }
