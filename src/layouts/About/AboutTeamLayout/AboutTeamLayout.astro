@@ -1,6 +1,7 @@
 ---
 import "./AboutTeamLayout.less";
 import { Image } from "astro:assets";
+import { t } from "i18next";
 import guide1 from "../../../assets/images/ali-kazal-mpPfqvh04Fc-unsplash.jpg";
 import guide1Mobile from "../../../assets/images/ali-kazal-mpPfqvh04Fc-unsplash-m.jpg";
 import guide2 from "../../../assets/images/elizeu-dias-2EGNqazbAMk-unsplash.jpg";
@@ -10,15 +11,14 @@ import guide4 from "../../../assets/images/jeffrey-keenan-W-hoDkGRPes-unsplash.j
 import guide4Mobile from "../../../assets/images/jeffrey-keenan-W-hoDkGRPes-unsplash.jpg";
 import guide5 from "../../../assets/images/irene-strong-v2aKnjMbP_k-unsplash.jpg";
 import guide5Mobile from "../../../assets/images/irene-strong-v2aKnjMbP_k-unsplash-m.jpg";
-import plusIcon from "../../../assets/svg/icons8-plus-60.png";
 import chevronDown from "../../../assets/svg/icons8-flecha-ampliar-64.png";
 ---
 <section id="about-team-section">
     <div class="container">
         <div class="content">
-            <span class="topper">The Team</span>
+            <span class="topper">{t("about:about.guides-section.topper")}</span>
 			<h2 class="section-title title about-team-title">
-				Meet your guides
+				{t("about:about.guides-section.title")}
 			</h2>
         </div>
         <div class="wrap">
@@ -49,12 +49,12 @@ import chevronDown from "../../../assets/svg/icons8-flecha-ampliar-64.png";
                         </picture>
                     </label>
                     <div class="guide-collapsible">
-                        <p class="subtitle guide-collapsible-guide-name bold">Javier Huam&aacute;n</p>
-                        <p class="subtitle text">Certified mountain guide</p>
-                        <p class="text">15 years of experience introducing clients to the magic of the Andes. </p>
+                        <p class="subtitle guide-collapsible-guide-name bold">{t("about:about.guides-section.guides.guide-1.name")}</p>
+                        <p class="subtitle text">{t("about:about.guides-section.guides.guide-1.job")}</p>
+                        <p class="text">{t("about:about.guides-section.guides.guide-1.description")}</p>
                         <div class="guide-collapsible-fun-fact">
-                            <p class="subtitle">Fun Fact</p>
-                            <p class="text">Can spot and name all the wildlife found on your adventure.</p>
+                            <p class="subtitle">{t("common.fun-fact")}</p>
+                            <p class="text">{t("about:about.guides-section.guides.guide-1.fun-fact")}</p>
                         </div>
                     </div>
                 </div>
@@ -84,12 +84,12 @@ import chevronDown from "../../../assets/svg/icons8-flecha-ampliar-64.png";
                         </picture>
                     </label>
                     <div class="guide-collapsible">
-                        <p class="subtitle guide-collapsible-guide-name bold">Javier Huam&aacute;n</p>
-                        <p class="subtitle text">Certified mountain guide</p>
-                        <p class="text">15 years of experience introducing clients to the magic of the Andes. </p>
+                        <p class="subtitle guide-collapsible-guide-name bold">{t("about:about.guides-section.guides.guide-1.name")}</p>
+                        <p class="subtitle text">{t("about:about.guides-section.guides.guide-1.job")}</p>
+                        <p class="text">{t("about:about.guides-section.guides.guide-1.description")}</p>
                         <div class="guide-collapsible-fun-fact">
-                            <p class="subtitle">Fun Fact</p>
-                            <p class="text">Can spot and name all the wildlife found on your adventure.</p>
+                            <p class="subtitle">{t("common.fun-fact")}</p>
+                            <p class="text">{t("about:about.guides-section.guides.guide-1.fun-fact")}</p>
                         </div>
                     </div>
                 </div>
@@ -119,12 +119,12 @@ import chevronDown from "../../../assets/svg/icons8-flecha-ampliar-64.png";
                         </picture>
                     </label>
                     <div class="guide-collapsible">
-                        <p class="subtitle guide-collapsible-guide-name bold">Javier Huam&aacute;n</p>
-                        <p class="subtitle text">Certified mountain guide</p>
-                        <p class="text">15 years of experience introducing clients to the magic of the Andes. </p>
+                        <p class="subtitle guide-collapsible-guide-name bold">{t("about:about.guides-section.guides.guide-1.name")}</p>
+                        <p class="subtitle text">{t("about:about.guides-section.guides.guide-1.job")}</p>
+                        <p class="text">{t("about:about.guides-section.guides.guide-1.description")}</p>
                         <div class="guide-collapsible-fun-fact">
-                            <p class="subtitle">Fun Fact</p>
-                            <p class="text">Can spot and name all the wildlife found on your adventure.</p>
+                            <p class="subtitle">{t("common.fun-fact")}</p>
+                            <p class="text">{t("about:about.guides-section.guides.guide-1.fun-fact")}</p>
                         </div>
                     </div>
                 </div>
@@ -154,12 +154,12 @@ import chevronDown from "../../../assets/svg/icons8-flecha-ampliar-64.png";
                         </picture>
                     </label>
                     <div class="guide-collapsible">
-                        <p class="subtitle guide-collapsible-guide-name bold">Javier Huam&aacute;n</p>
-                        <p class="subtitle text">Certified mountain guide</p>
-                        <p class="text">15 years of experience introducing clients to the magic of the Andes. </p>
+                        <p class="subtitle guide-collapsible-guide-name bold">{t("about:about.guides-section.guides.guide-1.name")}</p>
+                        <p class="subtitle text">{t("about:about.guides-section.guides.guide-1.job")}</p>
+                        <p class="text">{t("about:about.guides-section.guides.guide-1.description")}</p>
                         <div class="guide-collapsible-fun-fact">
-                            <p class="subtitle">Fun Fact</p>
-                            <p class="text">Can spot and name all the wildlife found on your adventure.</p>
+                            <p class="subtitle">{t("common.fun-fact")}</p>
+                            <p class="text">{t("about:about.guides-section.guides.guide-1.fun-fact")}</p>
                         </div>
                     </div>
                 </div>
@@ -189,12 +189,12 @@ import chevronDown from "../../../assets/svg/icons8-flecha-ampliar-64.png";
                         </picture>
                     </label>
                     <div class="guide-collapsible">
-                        <p class="subtitle guide-collapsible-guide-name bold">Javier Huam&aacute;n</p>
-                        <p class="subtitle text">Certified mountain guide</p>
-                        <p class="text">15 years of experience introducing clients to the magic of the Andes. </p>
+                        <p class="subtitle guide-collapsible-guide-name bold">{t("about:about.guides-section.guides.guide-1.name")}</p>
+                        <p class="subtitle text">{t("about:about.guides-section.guides.guide-1.job")}</p>
+                        <p class="text">{t("about:about.guides-section.guides.guide-1.description")}</p>
                         <div class="guide-collapsible-fun-fact">
-                            <p class="subtitle">Fun Fact</p>
-                            <p class="text">Can spot and name all the wildlife found on your adventure.</p>
+                            <p class="subtitle">{t("common.fun-fact")}</p>
+                            <p class="text">{t("about:about.guides-section.guides.guide-1.fun-fact")}</p>
                         </div>
                     </div>
                 </div>

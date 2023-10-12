@@ -1,30 +1,22 @@
 ---
+import { t, changeLanguage } from "i18next";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroLayout from "../../layouts/HeroLayout/HeroLayout.astro";
-import HomeAboutLayout from "../../layouts/Homepage/HomeAboutLayout/HomeAboutLayout.astro";
-import HomeExpeditionsLayout from "../../layouts/Homepage/HomeExpeditionsLayout/HomeExpeditionsLayout.astro";
-import HomeReviewsLayout from "../../layouts/Homepage/HomeReviewsLayout/HomeReviewsLayout.astro";
-import HomeGalleryLayout from "../../layouts/Homepage/HomeGalleryLayout/HomeGalleryLayout.astro";
-import HomepageImg from "../../assets/images/hero/sylvain-mauroux-OIuzDRYA3cw-unsplash.jpg";
-import HomepageImgMobile from "../../assets/images/hero/sylvain-mauroux-OIuzDRYA3cw-unsplash-m.jpg";
-import i18next, { t, changeLanguage } from "i18next";
+import AboutDetails from "../../layouts/About/AboutDetailsLayout/AboutDetails.astro";
+import AboutTeamLayout from "../../layouts/About/AboutTeamLayout/AboutTeamLayout.astro";
+import AboutImg from "../../assets/images/hero/frantisek-duris-KgFSDHXFSrw-unsplash.jpg";
+import AboutImgMobile from "../../assets/images/hero/frantisek-duris-KgFSDHXFSrw-unsplash-m.jpg";
 
 changeLanguage("es");
 ---
-<BaseLayout i18nextLang={i18next.language}>
+<BaseLayout>
 	<HeroLayout
-		heroSection="homepage"
-		heroTitle1={t("homepage:homepage.hero-title-1")}
-		heroTitle2={t("homepage:homepage.hero-title-2")}
-		heroImg={HomepageImg}
-		heroImgMobile={HomepageImgMobile}
+		heroSection="about"
+		heroTitle1={t("about:about.hero-title-1")}
+		heroTitle2={t("about:about.hero-title-2")}
+		heroImg={AboutImg}
+		heroImgMobile={AboutImgMobile}
 	/>
-	<div class="background-overlay-diamond-right">
-		<HomeAboutLayout />
-		<HomeExpeditionsLayout />
-	</div>
-	<HomeReviewsLayout />
-	<div class="background-overlay-diamond-right-strong">
-		<HomeGalleryLayout />
-	</div>
+	<AboutDetails />
+	<AboutTeamLayout />
 </BaseLayout>

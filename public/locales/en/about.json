@@ -1,0 +1,27 @@
+{
+	"about": {
+		"hero-title-1": "Discover our story.",
+		"hero-title-2": "meet your guides.",
+		"about-section": {
+			"top-text-title": "who we are",
+			"bottom-text-title": "who we are",
+			"text-1": "Our extraordinary journey started right here amidst the towering Andean peaks, where a tight-knit group of friends, all hailing from these very mountains, harbored a shared aspiration.",
+			"text-2": "Living in the midst of breathtaking beauty, yet grappling with the challenges of poverty, we united with a common purpose. Fueled by a desire to uplift our families and provide for their well-being, we conceived Guru Travel in 2018.",
+			"text-3": "When you choose Guru Travel, you're not just booking a mountaineering tour. You're embarking on a journey of a lifetime with a team that is passionate about sharing the beauty and challenge of the Peruvian Andes.",
+			"text-4": "We are dedicated to providing safe, thrilling, and culturally immersive experiences that leave you with a profound connection to the mountains and the people who call them home.",
+			"cta-btn-text": "Learn More"
+		},
+		"guides-section": {
+			"topper": "the team",
+			"title": "meet your guides",
+			"guides": {
+				"guide-1": {
+					"name": "Javier Huam&aacute;n",
+					"job": "Certified mountain guide",
+					"description": "15 years of experience introducing clients to the magic of the Andes.",
+					"fun-fact": "Can spot and name all the wildlife found on your adventure."
+				}
+			}
+		}
+	}
+}

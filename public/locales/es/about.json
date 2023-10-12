@@ -1,0 +1,27 @@
+{
+	"about": {
+		"hero-title-1": "Descubre nuestra historia.",
+		"hero-title-2": "conoce a tus guías.",
+		"about-section": {
+			"top-text-title": "quiénes somos",
+			"bottom-text-title": "quiénes somos",
+			"text-1": "Nuestro extraordinario viaje comenzó aquí, en medio de las imponentes cumbres andinas, donde un grupo de amigos unidos, todos provenientes de estas mismas montañas, albergaban una aspiración compartida.",
+			"text-2": "Viviendo en medio de una belleza impresionante, pero lidiando con los desafíos de la pobreza, nos unimos con un propósito común. Impulsados por el deseo de mejorar nuestras familias y velar por su bienestar, concebimos Guru Travel en 2018.",
+			"text-3": "Cuando eliges Guru Travel, no estás simplemente reservando un tour de montañismo. Te embarcas en un viaje de toda la vida con un equipo apasionado por compartir la belleza y el desafío de los Andes peruanos.",
+			"text-4": "Estamos dedicados a proporcionar experiencias seguras, emocionantes y culturalmente inmersivas que te dejen una profunda conexión con las montañas y las personas que las llaman hogar.",
+			"cta-btn-text": "Más información"
+		},
+		"guides-section": {
+			"topper": "el equipo",
+			"title": "conoce a tus guías",
+			"guides": {
+				"guide-1": {
+					"name": "Javier Huamán",
+					"job": "Guía de montaña certificado",
+					"description": "15 años de experiencia presentando a los clientes la magia de los Andes.",
+					"fun-fact": "Puede identificar y nombrar toda la fauna que se encuentra en tu aventura."
+				}
+			}
+		}
+	}
+}
