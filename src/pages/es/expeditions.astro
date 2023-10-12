@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroLayout from "../../layouts/HeroLayout/HeroLayout.astro";
 import AllExpeditionsLayout from "../../layouts/Expeditions/AllExpeditionsLayout/AllExpeditionsLayout.astro";
@@ -11,8 +11,8 @@ changeLanguage("es");
 <BaseLayout>
 	<HeroLayout
 		heroSection="expeditions"
-		heroTitle1="All climbs"
-		heroTitle2="& treks"
+		heroTitle1={t("expeditions:expeditions.hero-title-1")}
+		heroTitle2={t("expeditions:expeditions.hero-title-2")}
 		heroImg={ExpedImg}
 		heroImgMobile={ExpedImgMobile}
 	/>

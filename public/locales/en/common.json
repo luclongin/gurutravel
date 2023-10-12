@@ -18,6 +18,8 @@
 		"phone": "phone",
 		"email": "email",
 		"home": "home",
-		"fun-fact": "fun fact"
+		"fun-fact": "fun fact",
+		"see-less": "see less",
+		"see-more": "see more"
 	}
 }

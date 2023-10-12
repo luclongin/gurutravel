@@ -98,8 +98,7 @@ export const extraClimbs = [
 		altitude: "6,768M",
 		duration: "7-10 days",
 		url: "huayhuash-circuit",
-		description:
-			"The tallest peak in Peru, offering a significant mountaineering experience.",
+		description: "The tallest peak in Peru, offering a significant mountaineering experience.",
 	},
 ];
 

@@ -1,0 +1,200 @@
+{
+	"expeditions": {
+		"hero-title-1": "Todas las escaladas",
+		"hero-title-2": "y caminatas",
+		"all-climbs": {
+			"topper": "todas las escaladas y expediciones",
+			"title": "escaladas épicas. vistas épicas.",
+			"see-all-text": "Ver todas las escaladas y expediciones",
+			"climb-1": {
+				"id": 1,
+				"type": "escalada",
+				"name": "montaña tullparaju",
+				"difficulty": "avanzada",
+				"altitude": "5,830M",
+				"duration": "4-6 días",
+				"url": "huayhuash-circuit",
+				"description": "Embárcate en una escalada técnica, recompensada con impresionantes vistas de los picos circundantes."
+			},
+			"climb-2": {
+				"id": 2,
+				"type": "escalada",
+				"name": "montaña alpamayo",
+				"difficulty": "avanzada",
+				"altitude": "5,947M",
+				"duration": "12-14 días",
+				"url": "huayhuash-circuit",
+				"description": "Una de las montañas más hermosas del mundo, con su ascenso desafiante y vistas gratificantes."
+			},
+			"climb-3": {
+				"id": 3,
+				"type": "escalada",
+				"name": "montaña pisco",
+				"difficulty": "moderada",
+				"altitude": "5,732M",
+				"duration": "3-4 días",
+				"url": "huayhuash-circuit",
+				"description": "Introducción a la escalada a gran altitud y vistas impresionantes de la Cordillera Blanca."
+			},
+			"climb-4": {
+				"id": 4,
+				"type": "escalada",
+				"name": "montaña huascarán",
+				"difficulty": "avanzada",
+				"altitude": "6,768M",
+				"duration": "7-10 días",
+				"url": "huayhuash-circuit",
+				"description": "La montaña más alta de Perú, que ofrece una experiencia significativa de alpinismo."
+			},
+			"climb-5": {
+				"id": 5,
+				"type": "escalada",
+				"name": "montaña tullparaju",
+				"difficulty": "avanzada",
+				"altitude": "5,830M",
+				"duration": "4-6 días",
+				"url": "huayhuash-circuit",
+				"description": "Embárcate en una escalada técnica, recompensada con impresionantes vistas de los picos circundantes."
+			},
+			"climb-6": {
+				"id": 6,
+				"type": "escalada",
+				"name": "montaña alpamayo",
+				"difficulty": "avanzada",
+				"altitude": "5,947M",
+				"duration": "12-14 días",
+				"url": "huayhuash-circuit",
+				"description": "Una de las montañas más hermosas del mundo, con su ascenso desafiante y vistas gratificantes."
+			}
+		},
+		"extra-climbs": {
+			"climb-7": {
+				"id": 7,
+				"type": "escalada",
+				"name": "montaña pisco",
+				"difficulty": "moderada",
+				"altitude": "5,732M",
+				"url": "huayhuash-circuit",
+				"duration": "3-4 días",
+				"description": "Introducción a la escalada a gran altitud y vistas impresionantes de la Cordillera Blanca."
+			},
+			"climb-8": {
+				"id": 8,
+				"type": "escalada",
+				"name": "montaña huascaran clásica",
+				"difficulty": "avanzada",
+				"altitude": "6,768M",
+				"duration": "7-10 días",
+				"url": "huayhuash-circuit",
+				"description": "La montaña más alta de Perú, que ofrece una experiencia significativa de alpinismo."
+			},
+			"climb-9": {
+				"id": 9,
+				"type": "escalada",
+				"name": "montaña huascarán ruta francesa",
+				"difficulty": "avanzada",
+				"altitude": "6,768M",
+				"duration": "7-10 días",
+				"url": "huayhuash-circuit",
+				"description": "La montaña más alta de Perú, que ofrece una experiencia significativa de alpinismo."
+			}
+		},
+		"all-treks": {
+			"topper": "todas las caminatas y excursiones de un día",
+			"title": "Adéntrate en la Naturaleza.",
+			"see-all-text": "Ver todas las caminatas y excursiones",
+			"trek-1": {
+				"id": 1,
+				"type": "caminata",
+				"name": "Caminata a Laguna 69",
+				"difficulty": "principiante",
+				"altitude": "4,600M",
+				"duration": "1 día",
+				"url": "huayhuash-circuit",
+				"description": "Una corta pero gratificante caminata, una impresionante laguna glaciar rodeada de picos imponentes."
+			},
+			"trek-2": {
+				"id": 2,
+				"type": "caminata",
+				"name": "Caminata por el Circuito Huayhuash",
+				"difficulty": "avanzada",
+				"altitude": "5,000M",
+				"duration": "10-12 días",
+				"url": "huayhuash-circuit",
+				"description": "Embárcate en un viaje épico a través de la cordillera remota, conocida por su belleza y altos pasos."
+			},
+			"trek-3": {
+				"id": 3,
+				"type": "caminata",
+				"name": "Caminata al Glaciar Pastoruri",
+				"difficulty": "principiante",
+				"altitude": "5,000M",
+				"duration": "1 día",
+				"url": "huayhuash-circuit",
+				"description": "Una corta pero fascinante caminata donde podrás presenciar los efectos del retroceso glaciar."
+			},
+			"trek-4": {
+				"id": 4,
+				"type": "caminata",
+				"name": "Caminata de Santa Cruz",
+				"difficulty": "moderada",
+				"altitude": "5,000M",
+				"duration": "12-14 días",
+				"url": "huayhuash-circuit",
+				"description": "Experimenta la belleza de la Cordillera Blanca. Valles prístinos, lagunas glaciares y picos imponentes."
+			},
+			"trek-5": {
+				"id": 5,
+				"type": "caminata",
+				"name": "Caminata a Laguna 69",
+				"difficulty": "principiante",
+				"altitude": "4,600M",
+				"url": "huayhuash-circuit",
+				"duration": "1 día",
+				"description": "Una corta pero gratificante caminata, una impresionante laguna glaciar rodeada de picos imponentes."
+			},
+			"trek-6": {
+				"id": 6,
+				"type": "caminata",
+				"name": "Caminata por el Circuito Huayhuash",
+				"difficulty": "avanzada",
+				"altitude": "5,000M",
+				"duration": "10-12 días",
+				"url": "huayhuash-circuit",
+				"description": "Embárcate en un viaje épico a través de la cordillera remota, conocida por su belleza y altos pasos."
+			}
+		},
+		"extra-treks": {
+			"trek-7": {
+				"id": 7,
+				"type": "trek",
+				"name": "Trek de pastoruri glacier",
+				"difficulty": "beginner",
+				"altitude": "5,000M",
+				"url": "huayhuash-circuit",
+				"duration": "1 day",
+				"description": "Una breve pero fascinante caminata donde puedes presenciar los efectos de la retracción glacial."
+			},
+			"trek-8": {
+				"id": 8,
+				"type": "trek",
+				"name": "Trek de santa cruz",
+				"difficulty": "moderate",
+				"altitude": "5,000M",
+				"url": "huayhuash-circuit",
+				"duration": "12-14 days",
+				"description": "Experimenta la belleza de la Cordillera Blanca. Valles vírgenes, lagos glaciares y picos imponentes."
+			},
+			"trek-9": {
+				"id": 9,
+				"type": "trek",
+				"name": "Trek de Huayhuash Circuit II",
+				"difficulty": "moderate",
+				"altitude": "5,000M",
+				"url": "huayhuash-circuit",
+				"duration": "12-14 days",
+				"description": "Experimenta la belleza de la Cordillera Blanca. Valles vírgenes, lagos glaciares y picos imponentes."
+			}
+		}
+	}
+}

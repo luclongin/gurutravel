@@ -1,5 +1,6 @@
 ---
 import "./ExpeditionCard.less";
+import { t } from "i18next";
 import { Image } from "astro:assets";
 import triangle from "../../assets/svg/triangle.svg";
 import clock from "../../assets/svg/clock.svg";
@@ -11,7 +12,7 @@ expeditions/expeditions//URL-->
 <a href={`${url}`} class=`expedition-card ${hidden ? "hidden" : ""}`>
     <div class="expedition-img-container">
         <div class="expedition-card-hover">
-            <p class="card-hover-text">See More</p>
+            <p class="card-hover-text" set:html={t("common.see-more")} />
         </div>
         <div class="expedition-img-overlay"></div>
         <picture class="expedition-card-img">

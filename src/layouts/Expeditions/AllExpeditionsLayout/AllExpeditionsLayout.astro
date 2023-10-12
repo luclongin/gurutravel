@@ -3,9 +3,8 @@ import "./AllExpeditionsLayout.less";
 import ExpeditionCard from "../../../components/ExpeditionCard/ExpeditionCard.astro";
 import SeeAllButton from "../../../components/SeeAllButton/SeeAllButton.astro";
 import SeeLessButton from "../../../components/SeeLessButton/SeeLessButton.astro";
-
+import { t } from "i18next";
 import { allClimbs, extraClimbs, allTreks, extraTreks } from "../../../assets/data/allServices.js";
-
 import climb1Img from "../../../assets/images/climb-1.jpg";
 import climb2Img from "../../../assets/images/climb-2.jpg";
 import climb3Img from "../../../assets/images/climb-3.jpg";
@@ -22,7 +21,6 @@ const climbImgDict = {
 	8: {default: climb4Img, mobile: climb4Img},
 	9: {default: climb3Img, mobile: climb3Img}
 };
-
 import trek1Img from "../../../assets/images/trek-1.jpg";
 import trek2Img from "../../../assets/images/trek-2.jpg";
 import trek3Img from "../../../assets/images/trek-3.jpg";
@@ -43,48 +41,48 @@ const trekImgDict = {
     <div class="container">
         <div class="all-expetitions-container">
             <div class="content">
-                <span class="topper">all climbs & expeditions</span>
+                <span class="topper">{t("expeditions:expeditions.all-climbs.topper")}</span>
                 <h2 class="section-title title gallery-title">
-                    epic climbs. epic views.
+                    {t("expeditions:expeditions.all-climbs.title")}
                 </h2>
             </div>
             {
                 allClimbs.map((climb) => 
                     <ExpeditionCard 
                         id={climb.id} 
-                        type={climb.type}
-                        name={climb.name}
-                        difficulty={climb.difficulty}
-                        altitude={climb.altitude}
-                        duration={climb.duration}
-                        description={climb.description}
+                        type={t(`expeditions:expeditions.all-climbs.climb-${climb.id}.type`)}
+                        name={t(`expeditions:expeditions.all-climbs.climb-${climb.id}.name`)}
+                        difficulty={t(`expeditions:expeditions.all-climbs.climb-${climb.id}.difficulty`)}
+                        altitude={t(`expeditions:expeditions.all-climbs.climb-${climb.id}.altitude`)}
+                        duration={t(`expeditions:expeditions.all-climbs.climb-${climb.id}.duration`)}
+                        description={t(`expeditions:expeditions.all-climbs.climb-${climb.id}.description`)}
                         mobileImg={climbImgDict[climb.id].mobile.src}
                         defaultImg={climbImgDict[climb.id].default.src}
-                        url={climb.url}
+                        url={t(`expeditions:expeditions.all-climbs.climb-${climb.id}.url`)}
                     />
                 )
             }
-            <SeeAllButton seeAllText="See All climbs & expeditions" type="climbs"/>
+            <SeeAllButton seeAllText={t("expeditions:expeditions.all-climbs.see-all-text")} type="climbs"/>
             <div id="extra-climbs-container" class="all-expetitions-container">
                 {
                     extraClimbs.map((climb) => 
                         <ExpeditionCard 
                             id={climb.id} 
-                            type={climb.type}
-                            name={climb.name}
-                            difficulty={climb.difficulty}
-                            altitude={climb.altitude}
-                            duration={climb.duration}
-                            description={climb.description}
+                            type={t(`expeditions:expeditions.extra-climbs.climb-${climb.id}.type`)}
+                            name={t(`expeditions:expeditions.extra-climbs.climb-${climb.id}.name`)}
+                            difficulty={t(`expeditions:expeditions.extra-climbs.climb-${climb.id}.difficulty`)}
+                            altitude={t(`expeditions:expeditions.extra-climbs.climb-${climb.id}.altitude`)}
+                            duration={t(`expeditions:expeditions.extra-climbs.climb-${climb.id}.duration`)}
+                            description={t(`expeditions:expeditions.extra-climbs.climb-${climb.id}.description`)}
                             mobileImg={climbImgDict[climb.id].mobile.src}
                             defaultImg={climbImgDict[climb.id].default.src}
                             hidden={false}
-                            url={climb.url}
+                            url={t(`expeditions:expeditions.extra-climbs.climb-${climb.id}.url`)}
                         />
                     )
                 }
             </div>
-            <SeeLessButton seeLessText="See less" type="climbs"/>
+            <SeeLessButton seeLessText={t("common.see-less")} type="climbs"/>
         </div>
     </div>
 </section>
@@ -92,48 +90,49 @@ const trekImgDict = {
     <div class="container">
         <div class="all-expetitions-container">
             <div class="content trek-content">
-                <span class="topper">all treks & day hikes</span>
+                <span class="topper">{t("expeditions:expeditions.all-treks.topper")}</span>
                 <h2 class="section-title title gallery-title">
-                    Step into the Wild.
+                    {t("expeditions:expeditions.all-treks.title")}
                 </h2>
             </div>
             {
                 allTreks.map(trek => 
                     <ExpeditionCard 
-                        id={trek.id}
-                        type={trek.type} 
-                        name={trek.name}
-                        difficulty={trek.difficulty}
-                        altitude={trek.altitude}
-                        duration={trek.duration}
-                        description={trek.description}
-                        mobileImg={trekImgDict[trek.id].mobile.src}
-                        defaultImg={trekImgDict[trek.id].default.src}
-                        url={trek.url}
+                        id={trek.id} 
+                        type={t(`expeditions:expeditions.all-treks.trek-${trek.id}.type`)}
+                        name={t(`expeditions:expeditions.all-treks.trek-${trek.id}.name`)}
+                        difficulty={t(`expeditions:expeditions.all-treks.trek-${trek.id}.difficulty`)}
+                        altitude={t(`expeditions:expeditions.all-treks.trek-${trek.id}.altitude`)}
+                        duration={t(`expeditions:expeditions.all-treks.trek-${trek.id}.duration`)}
+                        description={t(`expeditions:expeditions.all-treks.trek-${trek.id}.description`)}
+                        mobileImg={climbImgDict[trek.id].mobile.src}
+                        defaultImg={climbImgDict[trek.id].default.src}
+                        url={t(`expeditions:expeditions.all-treks.trek-${trek.id}.url`)}
                     />
                 )
             }
-            <SeeAllButton seeAllText="See All Treks & Hikes" type="treks"/>
+            <SeeAllButton seeAllText={t("expeditions:expeditions.all-treks.see-all-text")} type="treks"/>
             <div id="extra-treks-container" class="all-expetitions-container">
                 {
                     extraTreks.map((trek) => 
                         <ExpeditionCard 
                             id={trek.id} 
-                            type={trek.type}
-                            name={trek.name}
-                            difficulty={trek.difficulty}
-                            altitude={trek.altitude}
-                            duration={trek.duration}
-                            description={trek.description}
-                            mobileImg={trekImgDict[trek.id].mobile.src}
-                            defaultImg={trekImgDict[trek.id].default.src}
+                            type={t(`expeditions:expeditions.extra-treks.trek-${trek.id}.type`)}
+                            name={t(`expeditions:expeditions.extra-treks.trek-${trek.id}.name`)}
+                            difficulty={t(`expeditions:expeditions.extra-treks.trek-${trek.id}.difficulty`)}
+                            altitude={t(`expeditions:expeditions.extra-treks.trek-${trek.id}.altitude`)}
+                            duration={t(`expeditions:expeditions.extra-treks.trek-${trek.id}.duration`)}
+                            description={t(`expeditions:expeditions.extra-treks.trek-${trek.id}.description`)}
+                            mobileImg={climbImgDict[trek.id].mobile.src}
+                            defaultImg={climbImgDict[trek.id].default.src}
+                            url={t(`expeditions:expeditions.extra-treks.trek-${trek.id}.url`)}
                             hidden={false}
                             url={trek.url}
                         />
                     )
                 }
             </div>
-            <SeeLessButton seeLessText="See less" type="treks"/>
+            <SeeLessButton seeLessText={t("common.see-less")} type="treks"/>
         </div>
     </div>
 </section>
