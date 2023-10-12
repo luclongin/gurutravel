@@ -59,7 +59,7 @@ const trekImgDict = {
                         description={t(`expeditions:expeditions.all-climbs.climb-${climb.id}.description`)}
                         mobileImg={climbImgDict[climb.id].mobile.src}
                         defaultImg={climbImgDict[climb.id].default.src}
-                        url={localizePath(t(`expeditions:expeditions.all-climbs.climb-${climb.id}.url`))}
+                        url={localizePath("expeditions/" + t(`expeditions:expeditions.all-climbs.climb-${climb.id}.url`))}
                     />
                 )
             }
@@ -78,7 +78,7 @@ const trekImgDict = {
                             mobileImg={climbImgDict[climb.id].mobile.src}
                             defaultImg={climbImgDict[climb.id].default.src}
                             hidden={false}
-                            url={t(`expeditions:expeditions.extra-climbs.climb-${climb.id}.url`)}
+                            url={localizePath("expeditions/" + t(`expeditions:expeditions.all-climbs.climb-${climb.id}.url`))}
                         />
                     )
                 }
@@ -108,7 +108,7 @@ const trekImgDict = {
                         description={t(`expeditions:expeditions.all-treks.trek-${trek.id}.description`)}
                         mobileImg={climbImgDict[trek.id].mobile.src}
                         defaultImg={climbImgDict[trek.id].default.src}
-                        url={t(`expeditions:expeditions.all-treks.trek-${trek.id}.url`)}
+                        url={localizePath("expeditions/" + t(`expeditions:expeditions.all-treks.trek-${trek.id}.url`))}
                     />
                 )
             }
@@ -128,7 +128,7 @@ const trekImgDict = {
                             defaultImg={climbImgDict[trek.id].default.src}
                             url={t(`expeditions:expeditions.extra-treks.trek-${trek.id}.url`)}
                             hidden={false}
-                            url={trek.url}
+                            url={localizePath("expeditions/" + t(`expeditions:expeditions.all-treks.trek-${trek.id}.url`))}
                         />
                     )
                 }
