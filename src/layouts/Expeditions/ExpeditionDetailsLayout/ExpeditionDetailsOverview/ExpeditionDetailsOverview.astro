@@ -15,7 +15,7 @@ import { t } from "i18next";
 <section id="overview" class="exped-details-section">
 	<div class="container">
 		<div class="exped-details-overview-content">
-			<h2 class="exped-details-section-title">{t("common.overview")}</h2>
+			<h2 class="exped-details-section-title" set:html={t("common.overview")} />
 			<IconLabelValue
 				type="column"
 				label={t("common.location")}
