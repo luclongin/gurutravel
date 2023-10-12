@@ -4,13 +4,16 @@ import "../styles/root.less";
 import Footer from "../layouts/Footer/Footer.astro";
 import HomeEnquireLayout from "../layouts/Homepage/HomeEnquireLayout/HomeEnquireLayout.astro";
 import dirtImage from "../assets/images/grain-white-1200-opac18.png";
+import { HeadHrefLangs } from "astro-i18next/components";
+import i18next from "i18next";
 ---
-<html lang="en">
+<html lang={i18next.language}>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Document</title>
+		<HeadHrefLangs />
 	</head>
 	<body>
 		 <!-- Background Image -->

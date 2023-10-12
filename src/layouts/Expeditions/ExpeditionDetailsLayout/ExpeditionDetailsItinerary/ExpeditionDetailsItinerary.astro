@@ -8,11 +8,13 @@ import SeeLessButton from "../../../../components/SeeLessButton/SeeLessButton.as
 import mapImg from "../../../../assets/images/itinerary-map.png";
 import lightbulbSVG from "../../../../assets/svg/lightbulb.svg";
 import ImgCardwithOverlayAndBtn from "../../../../components/ImgCardwithOverlayAndBtn/ImgCardwithOverlayAndBtn.astro";
-const {frontmatter} = Astro.props;
+const {data} = Astro.props;
+import { localizePath } from "astro-i18next";
+import { t } from "i18next";
 ---
 <section id="itinerary" class="exped-details-section">
 	<div class="container">
-		<h2 class="exped-details-section-title">Itinerary</h2>
+		<h2 class="exped-details-section-title">{t("common.itinerary")}</h2>
 		<Image 
 			class="itinerary-map-img" 
 			src={mapImg} 
@@ -23,12 +25,12 @@ const {frontmatter} = Astro.props;
 		<ExpeditionDetailsInfoCard
 			iconSVG={lightbulbSVG}
 			iconPosition="bottom"
-			title="Our Philosophy"
-			text="This tried and tested itinerary is informed by decades of mountaineering experience. As with all adventurous activities of this type however, circumstances may arise where we are forced to make alterations, possibly at short notice.<br /><br />While making every effort to adhere to this published schedule, we kindly ask for your patience if the weather, or other naturally occurring circumstances, intervene."
+			title={t("expeditions:expeditions.details.our-philosophy.title")}
+			text={t("expeditions:expeditions.details.our-philosophy.text")}
 		/>
 		<div class="exped-details-itinerary-steps-container">
 			{
-				frontmatter.itinerary.map(step => 
+				data.itinerary.map(step => 
 					<div class="exped-details-itinerary-step">
 						<p class="itinerary-number topper">{step.stepNumber}</p>
 						<p class="itinerary-name">{step.stepName}</p>
@@ -36,10 +38,10 @@ const {frontmatter} = Astro.props;
 					</div>	
 				)
 			}
-			<SeeAllButton seeAllText="View Complete Itinerary" type="itinerary"/>
+			<SeeAllButton seeAllText={t("expeditions:expeditions.details.view-all-itinerary")} type="itinerary"/>
 			<div id="extra-itinerary-container" class="exped-details-itinerary-steps-container">
 			{
-				frontmatter.extraItinerary.map(step => 
+				data.extraItinerary.map(step => 
 					<div class="exped-details-itinerary-step">
 						<p class="itinerary-number topper">{step.stepNumber}</p>
 						<p class="itinerary-name">{step.stepName}</p>
@@ -48,8 +50,8 @@ const {frontmatter} = Astro.props;
 				)
 			}
 			</div>
-			<SeeLessButton seeLessText="View Less" type="itinerary"/>
+			<SeeLessButton seeLessText={t("common.see-less")} type="itinerary"/>
 		</div>
-		<ImgCardwithOverlayAndBtn url="/about/#enquire" cardClass="enquire-img" title="Sound Exciting?" imgSrc={mountainImg}/>
+		<ImgCardwithOverlayAndBtn url={localizePath("/about/#enquire")} cardClass="enquire-img" title={t("common.sound-exciting")} imgSrc={mountainImg}/>
 	</div>
 </section>

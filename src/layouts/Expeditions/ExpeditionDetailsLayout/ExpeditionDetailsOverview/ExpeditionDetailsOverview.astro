@@ -9,56 +9,55 @@ import hikerSVG from "../../../../assets/svg/hiker.svg";
 import calendarSVG from "../../../../assets/svg/calendar.svg";
 import smileySVG from "../../../../assets/svg/smiley.svg";
 import ExpeditionDetailsInfoCard from "../../../../components/ExpeditionDetailsInfoCard/ExpeditionDetailsInfoCard.astro";
-const {frontmatter} = Astro.props;
+const {data} = Astro.props;
+import { t } from "i18next";
 ---
 <section id="overview" class="exped-details-section">
 	<div class="container">
 		<div class="exped-details-overview-content">
-			<h2 class="exped-details-section-title">Overview</h2>
-			
-				<IconLabelValue
-					type="column"
-					label="Location"
-					value={frontmatter.location}
-					imgSrc={locationSVG}
-				/>
-				<IconLabelValue
-					type="column"
-					label="Duration"
-					value={frontmatter.duration}
-					imgSrc={clockSVG}
-				/>
-				<IconLabelValue
-					type="column"
-					label="Difficulty"
-					value={frontmatter.difficulty}
-					imgSrc={difficultySVG}
-				/>
-				<IconLabelValue
-					type="column"
-					label="Altitude"
-					value={frontmatter.altitude}
-					imgSrc={altitudeSVG}
-				/>
-				<IconLabelValue
-					type="column"
-					label="Daily Activity"
-					value={frontmatter.dailyActivity}
-					imgSrc={hikerSVG}
-				/>
-				<IconLabelValue
-					type="column"
-					label="Season"
-					value={frontmatter.season}
-					imgSrc={calendarSVG}
-				/>
-				<ExpeditionDetailsInfoCard
-					iconSVG={smileySVG}
-					iconPosition="top"
-					title="Your Profile"
-					text="You have experience hiking and camping in the mountains, in all conditions.<br/>Previous acclimatization is necessary."
-				/>
-			
+			<h2 class="exped-details-section-title">{t("common.overview")}</h2>
+			<IconLabelValue
+				type="column"
+				label={t("common.location")}
+				value={data.location}
+				imgSrc={locationSVG}
+			/>
+			<IconLabelValue
+				type="column"
+				label={t("common.duration")}
+				value={data.duration}
+				imgSrc={clockSVG}
+			/>
+			<IconLabelValue
+				type="column"
+				label={t("common.difficulty")}
+				value={data.difficulty}
+				imgSrc={difficultySVG}
+			/>
+			<IconLabelValue
+				type="column"
+				label={t("common.altitude")}
+				value={data.altitude}
+				imgSrc={altitudeSVG}
+			/>
+			<IconLabelValue
+				type="column"
+				label={t("common.daily-activity")}
+				value={data.dailyActivity}
+				imgSrc={hikerSVG}
+			/>
+			<IconLabelValue
+				type="column"
+				label={t("common.season")}
+				value={data.season}
+				imgSrc={calendarSVG}
+			/>
+			<ExpeditionDetailsInfoCard
+				iconSVG={smileySVG}
+				iconPosition="top"
+				title={t("expeditions:expeditions.details.your-profile.title")}
+				text={t("expeditions:expeditions.details.your-profile.text")}
+			/>
 		</div>
 	</div>
 </section>

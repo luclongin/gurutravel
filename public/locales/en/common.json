@@ -10,6 +10,7 @@
 		"popular-treks": "popular treks",
 		"all-climbs-and-treks": "all climbs and treks",
 		"enquire": "enquire",
+		"enquire-now": "enquire now",
 		"contact-information": "contact information",
 		"monday": "monday",
 		"friday": "friday",
@@ -20,6 +21,21 @@
 		"home": "home",
 		"fun-fact": "fun fact",
 		"see-less": "see less",
-		"see-more": "see more"
+		"see-more": "see more",
+		"overview": "overview",
+		"whats-included": "what's included",
+		"itinerary": "itinerary",
+		"cost": "cost",
+		"pick-up": "pick-up",
+		"drop-off": "drop-off",
+		"included": "included",
+		"not-included": "not included",
+		"sound-exciting": "sound exciting?",
+		"location": "location",
+		"duration": "duration",
+		"difficulty": "difficulty",
+		"altitude": "altitude",
+		"daily-activity": "daily activity",
+		"season": "season"
 	}
 }

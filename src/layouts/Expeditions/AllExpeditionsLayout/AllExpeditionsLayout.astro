@@ -2,6 +2,7 @@
 import "./AllExpeditionsLayout.less";
 import ExpeditionCard from "../../../components/ExpeditionCard/ExpeditionCard.astro";
 import SeeAllButton from "../../../components/SeeAllButton/SeeAllButton.astro";
+import { localizePath } from "astro-i18next";
 import SeeLessButton from "../../../components/SeeLessButton/SeeLessButton.astro";
 import { t } from "i18next";
 import { allClimbs, extraClimbs, allTreks, extraTreks } from "../../../assets/data/allServices.js";
@@ -41,10 +42,10 @@ const trekImgDict = {
     <div class="container">
         <div class="all-expetitions-container">
             <div class="content">
-                <span class="topper">{t("expeditions:expeditions.all-climbs.topper")}</span>
-                <h2 class="section-title title gallery-title">
-                    {t("expeditions:expeditions.all-climbs.title")}
-                </h2>
+                <span class="topper" set:html={t("expeditions:expeditions.all-climbs.topper")} />
+                <h2 class="section-title title gallery-title" 
+                    set:html={t("expeditions:expeditions.all-climbs.title")}
+                />
             </div>
             {
                 allClimbs.map((climb) => 
@@ -58,7 +59,7 @@ const trekImgDict = {
                         description={t(`expeditions:expeditions.all-climbs.climb-${climb.id}.description`)}
                         mobileImg={climbImgDict[climb.id].mobile.src}
                         defaultImg={climbImgDict[climb.id].default.src}
-                        url={t(`expeditions:expeditions.all-climbs.climb-${climb.id}.url`)}
+                        url={localizePath(t(`expeditions:expeditions.all-climbs.climb-${climb.id}.url`))}
                     />
                 )
             }

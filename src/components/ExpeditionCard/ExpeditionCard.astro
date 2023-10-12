@@ -34,7 +34,7 @@ expeditions/expeditions//URL-->
             />
         </picture>
         <div class="expedition-img-container-content">
-            <p class="subtitle expedition-name">{name}</p>
+            <p class="subtitle expedition-name" set:html={name} />
             <div class="difficulty-container">
                 <ExpeditionDifficultyBars difficulty={difficulty} />
                 <p class="subtitle expedition-difficulty-text">{difficulty}</p>
@@ -49,9 +49,9 @@ expeditions/expeditions//URL-->
             </div>
             <div class="expedition-duration">
                 <Image src={clock} alt="Clock Icon" height="16" width="16" />
-                <p class="expedition-duration-text">{duration}</p>
+                <p class="expedition-duration-text" set:html={duration} />
             </div>
         </div>
-        <p class="expedition-description-text">{description}</p>
+        <p class="expedition-description-text" set:html={description} />
     </div>
 </a>

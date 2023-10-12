@@ -3,6 +3,7 @@ import "./ExpeditionDetailsSideBar.less";
 import { Image } from "astro:assets";
 import TableOfContentsButton from "../TableOfContentsButton/TableOfContentsButton.astro";
 import xMarkSVG from "../../assets/svg/x.svg";
+import { t } from "i18next";
 ---
 <div class="container table-of-contents-container">
     <input type="checkbox" name="toggle-menu-input" id="toggle-menu-input">
@@ -21,11 +22,11 @@ import xMarkSVG from "../../assets/svg/x.svg";
             </div>
         </label>
         <nav class="expedition-details-sidebar-nav">
-            <a href="#overview">Overview</a>
-            <a href="#included">What's included</a>
-            <a href="#itinerary">Itinerary</a>
-            <a href="#cost">Cost</a>
-            <a href="#gallery">Gallery</a>
+            <a href="#overview" set:html={t("common.overview")} />
+            <a href="#included" set:html={t("common.whats-included")}/>
+            <a href="#itinerary"set:html={t("common.itinerary")}/>
+            <a href="#cost"set:html={t("common.cost")}/>
+            <a href="#gallery"set:html={t("common.gallery")}/>
             <!--<a href="#">Practical Info</a>-->
         </nav>
     </div>

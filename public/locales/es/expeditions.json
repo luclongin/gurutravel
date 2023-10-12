@@ -4,7 +4,7 @@
 		"hero-title-2": "y caminatas",
 		"all-climbs": {
 			"topper": "todas las escaladas y expediciones",
-			"title": "escaladas épicas. vistas épicas.",
+			"title": "escaladas &eacute;picas. vistas &eacute;picas.",
 			"see-all-text": "Ver todas las escaladas y expediciones",
 			"climb-1": {
 				"id": 1,
@@ -14,7 +14,7 @@
 				"altitude": "5,830M",
 				"duration": "4-6 días",
 				"url": "huayhuash-circuit",
-				"description": "Embárcate en una escalada técnica, recompensada con impresionantes vistas de los picos circundantes."
+				"description": "Embárcate en una escalada t&eacute;cnica, recompensada con impresionantes vistas de los picos circundantes."
 			},
 			"climb-2": {
 				"id": 2,
@@ -54,7 +54,7 @@
 				"altitude": "5,830M",
 				"duration": "4-6 días",
 				"url": "huayhuash-circuit",
-				"description": "Embárcate en una escalada técnica, recompensada con impresionantes vistas de los picos circundantes."
+				"description": "Embárcate en una escalada t&eacute;cnica, recompensada con impresionantes vistas de los picos circundantes."
 			},
 			"climb-6": {
 				"id": 6,
@@ -101,7 +101,7 @@
 		},
 		"all-treks": {
 			"topper": "todas las caminatas y excursiones de un día",
-			"title": "Adéntrate en la Naturaleza.",
+			"title": "Ad&eacute;ntrate en la Naturaleza.",
 			"see-all-text": "Ver todas las caminatas y excursiones",
 			"trek-1": {
 				"id": 1,
@@ -121,7 +121,7 @@
 				"altitude": "5,000M",
 				"duration": "10-12 días",
 				"url": "huayhuash-circuit",
-				"description": "Embárcate en un viaje épico a través de la cordillera remota, conocida por su belleza y altos pasos."
+				"description": "Embárcate en un viaje &eacute;pico a trav&eacute;s de la cordillera remota, conocida por su belleza y altos pasos."
 			},
 			"trek-3": {
 				"id": 3,
@@ -161,7 +161,7 @@
 				"altitude": "5,000M",
 				"duration": "10-12 días",
 				"url": "huayhuash-circuit",
-				"description": "Embárcate en un viaje épico a través de la cordillera remota, conocida por su belleza y altos pasos."
+				"description": "Embárcate en un viaje &eacute;pico a trav&eacute;s de la cordillera remota, conocida por su belleza y altos pasos."
 			}
 		},
 		"extra-treks": {
@@ -194,6 +194,26 @@
 				"url": "huayhuash-circuit",
 				"duration": "12-14 days",
 				"description": "Experimenta la belleza de la Cordillera Blanca. Valles vírgenes, lagos glaciares y picos imponentes."
+			}
+		},
+		"details": {
+			"your-profile": {
+				"title": "Tu Perfil",
+				"text": "Tienes experiencia en senderismo y acampada en las montañas, en todas las condiciones. Se requiere aclimatación previa."
+			},
+			"our-philosophy": {
+				"title": "Nuestra Filosofía",
+				"text": "Este itinerario probado está basado en décadas de experiencia en montañismo. Sin embargo, como con todas las actividades aventureras de este tipo, pueden surgir circunstancias en las que nos veamos obligados a realizar alteraciones, posiblemente con poco aviso.<br /><br />Haremos todo lo posible por adherirnos a este programa publicado, y agradecemos tu paciencia si el clima u otras circunstancias naturales intervienen."
+			},
+			"view-all-itinerary": "Ver Itinerario Completo",
+			"cost": {
+				"price-introduction-text": "El precio indicado a continuación es por persona.",
+				"english-spanish-guides-available-text": "Esta expedición puede ser liderada por guías que hablan inglés y español.",
+				"info-card": {
+					"title": "Unirse a un grupo existente",
+					"text": "Se forma un grupo con un mínimo de 2 participantes para asegurar la salida en la fecha que desees. El precio final se determinará en función del tamaño del grupo final. Ten en cuenta que las salidas en grupo fijas están sujetas a disponibilidad. Contáctanos para obtener más información."
+				},
+				"personalized-experience-text": "Para una experiencia más personalizada, también ofrecemos salidas en tour privado. Estas se pueden programar en cualquier fecha. Por favor, contáctanos para obtener más información."
 			}
 		}
 	}

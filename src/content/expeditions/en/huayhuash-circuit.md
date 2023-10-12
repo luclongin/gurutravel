@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/Expeditions/ExpeditionDetailsLayout/ExpeditionDetailsLayout.astro
 title: 'Huayhuash Circuit Trek'
 location: "Huayhuash Range"
 duration: "10-12 days"

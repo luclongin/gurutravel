@@ -7,10 +7,8 @@ import MainGallery from "../../components/MainGallery/MainGallery.jsx";
 <section id="gallery-section">
 	<div class="container">
         <div class="content">
-            <span class="topper">{t("gallery:gallery.topper")}</span>
-			<h2 class="section-title title about-team-title">
-				{t("gallery:gallery.title")}
-			</h2>
+            <span class="topper" set:html={t("gallery:gallery.topper")} />
+			<h2 class="section-title title about-team-title" set:html={t("gallery:gallery.title")}/>
         </div>
         <div class="gallery-container">
             <MainGallery client:visible />

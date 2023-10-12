@@ -195,6 +195,27 @@
 				"url": "huayhuash-circuit",
 				"description": "Experience the beauty of Cordillera Blanca. Pristine valleys, glacial lakes, and towering peaks."
 			}
+		},
+		"details": {
+			"your-profile": {
+				"title": "Your Profile",
+				"text": "You have experience hiking and camping in the mountains, in all conditions.<br/>Previous acclimatization is necessary."
+			},
+			"our-philosophy": {
+				"title": "Our Philosophy Profile",
+				"text": "This tried and tested itinerary is informed by decades of mountaineering experience. As with all adventurous activities of this type however, circumstances may arise where we are forced to make alterations, possibly at short notice.<br /><br />While making every effort to adhere to this published schedule, we kindly ask for your patience if the weather, or other naturally occurring circumstances, intervene."
+			},
+			"view-all-itinerary": "View Complete Itinerary",
+			"cost": {
+				"price-introduction-text": "The price listed below is per person.",
+				"english-spanish-guides-available-text": "This expedition can be led by both English-speaking and Spanish-speaking guides.",
+				"info-card": {
+					"title": "join an existing group",
+					"text": "A group is formed with a minimum of 2 participants to ensure the departure on your desired date.<br/>The final price will be determined based on the final group size. <br/>Please note that fixed group departures are subject to availability.<br/>Contact us for more information.<br/>"
+				},
+				"personalized-experience-text": "For a more personalized experience, we also provide private tour departures. These can be arranged on any date. Kindly contact us for more information."
+			}
+			
 		}
 	}
 }

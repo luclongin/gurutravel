@@ -7,7 +7,7 @@ const { type, label, value, imgSrc } = Astro.props;
 <div class=`icon-and-label-and-value icon-label-value-${type}`>
 	<Image src={imgSrc} alt="Phone Icon" height="32" width="32" />
 	<div class="text-content">
-		<p class="subtitle">{label}</p>
-		<p class="bold">{value}</p>
+		<p class="subtitle" set:html={label} />
+		<p class="bold" set:html={value} />
 	</div>
 </div>

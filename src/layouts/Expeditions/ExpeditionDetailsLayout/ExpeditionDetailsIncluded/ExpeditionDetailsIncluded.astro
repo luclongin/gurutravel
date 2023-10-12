@@ -3,24 +3,25 @@ import checkmarkImg from "../../../../assets/svg/checkmark.svg";
 import xMarkImg from "../../../../assets/svg/x.svg";
 import IconAndLabel from "../../../../components/IconAndLabel/IconAndLabel.astro";
 import "./ExpeditionDetailsIncluded.less";
-const {frontmatter} = Astro.props;
+const {data} = Astro.props;
+import { t } from "i18next";
 ---
 <section class="exped-details-section" id="included">
 	<div class="container">
-        <h2 class="exped-details-section-title">What's included</h2>
+        <h2 class="exped-details-section-title" set:html={t("common.whats-included")} />
         <div class="exped-details-included-line">
-            <p class="subtitle">Pick-up</p>
-            <p class="text">{frontmatter.pickup}</p>
+            <p class="subtitle">{t("common.pick-up")}</p>
+            <p class="text">{data.pickup}</p>
         </div>
         <div class="exped-details-included-line">
-            <p class="subtitle">Drop-off</p>
-            <p class="text">{frontmatter.dropoff}</p>
+            <p class="subtitle">{t("common.drop-off")}</p>
+            <p class="text">{data.dropoff}</p>
         </div>
         <div class="exped-details-included-line included-list-container">
-            <p class="subtitle">Included</p>
+            <p class="subtitle">{t("common.included")}</p>
             <ul class="exped-details-included-list">
                 {
-                    frontmatter.includedList.map(
+                    data.includedList.map(
                         item => <IconAndLabel 
                                     value={item} 
                                     imgSrc={checkmarkImg}
@@ -31,10 +32,10 @@ const {frontmatter} = Astro.props;
             
         </div>
         <div class="exped-details-included-line included-list-container">
-            <p class="subtitle">Not Included</p>
+            <p class="subtitle">{t("common.not-included")}</p>
             <ul class="exped-details-included-list">
                 {
-                    frontmatter.notIncludedList.map(
+                    data.notIncludedList.map(
                         item => <IconAndLabel 
                                     value={item} 
                                     imgSrc={xMarkImg}

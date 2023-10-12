@@ -6,6 +6,8 @@ import { t } from "i18next";
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
 import { LanguageSelector } from "astro-i18next/components";
+import { localizePath } from "astro-i18next";
+
 ---
 <!-- ============================================ -->
 <!--         Navigation Code Stitch               -->
@@ -56,7 +58,7 @@ import { LanguageSelector } from "astro-i18next/components";
 						<!-- if currentPath is truthy, nav-li-link-selected will be added -->
 						<a
 							id="nav-home-link"
-							href="/"
+							href={localizePath("/")}
 							class:list={["nav-li-link", {"nav-li-link-selected": currentPath===""}]}
 						>
 							{t("common.home")}
@@ -65,14 +67,14 @@ import { LanguageSelector } from "astro-i18next/components";
 					<li class="nav-li nav-padded-li">
 						<a 
 							id="nav-team-link" 
-							href="/about" 
+							href={localizePath("/about")}
 							class:list={["nav-li-link", {"nav-li-link-selected": currentPath.includes("about")}]}
 						>{t("common.team")}</a>
 					</li>
 					<li class="nav-li nav-padded-li">
 						<a
 							id="nav-expeditions-link"
-							href="/expeditions"
+							href={localizePath("/expeditions")}
 							class:list={["nav-li-link", {"nav-li-link-selected": currentPath.includes("expeditions")}]}
 							>{t("common.expeditions")}</a
 						>
@@ -80,7 +82,7 @@ import { LanguageSelector } from "astro-i18next/components";
 					<li class="nav-li">
 						<a 
 							id="nav-gallery-link" 
-							href="/gallery" 							
+							href={localizePath("/gallery")}						
 							class:list={["nav-li-link", {"nav-li-link-selected": currentPath.includes("gallery")}]}
 							>{t("common.gallery")} </a
 						>
@@ -95,12 +97,22 @@ import { LanguageSelector } from "astro-i18next/components";
 						</a>
 					</li>
 					<li class="nav-li extra-enquire-link">
-						<a id="nav-gallery-link" href="/about/#enquire" class="nav-li-link"
-						>{t("common.enquire")}</a>
+						<a 
+							id="nav-gallery-link" 
+							href={localizePath("/about/#enquire")}
+							class="nav-li-link"
+						>
+							{t("common.enquire")}
+						</a>
 					</li>
 				</ul>
 			</div>
-			<a href="/about/#enquire" class="solid-btn nav-btn">{t("common.enquire")} </a>
+			<a 
+				href={localizePath("/about/#enquire")} 
+				class="solid-btn nav-btn"
+			>
+				{t("common.enquire")}
+			</a>
 		</nav>
 	</div>
 </header>

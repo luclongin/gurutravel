@@ -10,6 +10,7 @@
 		"popular-treks": "caminatas populares",
 		"all-climbs-and-treks": "todos los ascensos y caminatas",
 		"enquire": "consultar",
+		"enquire-now": "consultar ahora",
 		"contact information": "información de contacto",
 		"monday": "lunes",
 		"friday": "viernes",
@@ -20,6 +21,21 @@
 		"home": "inicio",
 		"fun-fact": "dato curioso",
 		"see-less": "ver menos",
-		"see-more": "ver m&aacute;s"
+		"see-more": "ver m&aacute;s",
+		"overview": "Descripci&oacute;n general",
+		"whats-included": "Qu&eacute; est&aacute; incluido",
+		"itinerary": "itinerario",
+		"cost": "precios",
+		"pick-up": "recogida",
+		"drop-off": "dejada",
+		"included": "incluido",
+		"not-included": "no incluido",
+		"sound-exciting": "¿Suena emocionante?",
+		"location": "ubicaci&oacute;n",
+		"duration": "duraci&oacute;n",
+		"difficulty": "dificultad",
+		"altitude": "altura",
+		"daily-activity": "actividad diaria",
+		"season": "temporada"
 	}
 }

@@ -10,24 +10,25 @@ import ExpeditionDetailsCost from "./ExpeditionDetailsCost/ExpeditionDetailsCost
 import ExpeditionDetailsGallery from "./ExpeditionDetailsGallery/ExpeditionDetailsGallery.astro";
 import ExpedImg from "../../../assets/images/hero/austin-ban-juHayWuaaoQ-unsplash.webp";
 import ExpedImgMobile from "../../../assets/images/hero/austin-ban-juHayWuaaoQ-unsplash-m.webp";
-const { frontmatter } = Astro.props;
+const { data } = Astro.props;
+import { t } from "i18next"; 
 ---
 <BaseLayout>
     <HeroLayout
 		heroSection="huayhuash-circuit"
-		heroTitle1="Huayhuash Circuit"
-		heroTitle2="Trek"
+		heroTitle1=""
+		heroTitle2={data.title}
 		heroImg={ExpedImg}
 		heroImgMobile={ExpedImgMobile}
 	/>
 	<section id="exped-details-container">
 		<ExpeditionDetailsSideBar />
 		<section id="exped-details-sections-container">
-			<ExpeditionDetailsOverview frontmatter={frontmatter} />
-			<ExpeditionDetailsIncluded frontmatter={frontmatter} />
-			<ExpeditionDetailsItinerary frontmatter={frontmatter} />
-			<ExpeditionDetailsCost frontmatter={frontmatter} />
-			<ExpeditionDetailsGallery frontmatter={frontmatter} />
+			<ExpeditionDetailsOverview data={data} />
+			<ExpeditionDetailsIncluded data={data} />
+			<ExpeditionDetailsItinerary data={data} />
+			<ExpeditionDetailsCost data={data} />
+			<ExpeditionDetailsGallery data={data} />
 		</section>
 	</section>
 </BaseLayout>
