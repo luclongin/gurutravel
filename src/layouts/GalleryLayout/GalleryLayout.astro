@@ -1,14 +1,15 @@
 ---
 import "./GalleryLayout.less";
 const { frontmatter } = Astro.props;
+import { t } from "i18next";
 import MainGallery from "../../components/MainGallery/MainGallery.jsx";
 ---
 <section id="gallery-section">
 	<div class="container">
         <div class="content">
-            <span class="topper">Gallery</span>
+            <span class="topper">{t("gallery:gallery.topper")}</span>
 			<h2 class="section-title title about-team-title">
-				View our gallery
+				{t("gallery:gallery.title")}
 			</h2>
         </div>
         <div class="gallery-container">

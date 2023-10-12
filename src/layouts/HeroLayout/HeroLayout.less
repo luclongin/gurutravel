@@ -10,6 +10,12 @@
 			justify-content: flex-end !important;
 			align-items: flex-start;
 
+			.hero-title-container {
+				display: flex;
+				flex-direction: column;
+				margin: 0 0 5rem 0.5rem;
+			}
+
 			.hero-title {
 				color: var(--primaryLight);
 				font-size: clamp(2.4rem, 10vw, 3.2rem);
@@ -18,7 +24,6 @@
 				letter-spacing: (3/16rem);
 				text-transform: uppercase;
 				z-index: 2;
-				margin: 0 0 5rem 0.5rem;
 				padding: 0 1rem;
 			}
 
@@ -74,7 +79,7 @@
 	#hero-section {
 		height: 100vh;
 
-		.hero-title {
+		.hero-title-container {
 			margin: 0 0 5rem 2rem !important;
 		}
 

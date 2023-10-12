@@ -6,6 +6,7 @@ export default {
 		"homepage", 
 		"about", 
 		"expeditions",
+		"gallery",
 		"footer", 
 		"common"],
 	defaultNamespace: "common",

@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroLayout from "../layouts/HeroLayout/HeroLayout.astro";
 import GalleryLayout from "../layouts/GalleryLayout/GalleryLayout.astro";
@@ -12,7 +12,7 @@ changeLanguage("en");
 	<HeroLayout
 		heroSection="gallery"
 		heroTitle1=""
-		heroTitle2="Gallery"
+		heroTitle2={t("gallery:gallery.hero-title-2")}
 		heroImg={GalleryImg}
 		heroImgMobile={GalleryImgMobile}
 	/>

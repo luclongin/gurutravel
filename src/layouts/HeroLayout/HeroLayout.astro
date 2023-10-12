@@ -15,7 +15,10 @@ import './HeroLayout.less';
 			<img aria-hidden="true" loading="lazy" decoding="async" src={heroImg.src} alt="kitchen cabinets" width="1920" height="1280">
 		</picture>
 		<div class="hero-gradient"></div>
-		<h1 class="hero-title">{heroTitle1}<br />{heroTitle2}</h1>
+		<div class="hero-title-container">
+			<h1 class="hero-title" set:html={heroTitle1} />
+			<h1 class="hero-title" set:html={heroTitle2} />
+		</div>	
 		<Image
 			class="hero-container-caret-down"
 			src={caretDown}
