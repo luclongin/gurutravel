@@ -1,4 +1,5 @@
 ---
+// Base Layout for all pages
 import Navigation from "../components/Navigation/Navigation.astro";
 import "../styles/root.less";
 import Footer from "../layouts/Footer/Footer.astro";
@@ -23,7 +24,6 @@ import i18next from "i18next";
 			<img aria-hidden="true" loading="lazy" decoding="async" src={dirtImage.src} alt="kitchen cabinets" width="1920" height="1280">
 		</picture>
 		<Navigation />
-
         <!-- Here will be inserted page-specific components -->
         <slot></slot>
 		<HomeEnquireLayout />

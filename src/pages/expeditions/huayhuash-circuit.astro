@@ -2,9 +2,11 @@
 import { getEntry } from "astro:content";
 import { t, changeLanguage } from "i18next";
 import ExpeditionDetailsLayout from "../../layouts/Expeditions/ExpeditionDetailsLayout/ExpeditionDetailsLayout.astro";
-
+// generated automatically by i18next for translation
 changeLanguage("en");
-
 const exped = await getEntry("expeditions", "en/huayhuash-circuit");
 ---
+<!-- ============================================ -->
+<!--   Expedition Details: Huayhuash Circuit      -->
+<!-- ============================================ -->
 <ExpeditionDetailsLayout data={exped.data}/>
