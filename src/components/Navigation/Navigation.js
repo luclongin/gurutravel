@@ -29,9 +29,11 @@ window.onscroll = function () {
 	if (pos1 > pos2) {
 		document.querySelector("#header .navigation").style.top = "1rem";
 		document.querySelector("#header .navigation").style.opacity = "1";
+		document.querySelector("#header").style.display = "flex";
 	} else {
 		document.querySelector("#header .navigation").style.top = "-20rem";
 		document.querySelector("#header .navigation").style.opacity = "0";
+		document.querySelector("#header").style.display = "none";
 	}
 	pos1 = pos2;
 };
