@@ -1,0 +1,13 @@
+---
+import { getEntry } from "astro:content";
+import { t, changeLanguage } from "i18next";
+import ExpeditionDetailsLayout from "../../../layouts/Expeditions/ExpeditionDetailsLayout/ExpeditionDetailsLayout.astro";
+
+changeLanguage("es");
+
+const exped = await getEntry("expeditions", "en/huayhuash-circuit");
+---
+<!-- ============================================ -->
+<!--   Expedition Details: Huayhuash Circuit      -->
+<!-- ============================================ -->
+<ExpeditionDetailsLayout data={exped.data}/>

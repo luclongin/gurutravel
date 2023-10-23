@@ -1,0 +1,23 @@
+---
+import { t, changeLanguage } from "i18next";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeroLayout from "../../layouts/HeroLayout/HeroLayout.astro";
+import GalleryLayout from "../../layouts/GalleryLayout/GalleryLayout.astro";
+import GalleryImgMobile from "../../assets/images/hero/gallery-img-m.jpg";
+import GalleryImg from "../../assets/images/hero/gallery-img.jpg";
+
+changeLanguage("es");
+---
+<!-- ============================================ -->
+<!--  	    	 Gallery  Page  		 	      -->
+<!-- ============================================ -->
+<BaseLayout>
+	<HeroLayout
+		heroSection="gallery"
+		heroTitle1=""
+		heroTitle2={t("gallery:gallery.hero-title-2")}
+		heroImg={GalleryImg}
+		heroImgMobile={GalleryImgMobile}
+	/>
+    <GalleryLayout />
+</BaseLayout>
